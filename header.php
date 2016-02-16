@@ -23,6 +23,8 @@
         <link rel="stylesheet" href="<?php echo bloginfo('stylesheet_directory'); ?>/css/ionicons.min.css">
         <!-- animate css -->
         <link rel="stylesheet" href="<?php echo bloginfo('stylesheet_directory'); ?>/css/animate.css">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="<?php echo bloginfo('stylesheet_directory'); ?>/css/font-awesome.min.css">
         <!-- Hero area slider css-->
         <link rel="stylesheet" href="<?php echo bloginfo('stylesheet_directory'); ?>/css/slider.css">
         <!-- owl craousel css -->
@@ -35,8 +37,8 @@
         <link rel="stylesheet" href="<?php echo bloginfo('stylesheet_directory'); ?>/css/responsive.css">
 
         <!-- SPARK STYLES -->
-        <link rel="stylesheet" href="<?php echo bloginfo('stylesheet_directory'); ?>/style.css">
         <link rel="stylesheet" href="<?php echo bloginfo('stylesheet_directory'); ?>/css/style.css">
+        <link rel="stylesheet" href="<?php echo bloginfo('stylesheet_directory'); ?>/style.css">
 
         <?php wp_head();?>
 
