@@ -1,0 +1,15 @@
+/*
+Theme Name: Spark WP Theme
+Theme URI: https://github.com/agenciamav/spark-wp-theme
+Description: Tema desenvolvido exclusivamente para o site www.sparkag.com.br com base no template "Timer Agency Template (http://www.themefisher.com/items/timer-responsive-multipage-agency-template/)"
+Version: 1.0
+Author: Luciano Tonet
+Author URI: http://lucianotonet.com
+*/
+
+a {
+    color: #FF6700;    
+}
+.nav>li>a:hover, .nav>li>a:focus {
+	color: #FF6700;        
+}

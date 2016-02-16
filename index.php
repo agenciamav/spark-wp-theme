@@ -1,69 +1,5 @@
-<!DOCTYPE html>
-<html class="no-js">
-    <head>
-        <!-- Basic Page Needs
-        ================================================== -->
-        <meta charset="utf-8">
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-        <link rel="icon" type="image/png" href="images/favicon.png">
-        <title>Timer Agency Template</title>
-        <meta name="description" content="">
-        <meta name="keywords" content="">
-        <meta name="author" content="">
-        <!-- Mobile Specific Metas
-        ================================================== -->
-        <meta name="format-detection" content="telephone=no">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <!-- Template CSS Files
-        ================================================== -->
-        <!-- Twitter Bootstrs CSS -->
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <!-- Ionicons Fonts Css -->
-        <link rel="stylesheet" href="css/ionicons.min.css">
-        <!-- animate css -->
-        <link rel="stylesheet" href="css/animate.css">
-        <!-- Hero area slider css-->
-        <link rel="stylesheet" href="css/slider.css">
-        <!-- owl craousel css -->
-        <link rel="stylesheet" href="css/owl.carousel.css">
-        <link rel="stylesheet" href="css/owl.theme.css">
-        <link rel="stylesheet" href="css/jquery.fancybox.css">
-        <!-- template main css file -->
-        <link rel="stylesheet" href="css/main.css">
-        <!-- responsive css -->
-        <link rel="stylesheet" href="css/responsive.css">
-
-        <!-- SPARK STYLES -->
-        <link rel="stylesheet" href="css/style.css">
-
-        <!-- Template Javascript Files
-        ================================================== -->
-        <!-- modernizr js -->
-        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
-        <!-- jquery -->
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-        <!-- owl carouserl js -->
-        <script src="js/owl.carousel.min.js"></script>
-        <!-- bootstrap js -->
-
-        <script src="js/bootstrap.min.js"></script>
-        <!-- wow js -->
-        <script src="js/wow.min.js"></script>
-        <!-- slider js -->
-        <script src="js/slider.js"></script>
-        <script src="js/jquery.fancybox.js"></script>
-        <!-- template main js -->
-        <script src="js/main.js"></script>
-
-        <!-- SPARK DEPENDENCIES SCRIPTS -->
-        <script src="zoom_assets/jquery.smoothZoom.min.js"></script>
-        <script src="js/jquery.scrollify.min.js"></script>
-
-        <!-- SPARK SCRIPTS -->
-        <script src="js/scripts.js"></script>
-    </head>
-    <body>
+<?php get_header();?>
+    <body <?php body_class();?>>
         <!--
         ==================================================
         Header Section Start
@@ -83,7 +19,7 @@
                     <!-- logo -->
                     <div class="navbar-brand">
                         <a href="index.html" >
-                            <img src="images/logo.png" alt="">
+                            <img src="<?php echo bloginfo('stylesheet_directory'); ?>/images/logo.png" alt="">
                         </a>
                     </div>
                     <!-- /logo -->
@@ -126,6 +62,16 @@
 
         <?php require 'warehouse.php';?>
 
+        <?php
+$the_query = new WP_Query('page_id=6');
+while ($the_query->have_posts()) {
+	$the_query->the_post();
+	the_title();
+	the_content();
+}
+wp_reset_postdata();
+?>
+
 
             <!--
             ==================================================
@@ -137,20 +83,21 @@
                         <div class="col-md-6 col-sm-6">
                             <div class="block wow fadeInLeft" data-wow-delay=".3s" data-wow-duration="500ms">
                                 <h2>
-                                ABOUT ME
+                                <?php the_title();?>
                                 </h2>
-                                <p>
-                                    Hello, I’m a UI/UX Designer & Front End Developer from Victoria, Australia. I hold a master degree of Web Design from the World University.And scrambled it to make a type specimen book. It has survived not only five centuries
-                                </p>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, adipisci voluptatum repudiandae, natus impedit repellat aut officia illum at assumenda iusto reiciendis placeat. Temporibus, vero.
-                                </p>
+                                <?php the_content();?>
                             </div>
 
                         </div>
                         <div class="col-md-6 col-sm-6">
                             <div class="block wow fadeInRight" data-wow-delay=".3s" data-wow-duration="500ms">
-                                <img src="images/about/about.jpg" alt="">
+                            <?php
+if (has_post_thumbnail()) {
+	the_post_thumbnail([494, 309]);
+} else {
+	echo "<img src='" . bloginfo('stylesheet_directory') . "/images/about/about.jpg' alt=''/>";
+}
+?>
                             </div>
                         </div>
                     </div>
@@ -169,33 +116,49 @@
                         </p>
                     </div>
                     <div class="row">
-                        <div class="col-sm-4 col-xs-12">
-                            <figure class="wow fadeInLeft animated portfolio-item" data-wow-duration="500ms" data-wow-delay="0ms">
-                                <div class="img-wrapper">
-                                    <img src="images/portfolio/item-1.jpg" class="img-responsive" alt="this is a title" >
-                                    <div class="overlay">
-                                        <div class="buttons">
-                                            <a rel="gallery" class="fancybox" href="images/portfolio/item-1.jpg">Demo</a>
-                                            <a target="_blank" href="single-portfolio.html">Details</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <figcaption>
-                                <h4>
-                                <a href="#">
-                                    Dew Drop
-                                </a>
-                                </h4>
-                                <p>
-                                    Redesigne UI Concept
-                                </p>
-                                </figcaption>
-                            </figure>
-                        </div>
+
+                        <?php if (have_posts()) {
+
+	while (have_posts()) {
+		the_post();
+		?>
+
+	                        <div id="post-<?php the_ID()?>" class="col-sm-4 col-xs-12">
+	                            <figure class="wow fadeInLeft animated portfolio-item" data-wow-duration="500ms" data-wow-delay="0ms">
+	                                <div class="img-wrapper">
+	                                    <img src="<?php echo bloginfo('stylesheet_directory'); ?>/images/portfolio/item-1.jpg" class="img-responsive" alt="this is a title" >
+	                                    <div class="overlay">
+	                                        <div class="buttons">
+	                                            <a rel="gallery" class="fancybox" href="<?php echo bloginfo('stylesheet_directory'); ?>/images/portfolio/item-1.jpg">Demo</a>
+	                                            <a target="_blank" href="<?php the_permalink();?>">Details</a>
+	                                        </div>
+	                                    </div>
+	                                </div>
+	                                <figcaption>
+	                                <h4>
+	                                <a href="<?php the_permalink();?>">
+	                                    <?php the_title();?>
+	                                </a>
+	                                </h4>
+	                                <p>
+	                                    <?php the_excerpt();?>
+	                                </p>
+	                                </figcaption>
+	                            </figure>
+	                        </div>
+
+                    <?php }
+} else {?>
+
+                        <p><?php _e('Sorry, no posts matched your criteria.');?></p>
+
+                        <?php }
+;?>
+
                         <div class="col-sm-4 col-xs-12">
                             <figure class="wow fadeInLeft animated" data-wow-duration="500ms" data-wow-delay="300ms">
                                 <div class="img-wrapper">
-                                    <img src="images/portfolio/item-2.jpg" class="img-responsive" alt="this is a title" >
+                                    <img src="<?php echo bloginfo('stylesheet_directory'); ?>/images/portfolio/item-2.jpg" class="img-responsive" alt="this is a title" >
                                     <div class="overlay">
                                         <div class="buttons">
                                             <a rel="gallery" class="fancybox" href="images/portfolio/item-2.jpg">Demo</a>
@@ -218,7 +181,7 @@
                         <div class="col-sm-4 col-xs-12">
                             <figure class="wow fadeInLeft animated" data-wow-duration="500ms" data-wow-delay="300ms">
                                 <div class="img-wrapper">
-                                    <img src="images/portfolio/item-3.jpg" class="img-responsive" alt="" >
+                                    <img src="<?php echo bloginfo('stylesheet_directory'); ?>/images/portfolio/item-3.jpg" class="img-responsive" alt="" >
                                     <div class="overlay">
                                         <div class="buttons">
                                             <a rel="gallery" class="fancybox" href="images/portfolio/item-3.jpg">Demo</a>
@@ -241,7 +204,7 @@
                         <div class="col-sm-4 col-xs-12">
                             <figure class="wow fadeInLeft animated" data-wow-duration="500ms" data-wow-delay="600ms">
                                 <div class="img-wrapper">
-                                    <img src="images/portfolio/item-4.jpg" class="img-responsive" alt="" >
+                                    <img src="<?php echo bloginfo('stylesheet_directory'); ?>/images/portfolio/item-4.jpg" class="img-responsive" alt="" >
                                     <div class="overlay">
                                         <div class="buttons">
                                             <a rel="gallery" class="fancybox" href="images/portfolio/item-4.jpg">Demo</a>
@@ -264,7 +227,7 @@
                         <div class="col-sm-4 col-xs-12">
                             <figure class="wow fadeInLeft animated" data-wow-duration="500ms" data-wow-delay="900ms">
                                 <div class="img-wrapper">
-                                    <img src="images/portfolio/item-5.jpg" class="img-responsive" alt="" >
+                                    <img src="<?php echo bloginfo('stylesheet_directory'); ?>/images/portfolio/item-5.jpg" class="img-responsive" alt="" >
                                     <div class="overlay">
                                         <div class="buttons">
                                             <a rel="gallery" class="fancybox" href="images/portfolio/item-5.jpg">Demo</a>
@@ -287,7 +250,7 @@
                         <div class="col-sm-4 col-xs-12">
                             <figure class="wow fadeInLeft animated" data-wow-duration="500ms" data-wow-delay="1200ms">
                                 <div class="img-wrapper">
-                                    <img src="images/portfolio/item-6.jpg" class="img-responsive" alt="" >
+                                    <img src="<?php echo bloginfo('stylesheet_directory'); ?>/images/portfolio/item-6.jpg" class="img-responsive" alt="" >
                                     <div class="overlay">
                                         <div class="buttons">
                                             <a rel="gallery" class="fancybox" href="images/portfolio/item-6.jpg">Demo</a>
@@ -430,18 +393,18 @@
             <footer id="footer">
                 <div class="container">
                     <div class="col-md-8">
-                        <p class="copyright">Copyright: <span>2015</span> . Design and Developed by <a href="http://www.Themefisher.com">Themefisher</a></p>
+                        <p class="copyright">Copyright: <span><?php echo date('Y'); ?></span>. Design and Developed by <a href="http://www.sparkag.com.br">Spark</a></p>
                     </div>
                     <div class="col-md-4">
                         <!-- Social Media -->
                         <ul class="social">
                             <li>
-                                <a href="http://wwww.fb.com/themefisher" class="Facebook">
+                                <a href="http://wwww.fb.com/Spark" class="Facebook">
                                     <i class="ion-social-facebook"></i>
                                 </a>
                             </li>
                             <li>
-                                <a href="http://wwww.twitter.com/themefisher" class="Twitter">
+                                <a href="http://wwww.twitter.com/Spark" class="Twitter">
                                     <i class="ion-social-twitter"></i>
                                 </a>
                             </li>
@@ -451,7 +414,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="http://wwww.fb.com/themefisher" class="Google Plus">
+                                <a href="http://wwww.fb.com/Spark" class="Google Plus">
                                     <i class="ion-social-googleplus"></i>
                                 </a>
                             </li>
@@ -460,5 +423,6 @@
                 </div>
             </footer> <!-- /#footer -->
 
-        </body>
-    </html>
+            <?php wp_footer();?>
+
+<?php get_footer();?>
