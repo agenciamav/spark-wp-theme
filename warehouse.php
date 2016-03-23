@@ -5,66 +5,66 @@
 			<div id="navbar" class="">
 				<ul class="nav nav-justified" id="slider-navigation">
 					<li data-slide-to="0" class="active" data-position-x="2496" data-position-y="1600" data-zoom="90">
-						<a href="http://google.com.br">
+						<a href="http://google.com.br" style="color:#fff;">
 							<img src="<?php echo bloginfo('stylesheet_directory'); ?>/images/icons/full/icon_wms.png">
 							<br>
 							WMS
 						</a>
 					</li>
 					<li data-slide-to="1" data-position-x="1442" data-position-y="982" data-zoom="90">
-						<a href="#">
+						<a href="#" style="color:#fff;">
 							<img src="<?php echo bloginfo('stylesheet_directory'); ?>/images/icons/full/icon_cart.png">
 							<br>
 							CART
 						</a>
 					</li>
 					<li data-slide-to="2" data-position-x="3333" data-position-y="920" data-zoom="90">
-						<a href="#">
+						<a href="#" style="color:#fff;">
 							<img src="<?php echo bloginfo('stylesheet_directory'); ?>/images/icons/full/icon_lift.png">
 							<br>
 							LIFT
 						</a>
 					</li>
 					<li data-slide-to="3" data-position-x="745" data-position-y="1702" data-zoom="90">
-						<a href="#">
+						<a href="#" style="color:#fff;">
 							<img src="<?php echo bloginfo('stylesheet_directory'); ?>/images/icons/full/icon_agv.png">
 							<br>
 							AGV
 						</a>
 					</li>
-					<li data-slide-to="4" data-position-x="2148" data-position-y="1081" data-zoom="90">
-						<a href="#">
-							<img src="<?php echo bloginfo('stylesheet_directory'); ?>/images/icons/full/icon_rfid.png">
-							<br>
-							RFID
-						</a>
-					</li>
-					<li data-slide-to="5" data-position-x="2754" data-position-y="1081" data-zoom="90">
-						<a href="#">
-							<img src="<?php echo bloginfo('stylesheet_directory'); ?>/images/icons/full/icon_desk.png">
-							<br>
-							DESK
-						</a>
-					</li>
 					<li data-slide-to="6" data-position-x="1001" data-position-y="1181" data-zoom="90">
-						<a href="#">
+						<a href="#" style="color:#fff;">
 							<img src="<?php echo bloginfo('stylesheet_directory'); ?>/images/icons/full/icon_glass.png">
 							<br>
 							GLASS
 						</a>
 					</li>
 					<li data-slide-to="6" data-position-x="1780" data-position-y="1855" data-zoom="90">
-						<a href="#">
+						<a href="#" style="color:#fff;">
 							<img src="<?php echo bloginfo('stylesheet_directory'); ?>/images/icons/full/icon_watch.png">
 							<br>
 							WATCH
 						</a>
 					</li>
 					<li data-slide-to="6" data-position-x="1" data-position-y="1" data-zoom="90">
-						<a href="#">
+						<a href="#" style="color:#fff;">
 							<img src="<?php echo bloginfo('stylesheet_directory'); ?>/images/icons/full/icon_arm.png">
 							<br>
 							ARM
+						</a>
+					</li>
+					<li data-slide-to="4" data-position-x="2148" data-position-y="1081" data-zoom="90">
+						<a href="#" style="color:#fff;">
+							<img src="<?php echo bloginfo('stylesheet_directory'); ?>/images/icons/full/icon_rfid.png">
+							<br>
+							RFID
+						</a>
+					</li>
+					<li data-slide-to="5" data-position-x="2754" data-position-y="1081" data-zoom="90">
+						<a href="#" style="color:#fff;">
+							<img src="<?php echo bloginfo('stylesheet_directory'); ?>/images/icons/full/icon_desk.png">
+							<br>
+							DESK
 						</a>
 					</li>
 				</ul>

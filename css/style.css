@@ -1,5 +1,5 @@
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     padding-top: 93px;
     padding-top: 91px;
 }
@@ -9,10 +9,10 @@ body {
 }
 
 div#zoom_container {
-    /* margin-top: -70px; */
-    /* margin-bottom: -70px; */
+    margin-top: -50px !important;
+    margin-bottom: 0px;
     background-color: #F7F3F0 !important;
-    height: 600px !important;
+    height: 615px !important;
     z-index: 0;
 }
 
@@ -38,6 +38,7 @@ div#zoom_container {
     text-align:center;
     display: none;
     max-width: 164px;
+    /* display: none !important; */
 }
 mark, .mark {
     background-color: transparent;

@@ -17,8 +17,10 @@ $(document).ready(function() {
         }
     }
 
+    var scrollenabled = true;
     function disableScroll() {
         console.log('Scroll desativado');
+
       if (window.addEventListener) // older FF
           window.addEventListener('DOMMouseScroll', preventDefault, false);
       window.onwheel = preventDefault; // modern standard
@@ -29,6 +31,7 @@ $(document).ready(function() {
 
     function enableScroll() {
         console.log('Scroll ativado');
+        
         if (window.removeEventListener)
             window.removeEventListener('DOMMouseScroll', preventDefault, false);
         window.onmousewheel = document.onmousewheel = null; 
@@ -48,12 +51,22 @@ $(document).ready(function() {
         mouse_DOUBLE_CLICK: false,
         zoom_MAX: 100,
         mouse_WHEEL_CURSOR_POS: true,
-        on_ZOOM_PAN_COMPLETE: function(data) {
-            enableScroll()                        
+        on_ZOOM_PAN_COMPLETE: function(data) {            
+            //enableScroll(); 
         },
-        on_ZOOM_PAN_UPDATE: function(data) {
-            disableScroll();            
+        on_ZOOM_PAN_UPDATE: function(data) {                        
+            //disableScroll();            
         },
+    });
+
+    $('body').mousewheel(function(event, delta, deltaX, deltaY) {
+
+        var zoomData = $('#warehouse').smoothZoom('getZoomData');
+        
+        if (delta < 0) {             
+            $('#warehouse').smoothZoom('Reset');
+        }
+        
     });
 
 
@@ -72,21 +85,44 @@ $(document).ready(function() {
         var zpos = $(this).data('zoom');
 
         // SmoothZoom 
+        // $('#warehouse').smoothZoom('focusTo', {
+        //     x: xpos,
+        //     y: ypos,
+        //     zoom: 25,
+        //     speed: 2
+        // });
+        // setTimeout(function() {
+        //     $('#warehouse').smoothZoom('focusTo', {
+        //         x: xpos,
+        //         y: ypos,
+        //         zoom: zpos,
+        //         speed: 2
+        //     });
+        // }, 700);
+
+        // $('#warehouse').smoothZoom('focusTo', {
+        //     x: xpos,
+        //     y: ypos,
+        //     zoom: zpos,
+        //     speed: 2
+        // });
+
         $('#warehouse').smoothZoom('focusTo', {
             x: xpos,
             y: ypos,
-            zoom: 25,
-            speed: 2
+            zoom: zpos - 15,
+            speed: 3
         });
         setTimeout(function() {
             $('#warehouse').smoothZoom('focusTo', {
                 x: xpos,
                 y: ypos,
                 zoom: zpos,
-                speed: 2
+                speed: 3
             });
         }, 700);
 
+        /* SHOW THE RELATED INFOBOX */
 
         /* Act on the event */
         $("#slider-navigation li.active").removeClass('active');
@@ -97,16 +133,10 @@ $(document).ready(function() {
 
     }, function() {
         /* Stuff to do when the mouse leaves the element */
+        /* HIDE THE INFOBOXES */
     });
 
 
-    $('body').mousewheel(function(event, delta, deltaX, deltaY) {
-
-        // var zoomData = $('#warehouse').smoothZoom('getZoomData');
-        if (delta < 0) {        
-            $('#warehouse').smoothZoom('Reset');
-        }
-        
-    });
+    
 
 });

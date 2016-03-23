@@ -1,3 +1,41 @@
+<!--
+==================================================
+Footer Section Start
+================================================== -->
+<footer id="footer">
+    <div class="container">
+        <div class="col-md-8">
+            <p class="copyright">Copyright © <span><?php echo date('Y'); ?></span>. <a href="http://www.sparkag.com.br">Spark</a> - Soluções inovadoras em intralogística. Todos os direitos reservados.</p>
+        </div>
+        <div class="col-md-4">
+            <!-- Social Media -->
+            <ul class="social">
+                <li>
+                    <a href="http://wwww.fb.com/Spark" class="Facebook">
+                        <i class="ion-social-facebook"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://wwww.twitter.com/Spark" class="Twitter">
+                        <i class="ion-social-twitter"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="Linkedin">
+                        <i class="ion-social-linkedin"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://wwww.fb.com/Spark" class="Google Plus">
+                        <i class="ion-social-googleplus"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</footer> <!-- /#footer -->
+
+
     <!-- Template Javascript Files
     ================================================== -->
     <!-- modernizr js -->
@@ -24,5 +62,7 @@
     <!-- SPARK SCRIPTS -->
     <script src="<?php echo bloginfo('stylesheet_directory'); ?>/js/scripts.js"></script>
 
+    <?php wp_footer();?>
+    
 </body>
 </html>
