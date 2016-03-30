@@ -5,7 +5,7 @@ Footer Section Start
 <footer id="footer">
     <div class="container">
         <div class="col-md-8">
-            <p class="copyright">Copyright © <span><?php echo date('Y'); ?></span>. <a href="http://www.sparkag.com.br">Spark</a> - Soluções inovadoras em intralogística. Todos os direitos reservados.</p>
+            <p class="copyright">© <span><?php echo date('Y'); ?></span>. <a href="http://www.sparkag.com.br">Spark</a> - Soluções inovadoras em intralogística. Todos os direitos reservados.</p>
         </div>
         <div class="col-md-4">
             <!-- Social Media -->

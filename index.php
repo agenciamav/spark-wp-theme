@@ -113,154 +113,163 @@
 	</div>
 </section> <!-- /#feature -->
 
+
+
 <section id="home-news">
 
 	<div class="container">
 		<div class="row">
-			<div class="col-md-9">
+			<div class="col-md-12">
+				<div class="page-header">					
+				  	<h1>News <small>Últimas notícias do blog</small>
+				  		<a href="/news" class="btn btn-warning btn-sm pull-right">Ver todas <span class="ion-ios-arrow-right"></span></a>
+				  	</h1>
+				</div>
+				<!-- 
+				<h1 cla ss="page-title">News <small>Últimas notícias do blog</small></h1>-->
+			</div>
+		</div>
+		<div class="row">
 
 				<?php if (have_posts()) {
 
 					while (have_posts()) {
 						the_post();
 						?>
+						
+						<div class="col-md-3">
 
-						<?php if (has_post_thumbnail()){ ?>
-						<article id="post-<?php the_ID()?>" class="wow fadeInDown" data-wow-delay=".3s" data-wow-duration="500ms">
-							<div class="row">
-								<div class="col-md-4">
+							<?php if (has_post_thumbnail()){ ?>
+								<article id="post-<?php the_ID()?>" class="wow fadeInDown" data-wow-delay=".3s" data-wow-duration="500ms">
+									
+										<div class="blog-post-image">
+											<a href="<?php the_permalink();?>">
+												<?php the_post_thumbnail('full', array('class' => 'img-responsive')); ?>
+											</a>
+										</div>									
+									
+										<div class="blog-content">
+											<h2 class="blogpost-title">
+												<a href="<?php the_permalink();?>"><?php the_title();?></a>
+											</h2>
+											<div class="blog-meta">
+												<span class="text-uppercase"><?php the_time('l, d \d\e F'); ?></span>
+												<!-- <span class="text-capitalize">por <?php the_author_posts_link();?></span>
+												<span class="text-capitalize"><?php the_category(', ');?></span> -->
+											</div>
+											<?php the_excerpt();?>										
+										</div>
+									
+								</article>
+								<?php }else{ ?>
+								<article id="post-<?php the_ID()?>" class="wow fadeInDown" data-wow-delay=".3s" data-wow-duration="500ms">	
+
 									<div class="blog-post-image">
 										<a href="<?php the_permalink();?>">
-											
-												<?php the_post_thumbnail('full', array('class' => 'img-responsive')); ?>
-											
+											<img src="<?php echo bloginfo('stylesheet_directory'); ?>/images/placeholder.png" alt="" class="img-responsive" />
 										</a>
-									</div>									
-								</div>
-								<div class="col-md-8">
+									</div>				
+								
 									<div class="blog-content">
 										<h2 class="blogpost-title">
 											<a href="<?php the_permalink();?>"><?php the_title();?></a>
 										</h2>
 										<div class="blog-meta">
-											<span class="text-capitalize"><?php the_time('l, d \d\e F \d\e Y');?></span>
+											<!-- <span class="text-capitalize"><?php the_time('l, d \d\e F \d\e Y');?></span>
 											<span class="text-capitalize">por <?php the_author_posts_link();?></span>
-											<span class="text-capitalize"><?php the_category(', ');?></span>
+											<span class="text-capitalize"><?php the_category(', ');?></span> -->
+											<span class="text-uppercase"><?php the_time('l, d \d\e F'); ?></span>
 										</div>
 										<?php the_excerpt();?>										
 									</div>
-								</div>
-							</div>
-						</article>
-						<?php }else{ ?>
-						<article id="post-<?php the_ID()?>" class="wow fadeInDown" data-wow-delay=".3s" data-wow-duration="500ms">				
-						
-							<div class="blog-content">
-								<h2 class="blogpost-title">
-									<a href="<?php the_permalink();?>"><?php the_title();?></a>
-								</h2>
-								<div class="blog-meta">
-									<span class="text-capitalize"><?php the_time('l, d \d\e F \d\e Y');?></span>
-									<span class="text-capitalize">por <?php the_author_posts_link();?></span>
-									<span class="text-capitalize"><?php the_category(', ');?></span>
-								</div>
-								<?php the_excerpt();?>										
-							</div>
-						
-						</article>
-						<?php } ?>						
+								
+								</article>
+							<?php } ?>
 
-						<?php } ?>
-						<article class="wow fadeInDown" data-wow-delay=".3s" data-wow-duration="500ms">
-							<div class="blog-content">
-								<a href="/news" class="btn btn-dafault btn-details">Ver todas <span class="ion-ios-arrow-right"></span></a>
-							</div>
-						</article>
-					<?php } else {?>
+							</div>						
+									
 
-					<p><?php _e('Sorry, no posts matched your criteria.');?></p>
-
-					<?php };?>
-
-				</div>
-				<div class="col-md-3">
-					<div class="sidebar">						
-						<div class="author widget">
-							<img class="img-responsive" src="http://dev.sparkag.com.br/wp-content/uploads/2016/03/720.jpg">
-							<div class="author-body text-center">
-								<div class="author-img">
-									<img src="<?php echo bloginfo('stylesheet_directory'); ?>/images/spark.png">
-								</div>
-								<div class="author-bio">
-									<!-- <h3>Spark</h3> -->
-									<div class="office">
-										<p><i class="fa fa-building"></i> Rua Antônio Peruzzo, nº 250.<br/>
-											<i class="fa fa-map-marker"></i> Bairro Sagrada Família<br>
-											Nova Prata – RS. CEP 95320-000</p>
-											<h4><i class="fa fa-phone"></i>+55 54 3242-4507</h4>
-											<p><i class="fa fa-envelope"></i> <a href="mailto:comercial@sparkag.com.br">comercial@sparkag.com.br</a></p>
-										</div>
-										<p>
-										</p>
+							<?php } ?>
+							<!-- <div class="col-md-3">
+								<article class="wow fadeInDown" data-wow-delay=".3s" data-wow-duration="500ms">
+									<div class="blog-content">
+										<a href="/news" class="btn btn-dafault btn-details">Ver todas <span class="ion-ios-arrow-right"></span></a>
 									</div>
-								</div>
-							</div>
-							<div class="categories widget">
-								<h3 class="widget-head">Produtos</h3>
-								<ul>
-									<li>
-										<a href="">WMS <span class="badge"><span class="ion-ios-arrow-right"></span></span></a>
-									</li>
-									<li>
-										<a href="">CART <span class="badge"><span class="ion-ios-arrow-right"></span></span></a>
-									</li>
-									<li>
-										<a href="">LIFT <span class="badge"><span class="ion-ios-arrow-right"></span></span></a>
-									</li>
-									<li>
-										<a href="">AGV <span class="badge"><span class="ion-ios-arrow-right"></span></span></a>
-									</li>
-									<li>
-										<a href="">RFID <span class="badge"><span class="ion-ios-arrow-right"></span></span></a>
-									</li>
-									<li>
-										<a href="">DESK <span class="badge"><span class="ion-ios-arrow-right"></span></span></a>
-									</li>
-									<li>
-										<a href="">GLASS <span class="badge"><span class="ion-ios-arrow-right"></span></span></a>
-									</li>
-									<li>
-										<a href="">WATCH <span class="badge"><span class="ion-ios-arrow-right"></span></span></a>
-									</li>
-									<li>
-										<a href="">ARM <span class="badge"><span class="ion-ios-arrow-right"></span></span></a>
-									</li>
-								</ul>
-							</div>							
+								</article>
+							</div> -->
+						<?php } else {?>
 
-						</div>
-					</div>
-				</div>
+						<p><?php _e('Sorry, no posts matched your criteria.');?></p>
+						
+						<?php };?>
+
+
+
+				
 			</section>
 
 
-<!--
-==================================================
-Call To Action Section Start
-================================================== -->
-<section id="call-to-action">
+<section class="newsletter bg-primary">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-12">
-				<div class="block">
-					<h2 class="title wow fadeInDown" data-wow-delay=".3s" data-wow-duration="500ms">PREPARADO PARA EXPANDIR O SEU NEGÓCIO?</h1>
-						<p class="wow fadeInDown" data-wow-delay=".5s" data-wow-duration="500ms">Texto texto texto texto texto texto texto texto texto texto texto<br> texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto.</p>
-						<a href="#" class="btn btn-default btn-contact wow fadeInDown" data-wow-delay=".7s" data-wow-duration="500ms">Solicite contato</a> <a href="#" class="btn btn-default btn-contact wow fadeInDown" data-wow-delay=".8s" data-wow-duration="500ms">Fale com um Consultor</a>
+			<div class="col-md-4">
+				 <h2 class="">Mantenha-se informado com notícias do blog diretamente em seu e-mail</h2>
+			</div>
+			<div class="col-md-8">
+				<form action="" method="POST" class="" role="form">
+					<div class="form-group">
+						<p class="form-control-static">Assine nossa newsletter. Informe abaixo o seu e-mail e clique assinar. <br>Fique tranquilo, nós também odiamos <i>spam</i></p>
+						<br>
+						<div class="input-group input-group-lg">
+							<input type="text" class="form-control input-lg" placeholder="Search for...">
+							<span class="input-group-btn">
+								<button class="btn btn-default btn-lg" type="button"> Assinar! </button>
+							</span>
+						</div><!-- /input-group -->					
 					</div>
-				</div>
-
+				</form>
 			</div>
 		</div>
-	</section>
+	</div>
+</section>
+
+<section class="about-feature clearfix">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="block col-md-8 wow fadeInDown animated" data-wow-duration="500ms" data-wow-delay=".3s" style="visibility: visible; animation-duration: 500ms; animation-delay: 0.3s; animation-name: fadeInDown;">
+                <div class="col-md-8">
+        			<h3 class="hero text-uppercase">Conheça nossas soluções</h3>
+        		</div>
+               	<div class="col-md-2">
+        			<ul>
+        				<!-- <li><h4><strong class="text-uppercase">Produtos</strong></h4></li> -->
+        				<li><a href="#">WMS</a></li>
+        				<li><a href="#">AGV</a></li>
+        				<li><a href="#">CART</a></li>
+        				<li><a href="#">WATCH</a></li>                				
+        				<li><a href="#">WMS</a></li>                				
+        				<li><a href="#">GLASS</a></li>                				
+        				<li><a href="#">RFID</a></li>                				
+        			</ul>
+        		</div>
+        		<div class="col-md-2">
+        			<ul>
+        				<!-- <li><h4><strong class="text-uppercase">Serviços</strong></h4></li> -->
+        				<li><a href="#">Implementação</a></li>
+        				<li><a href="#">Consultoria</a></li>
+        				<li><a href="#">Desenvolvimento</a></li>
+        				<li><a href="#">Suporte</a></li>                				
+        			</ul>
+        		</div>
+            </div>
+            <div class="block bg-dark col-md-4 wow fadeInDown animated" data-wow-duration="500ms" data-wow-delay=".5s" style="visibility: visible; animation-duration: 500ms; animation-delay: 0.5s; animation-name: fadeInDown;">                    	
+        		 <h2 class="">Desenvolvemos projetos de consultoria e soluções logísticas sob medida (???)</h2>                        
+                <a href="#" class="btn btn-lined">Saiba mais</a>
+        	                 
+            </div>                    
+        </div>
+    </div>
+</section>
+
 
 	<?php get_footer();?>

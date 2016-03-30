@@ -301,10 +301,38 @@ a img.aligncenter {
 .slogan strong{    
     font-size: 51px;
 }
+.bg-primary {
+    color: #fff;
+    background-color: rgb(248, 103, 14);
+}
+section.newsletter{
+    padding: 60px 0px;
+}
+.btn-default:active:hover, .btn-default.active:hover, .open>.dropdown-toggle.btn-default:hover, .btn-default:active:focus, .btn-default.active:focus, .open>.dropdown-toggle.btn-default:focus, .btn-default:active.focus, .btn-default.active.focus, .open>.dropdown-toggle.btn-default.focus {
+    color: #F8670E;
+    background-color: #000;
+    border-color: #000000;
+}
+.btn-default {
+    color: #FFF;
+    background-color: #333;
+    border-color: #333;
+}
+.btn-default:focus, .btn-default.focus {
+    color: #FFF;
+    background-color: #23282D;
+    border-color: #23282D;
+}
+.btn-default:hover {
+    color: #F8670E;
+    background-color: #333;
+    border-color: #333;
+}
 
 /* HOME NEWS */
 section#home-news {
     padding: 60px 0 0px 0;
+    margin-bottom: 60px;
 }
 section#home-news .blog-content p{    
     font-size: 14px;
@@ -312,11 +340,42 @@ section#home-news .blog-content p{
 section#home-news .blog-content .blog-meta {
     color: #A7A7A7;
     font-weight: 300;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     margin-left: 0;
-    font-size: 13px;
+    font-size: 11px;
 }
 section#home-news article {
     padding: 0px 0;
-    margin-bottom: 60px;
+    margin-bottom: 0px;
+}
+
+section#home-news .page-header {
+    padding-bottom: 9px;
+    margin: 0px 0 20px;
+    border-bottom: 1px solid #eee;
+}
+section#home-news .page-header h1{
+    color: #FF8A3D;
+    text-transform: uppercase;
+    margin-top: 0px;
+}
+section#home-news .page-header h1 small{
+    font-size: 0.5em;
+    color: #A6A6A6;
+    font-weight: 300;
+}
+
+section#home-news .page-header .btn {
+    background: #FF8A3D;
+    /*     border: none; */
+    /*     color: #fff; */
+    /*     padding: 20px 35px; */
+    margin-top: 5px;
+    /*     font-size: 16px; */
+    /*     font-size: 13px; */
+    /*     line-height: 1em; */
+    text-transform: uppercase;
+    letter-spacing: normal;
+    border-radius: 0;
+    border-color: #FF8A3D;
 }
