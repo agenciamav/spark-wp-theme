@@ -7,8 +7,13 @@ Author: Luciano Tonet
 Author URI: http://lucianotonet.com
 */
 body {
-    padding-top: 105px !important;
-    padding-bottom: 0px;
+    padding-top: 120px !important;
+    /* padding-bottom: 436px; */
+    margin-bottom: 100%;
+    background: #fff;
+}
+body.admin-bar {
+    padding-top: calc(120px - 32px) !important;
 }
 a {
     color: #FF6700;    
@@ -305,8 +310,10 @@ a img.aligncenter {
     color: #fff;
     background-color: rgb(248, 103, 14);
 }
+
 section.newsletter{
     padding: 60px 0px;
+    margin-bottom: 0px;
 }
 .btn-default:active:hover, .btn-default.active:hover, .open>.dropdown-toggle.btn-default:hover, .btn-default:active:focus, .btn-default.active:focus, .open>.dropdown-toggle.btn-default:focus, .btn-default:active.focus, .btn-default.active.focus, .open>.dropdown-toggle.btn-default.focus {
     color: #F8670E;
@@ -331,8 +338,9 @@ section.newsletter{
 
 /* HOME NEWS */
 section#home-news {
-    padding: 60px 0 0px 0;
-    margin-bottom: 60px;
+    padding: 60px 0 60px 0;
+    margin-bottom: 0px;
+    background: white;
 }
 section#home-news .blog-content p{    
     font-size: 14px;
@@ -378,4 +386,43 @@ section#home-news .page-header .btn {
     letter-spacing: normal;
     border-radius: 0;
     border-color: #FF8A3D;
+}
+
+
+/** PRODUCTS **/
+section.product_section2{
+    padding: 60px 0;    
+}
+section.product_section2 h1,
+section.product_section2 h2,
+section.product_section2 h3,
+section.product_section2 h4,
+section.product_section2 h5,
+section.product_section2 h6 {
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 1em;
+    margin-top: 15px;
+}
+
+
+section.product_section3{
+    padding: 60px 0;    
+}
+section.product_section3 h1,
+section.product_section3 h2,
+section.product_section3 h3,
+section.product_section3 h4,
+section.product_section3 h5,
+section.product_section3 h6 {
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 0.4em;
+    margin-top: 15px;
+}
+.product_section_downloads .list-group-item:hover{
+     
+color: #FF6700;
+}
+
+section:last-child{
+    /* margin-bottom: 100px; */
 }

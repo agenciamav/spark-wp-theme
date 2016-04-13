@@ -1,0 +1,1746 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"bs3-list",
+				"bs3-list-group:linked	bs3-list-group-linked"
+			],
+			[
+				"bs3-inpu",
+				"bs3-input:email:h	bs3-input-email-h"
+			],
+			[
+				"bs3-form",
+				"bs3-form:horizontal	bs3-form-horizontal"
+			],
+			[
+				"bs3-page",
+				"bs3-page-header	bs3-page header"
+			],
+			[
+				"css",
+				"css	.css() - single"
+			],
+			[
+				"style",
+				"stylesheet"
+			],
+			[
+				"read",
+				"ready	$(document).ready"
+			],
+			[
+				"settim",
+				"setTimeout(func, delay)	Window"
+			],
+			[
+				"cons",
+				"console.log()"
+			],
+			[
+				"wind",
+				"window.innerHeight	Window"
+			],
+			[
+				"sc",
+				"scroll	Event"
+			],
+			[
+				"mouse",
+				"mouseout	.mouseout()"
+			],
+			[
+				"setTim",
+				"setTimeout(func, delay)	Window"
+			],
+			[
+				"wi",
+				"width	Style CSS"
+			],
+			[
+				"Ma",
+				"Math.random()	Math"
+			],
+			[
+				"inn",
+				"innerWidth	Window"
+			],
+			[
+				"rea",
+				"ready	document.ready - $(function(){})"
+			],
+			[
+				"body",
+				"document.body	Document"
+			],
+			[
+				"each",
+				"each	$.each()"
+			],
+			[
+				"inner",
+				"innerHTML	Element"
+			],
+			[
+				"function",
+				"style.transitionTimingFunction = 'ease-out'	Style CSS"
+			],
+			[
+				"off",
+				"offset	.offset()"
+			],
+			[
+				"offse",
+				"offsetParent	.offsetParent()"
+			],
+			[
+				"top",
+				"top	Window"
+			],
+			[
+				"getElementBy",
+				"getElementsByClassName(${0:names})	Element"
+			],
+			[
+				"pre",
+				"preventDefault"
+			],
+			[
+				"foreach",
+				"foreach	blade-foreach"
+			],
+			[
+				"bs3-na",
+				"bs3-navbar:links	bs3-navbar-links"
+			],
+			[
+				"att",
+				"attr	.attr() - single"
+			],
+			[
+				"tim",
+				"timeago"
+			],
+			[
+				"arra",
+				"array_chunk"
+			],
+			[
+				"form",
+				"formdata"
+			],
+			[
+				"if",
+				"if	blade-if"
+			],
+			[
+				"cli",
+				"click"
+			],
+			[
+				"set",
+				"setTimeout"
+			],
+			[
+				"impli",
+				"implode()	standard Function"
+			],
+			[
+				"bs3-button",
+				"bs3-button:default	bs3-button-default"
+			],
+			[
+				"number_format",
+				"number_format()	standard Function"
+			],
+			[
+				"html",
+				"esc_html"
+			],
+			[
+				"Form",
+				"FORM"
+			],
+			[
+				"Route",
+				"Route::group	Create a Group of Routes"
+			],
+			[
+				"bs3-nav",
+				"bs3-navbar:fixed-top	bs3-navbar-fixed-top"
+			],
+			[
+				"bs3-panel",
+				"bs3-panel:table	bs3-panel-table"
+			],
+			[
+				"bs3-table",
+				"bs3-table:responsive	bs3-table-responsive"
+			],
+			[
+				"jso",
+				"json_encode"
+			],
+			[
+				"technical",
+				"technical_consult"
+			],
+			[
+				"tec",
+				"technical_consult"
+			],
+			[
+				"cur",
+				"cursor = 'default'	Style CSS"
+			],
+			[
+				"cus",
+				"cursor = 'pointer'	Style CSS"
+			],
+			[
+				"cursor",
+				"cursor = 'wait'	Style CSS"
+			],
+			[
+				"fun",
+				"function(){\n	$0\n})();	(function(){\n	$0\n})();"
+			],
+			[
+				"fa-spin",
+				"fa-spinner"
+			],
+			[
+				"slee",
+				"sleep()	standard Function"
+			],
+			[
+				"app",
+				"append	.append()"
+			],
+			[
+				"ea",
+				"each	$.each()"
+			],
+			[
+				"remove",
+				"remove	.remove()"
+			],
+			[
+				"bs3-input",
+				"bs3-input:radio	bs3-input-radio"
+			],
+			[
+				"consul",
+				"consult"
+			],
+			[
+				"contac",
+				"contact_id"
+			],
+			[
+				"contat",
+				"contact_id"
+			],
+			[
+				"conta",
+				"contact"
+			],
+			[
+				"aler",
+				"alert(${0:message})	Window"
+			],
+			[
+				"conol",
+				"console.log('$0');"
+			],
+			[
+				"bs3-selec",
+				"bs3-select:h	bs3-select-h"
+			],
+			[
+				"array_push",
+				"array_push()	standard Function"
+			],
+			[
+				"User",
+				"user_error"
+			],
+			[
+				"bind",
+				"bind(${0:thisArg})	Function"
+			],
+			[
+				"get",
+				"get	.get()"
+			],
+			[
+				"req",
+				"request"
+			],
+			[
+				"proto",
+				"proto	Prototype"
+			],
+			[
+				"mode",
+				"module	QUnit module"
+			],
+			[
+				"call",
+				"call(${0:thisArg})	Function"
+			],
+			[
+				"con",
+				"consults"
+			],
+			[
+				"bs3-b",
+				"bs3-button:success	bs3-button-success"
+			],
+			[
+				"bs3-t",
+				"bs3-table:bordered	bs3-table-bordered"
+			],
+			[
+				"inde",
+				"index_stage"
+			],
+			[
+				"client",
+				"client_id"
+			],
+			[
+				"clien",
+				"client_id"
+			],
+			[
+				"clie",
+				"client_id"
+			],
+			[
+				"bs3-in",
+				"bs3-input:select	bs3-input-select"
+			],
+			[
+				"pr",
+				"projects"
+			],
+			[
+				"user",
+				"user_id"
+			],
+			[
+				"bs3-pag",
+				"bs3-page-header	bs3-page header"
+			],
+			[
+				"Au",
+				"Auth-user	Auth-user"
+			],
+			[
+				"Auth",
+				"Auth-id	Auth-id"
+			],
+			[
+				"for",
+				"foreigns"
+			],
+			[
+				"Schema-",
+				"Schema-table	Schema-table"
+			],
+			[
+				"Sche",
+				"Schema-table	Schema-table"
+			],
+			[
+				"md5",
+				"md5()	standard Function"
+			],
+			[
+				"fibersul_",
+				"fibersul_db"
+			],
+			[
+				"is",
+				"is_array"
+			],
+			[
+				"mar",
+				"markers_url"
+			],
+			[
+				"flash",
+				"flash_messages"
+			],
+			[
+				"In",
+				"Input::all	Retrieve all Inputs"
+			],
+			[
+				"Reques",
+				"Request-exists	Request-exists"
+			],
+			[
+				"au",
+				"authUrl"
+			],
+			[
+				"php",
+				"phpinfo()	standard Function"
+			],
+			[
+				"bor",
+				"border-radius"
+			],
+			[
+				"b",
+				"bs3-col:10	bs3-col-10"
+			],
+			[
+				"dis",
+				"display"
+			],
+			[
+				"pad",
+				"padding"
+			],
+			[
+				"auten",
+				"authenticate"
+			],
+			[
+				"func",
+				"function 	Language Construct"
+			],
+			[
+				"new_order_",
+				"new_order_billingcycle"
+			],
+			[
+				"curre",
+				"current_user"
+			],
+			[
+				"is_ob",
+				"is_object()	standard Function"
+			],
+			[
+				"bs3-inp",
+				"bs3-input:text	bs3-input-text"
+			],
+			[
+				"remo",
+				"remove	.remove()"
+			],
+			[
+				"eac",
+				"each	$.each()"
+			],
+			[
+				"prop",
+				"prop	.prop() - single"
+			],
+			[
+				"prep",
+				"prependTo	.prependTo()"
+			],
+			[
+				"ope",
+				"open	Event"
+			],
+			[
+				"sub",
+				"submit	Event"
+			],
+			[
+				"bs3-for",
+				"bs3-form:horizontal	bs3-form-horizontal"
+			],
+			[
+				"$sc",
+				"$scope	AngularJS"
+			],
+			[
+				"cont",
+				"controller	AngularJS"
+			],
+			[
+				"sidebar",
+				"get_sidebar"
+			],
+			[
+				"array_spl",
+				"array_splice()	standard Function"
+			],
+			[
+				"ped",
+				"pedido"
+			],
+			[
+				"unregister_fun",
+				"unregister_tick_function()	standard Function"
+			],
+			[
+				"exis",
+				"function_exists"
+			],
+			[
+				"json",
+				"json_decode()	json Function"
+			],
+			[
+				"Requ",
+				"Request-all	Request-all"
+			],
+			[
+				"spr",
+				"sprintf()	standard Function"
+			],
+			[
+				"fore",
+				"foreach	blade-foreach"
+			],
+			[
+				"print",
+				"print_r"
+			],
+			[
+				"cust",
+				"customer"
+			],
+			[
+				"forgot",
+				"forgot_password_form"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/E/Works/www/foegos.com.br/index.php",
+			"settings":
+			{
+				"buffer_size": 2903,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/E/Works/www/foegos.com.br/assets/css/main.css",
+			"settings":
+			{
+				"buffer_size": 18348,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "reind",
+		"selected_items":
+		[
+			[
+				"reind",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"package",
+				"Package Control: Disable Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"pretty",
+				"HTMLPrettify"
+			],
+			[
+				"rein",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: install",
+				"Package Control: Install Package"
+			],
+			[
+				"tid",
+				"Tidy PHP"
+			],
+			[
+				"php",
+				"Tidy PHP"
+			],
+			[
+				"reinden",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"reindf",
+				"Preferences: Settings - Default"
+			],
+			[
+				"tidy",
+				"Tidy PHP"
+			],
+			[
+				"remov",
+				"Package Control: Remove Package"
+			],
+			[
+				"blade",
+				"Blade Spacer: Format File"
+			],
+			[
+				"reindent",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"reing",
+				"Preferences: Settings - Default"
+			],
+			[
+				"reid",
+				"Snippet: Retrieve an Input value with Default"
+			],
+			[
+				"html",
+				"HTMLPrettify"
+			],
+			[
+				"reinf",
+				"Preferences: Settings - Default"
+			],
+			[
+				"prett",
+				"HTMLPrettify"
+			],
+			[
+				"reint",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"hmtl",
+				"HTMLPrettify: Set Plugin Options"
+			],
+			[
+				"pret",
+				"Pretty JSON: Format (Pretty Print) JSON"
+			],
+			[
+				"rei",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"reinde",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"bs3-",
+				"Snippet: bs3-carousel"
+			],
+			[
+				"set",
+				"Set Syntax: SQL"
+			],
+			[
+				"ti",
+				"Tidy PHP"
+			],
+			[
+				"install ",
+				"Package Control: Install Package"
+			],
+			[
+				"bootstra",
+				"Goto Bootstrap: Components"
+			],
+			[
+				"prett\n",
+				"Preferences: Settings - User"
+			],
+			[
+				"json",
+				"Pretty JSON: JSON 2 XML"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 856.0
+	},
+	"console":
+	{
+		"height": 295.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/E/Works/www/foegos.com.br",
+		"/E/Works/www/foegos.com.br/assets",
+		"/E/Works/www/foegos.com.br/assets/css",
+		"/E/Works/www/foegos.com.br/assets/fonts"
+	],
+	"file_history":
+	[
+		"/E/_Marketing Digital/Curso 8Ps/Notas 8Ps.txt",
+		"/E/Works/_STOCK/Fons + Icons/themify-icons/demo-files/demo.css",
+		"/E/Programas/Adobe/Topaz Photoshop Plugins Bundle July 2014 (32-64 bit) [ChingLiu]/Keys.txt",
+		"/E/Works/FOEGOS MIDIAS/Endereços das Músicas Upadas.txt",
+		"/C/Users/Luciano/AppData/Local/Temp/Rar$DIa0.722/stylesheet.css",
+		"/E/Works/www/sparkag.com.br/wp-content/themes/spark-wp-theme/single-product.php",
+		"/E/Works/www/sparkag.com.br/wp-content/themes/spark-wp-theme/functions.php",
+		"/E/Works/FOEGOS MIDIAS/Registros Músicas Foegos.txt",
+		"/E/Works/Steel4Web/Site/modulos.txt",
+		"/E/Works/www/sparkag.com.br/wp-content/themes/spark-wp-theme/style.css",
+		"/E/Works/www/sparkag.com.br/wp-content/themes/spark-wp-theme/archive-service.php",
+		"/E/Works/www/sparkag.com.br/wp-content/themes/spark-wp-theme/single-service.php",
+		"/E/Works/www/sparkag.com.br/wp-content/themes/spark-wp-theme/index.php",
+		"/E/Works/www/sparkag.com.br/wp-content/themes/spark-wp-theme/archive-product.php",
+		"/E/Works/www/sparkag.com.br/wp-content/themes/spark-wp-theme/page.php",
+		"/E/Works/www/sparkag.com.br/wp-content/themes/spark-wp-theme/page-product.php",
+		"/E/Works/www/sparkag.com.br/wp-content/themes/spark-wp-theme/section-calltoaction.php",
+		"/E/Works/www/sparkag.com.br/wp-content/themes/spark-wp-theme/header.html",
+		"/E/Works/www/sparkag.com.br/wp-content/themes/spark-wp-theme/header.php",
+		"/E/Works/www/sparkag.com.br/wp-content/themes/spark-wp-theme/page-home-2.php",
+		"/E/Works/www/sparkag.com.br/wp-content/themes/spark-wp-theme/404.php",
+		"/E/Works/www/sparkag.com.br/wp-content/themes/spark-wp-theme/page-fullwidth.php",
+		"/E/Works/www/sparkag.com.br/wp-content/themes/spark-wp-theme/theme-options.php",
+		"/E/Works/www/sparkag.com.br/wp-content/themes/spark-wp-theme/typerocket/config.php",
+		"/E/Works/www/sparkag.com.br/wp-content/themes/spark-wp-theme/footer.php",
+		"/E/Works/www/sparkag.com.br/wp-content/themes/spark-wp-theme/sidebar.php",
+		"/E/Works/www/sparkag.com.br/wp-content/themes/spark-wp-theme/index.html",
+		"/E/Works/www/sparkag.com.br/wp-content/themes/spark-wp-theme/page-contact.php",
+		"/E/Works/www/sparkag.com.br/wp-content/themes/spark-wp-theme/single.php",
+		"/E/Works/www/sparkag.com.br/wp-content/themes/spark-wp-theme/page-news.php",
+		"/E/Works/www/sparkag.com.br/wp-content/themes/spark-wp-theme/options/theme-options-example.txt",
+		"/E/Works/www/sparkag.com.br/wp-content/themes/spark-wp-theme/service.html",
+		"/E/Works/www/sparkag.com.br/wp-content/themes/spark-wp-theme/page-blog.php",
+		"/E/Works/www/sparkag.com.br/wp-content/themes/spark-wp-theme/blog-right-sidebar.html",
+		"/E/Works/www/sparkag.com.br/wp-content/themes/spark-wp-theme/css/main.css",
+		"/E/Works/www/sparkag.com.br/wp-content/themes/twentysixteen/single.php",
+		"/E/Works/www/sparkag.com.br/wp-content/themes/twentysixteen/template-parts/content-single.php",
+		"/E/Works/www/sparkag.com.br/wp-content/themes/spark-wp-theme/comments.php",
+		"/E/Works/www/sparkag.com.br/wp-content/themes/twentysixteen/page.php",
+		"/E/Works/www/sparkag.com.br/wp-content/themes/twentysixteen/template-parts/content-page.php",
+		"/E/Works/www/sparkag.com.br/wp-content/themes/twentysixteen/template-parts/content.php",
+		"/E/Works/www/sparkag.com.br/wp-content/themes/twentyfifteen/single.php",
+		"/E/Works/www/sparkag.com.br/wp-content/themes/twentyfifteen/content.php",
+		"/E/Works/www/sparkag.com.br/wp-content/themes/twentysixteen/inc/template-tags.php",
+		"/E/Works/www/sparkag.com.br/wp-content/themes/twentysixteen/functions.php",
+		"/E/Works/www/dev/steel4web/composer.json",
+		"/E/Works/www/dev/steel4web/composer.lock",
+		"/E/Works/www/sparkag.com.br/wp-content/themes/spark-wp-theme/js/scripts.js",
+		"/E/Works/www/sparkag.com.br/wp-content/themes/spark-wp-theme/warehouse-2.php",
+		"/C/xampp/apache/conf/extra/httpd-vhosts.conf",
+		"/E/Works/www/sparkag.com.br/wp-content/themes/spark-wp-theme/css/style.css",
+		"/E/Works/www/dev/update.bat",
+		"/C/Windows/System32/drivers/etc/hosts",
+		"/E/Works/www/sparkag.com.br/wp-content/themes/spark-wp-theme/fonts/stylesheet.css",
+		"/E/Works/www/sparkag.com.br/wp-content/themes/spark-wp-theme/warehouse.php",
+		"/E/Works/www/sparkag.com.br/wp-content/themes/spark-wp-theme/css/fonts.css",
+		"/C/Users/Luciano/AppData/Local/Temp/fz3temp-1/.htaccess",
+		"/D/Works/www/dev/steel4web/database/migrations/2016_02_16_191611_update_locatario_table.php",
+		"/D/Works/www/sparkag.com.br/wp-content/themes/spark-wp-theme/footer.php",
+		"/D/Works/www/sparkag.com.br/wp-content/themes/spark-wp-theme/functions.php",
+		"/D/Works/www/sparkag.com.br/wp-config.php",
+		"/C/Users/Luciano/AppData/Local/Temp/Rar$DIa0.231/functions.php",
+		"/D/Works/www/sparkag.com.br/wp-content/themes/spark-wp-theme/header.php",
+		"/C/xampp/apache/conf/httpd.conf",
+		"/D/Works/www/sparkag.com.br/index.php",
+		"/D/Works/www/sparkag.com.br/style.css",
+		"/D/Works/www/sparkag.com.br/js/scripts.js",
+		"/D/Works/www/sparkag.com.br/css/main.css",
+		"/D/Works/www/sparkag.com.br/.gitignore",
+		"/C/Users/Luciano/Downloads/main.css",
+		"/D/Works/www/sparkag.com.br/warehouse.php",
+		"/D/Works/www/sparkag.com.br/js/main.js",
+		"/D/Works/www/sparkag.com.br/index.html",
+		"/D/Works/www/dev/steel4web/composer.json",
+		"/C/Users/Luciano/Downloads/routes.php",
+		"/D/Works/www/horuswp.agenciamav.com.br/composer.json",
+		"/D/Works/www/horuswp.agenciamav.com.br/config/app.php",
+		"/D/Works/www/_2015/alfred/app/controllers/SettingsController.php",
+		"/D/Works/www/alfred/app/config/database.php",
+		"/D/Works/www/sparkag.com.br/css/slider.css",
+		"/D/Works/www/sparkag.com.br/css/style.css",
+		"/C/Users/Luciano/AppData/Local/Temp/Rar$DIa0.594/adminfunctions.php",
+		"/D/Works/www/fibersul.mavpages.com/.gitignore",
+		"/D/Works/www/fibersul.mavpages.com/backup.sh",
+		"/C/Users/Luciano/AppData/Local/Temp/fz3temp-1/.gitignore",
+		"/D/Works/www/sparkag.com.br/js/zoom.js",
+		"/C/Users/Luciano/AppData/Local/Temp/Rar$DIa0.351/section-slider-warehouse.blade.php",
+		"/C/Users/Luciano/AppData/Local/Temp/Rar$DIa0.865/index.blade.php",
+		"/D/Works/www/sparkag.com.br/footer.html",
+		"/D/Works/www/sparkag.com.br/header.html",
+		"/D/Works/www/sparkag.com.br/main-menu.html",
+		"/C/Users/Luciano/AppData/Local/Temp/Rar$DIa0.635/menu.blade.php",
+		"/D/Works/www/dev/gestor-de-lotes/app/Http/Controllers/PecasController.php",
+		"/D/Works/www/dev/gestor-de-lotes/app/Http/breadcrumbs.php",
+		"/D/Works/www/dev/gestor-de-lotes/resources/views/_partials/breadcrumbs.blade.php",
+		"/D/Works/www/dev/gestor-de-lotes/resources/views/templates/default.blade.php",
+		"/C/Users/Luciano/AppData/Local/Temp/Rar$DIa0.965/section-slider-warehouse.blade.php",
+		"/C/Users/Luciano/AppData/Local/Temp/Rar$DIa0.845/section-slider-warehouse.blade.php",
+		"/C/Users/Luciano/AppData/Local/Temp/Rar$DIa0.820/home.blade.php",
+		"/D/Works/www/dev/gestor-de-lotes/resources/views/lotes/index.blade.php",
+		"/D/Works/www/dev/gestor-de-lotes/resources/views/templates/_partials/aside.blade.php",
+		"/D/Works/www/dev/gestor-de-lotes/resources/views/templates/_partials/header.blade.php",
+		"/D/Works/www/dev/gestor-de-lotes/config/breadcrumbs.php",
+		"/D/Works/www/dev/gestor-de-lotes/resources/views/pecas/index.blade.php",
+		"/D/Works/www/dev/gestor-de-lotes/app/Http/Controllers/LotesController.php",
+		"/D/Works/www/dev/gestor-de-lotes/composer.json",
+		"/D/Works/www/dev/gestor-de-lotes/app/Http/bradcrumbs.php",
+		"/D/Works/www/dev/gestor-de-lotes/config/app.php",
+		"/D/Works/www/dev/consultas-tecnicas/composer.json",
+		"/D/Works/www/dev/consultas-tecnicas/app/Http/breadcrumbs.php",
+		"/C/Users/Luciano/AppData/Local/Temp/fz3temp-1/.env",
+		"/D/Works/www/dev/gestor-de-lotes/.env",
+		"/D/Works/www/dalwer.com.br/backup.sh",
+		"/D/Works/www/dev/gantt/js/scripts.js",
+		"/D/Works/www/mavpages.com/backup.sh",
+		"/D/Works/www/dev/gantt/index.html",
+		"/D/Works/www/dev/gantt/gruntfile.js",
+		"/D/Works/www/dev/gantt/css/style.css",
+		"/D/Works/www/dev/gantt/build/build.js",
+		"/D/Works/www/dev/gantt/build/build.css",
+		"/C/Users/Luciano/AppData/Local/Temp/Rar$DRa0.813/angular-gantt-1.2.6/dist/angular-gantt-plugins.min.css",
+		"/C/Users/Luciano/AppData/Local/Temp/Rar$DRa0.813/angular-gantt-1.2.6/dist/angular-gantt-plugins.js",
+		"/C/Users/Luciano/AppData/Local/Temp/Rar$DRa0.813/angular-gantt-1.2.6/dist/angular-gantt.js",
+		"/C/Users/Luciano/AppData/Local/Temp/Rar$DRa0.813/angular-gantt-1.2.6/dist/angular-gantt.min.js",
+		"/D/Works/www/dev/consultas-tecnicas/database/migrations/2016_01_10_215941_create_email_file_table.php",
+		"/D/Works/www/dev/consultas-tecnicas/.gitignore",
+		"/D/Works/www/dev/consultas-tecnicas/database/migrations/2015_11_06_224820_create_email_messages_table.php",
+		"/D/Works/www/dev/consultas-tecnicas/database/migrations/2016_01_03_225519_create_files_table.php"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+			"E:\\Works\\www\\sparkag.com.br\\wp-content\\themes",
+			"D:\\Works\\www\\dev\\consultas-tecnicas\\database\\migrations",
+			"D:\\Works\\www\\dev\\consultas-tecnicas\\database",
+			"D:\\Works\\www\\dev\\consultas-tecnicas\\database\\migrations",
+			"D:\\Works\\www\\system3d.com.br",
+			"D:\\Works\\www\\system3d.com.br\\resources\\views",
+			"D:\\Works\\www\\horuswp.agenciamav.com.br",
+			"D:\\Works\\www\\system3d.com.br",
+			"D:\\Works\\www\\system3d.com.br\\vendor",
+			"D:\\Works\\www\\system3d.com.br\\public\\js\\Director",
+			"D:\\Works\\www\\system3d.com.br\\database",
+			"D:\\Works\\www\\system3d.com.br\\app",
+			"D:\\Works\\www\\system3d.com.br\\database",
+			"D:\\Works\\www\\system3d.com.br\\app\\Http",
+			"D:\\Works\\www\\system3d.com.br\\database",
+			"D:\\Works\\www\\system3d.com.br\\app\\Http\\Controllers",
+			"D:\\Works\\www\\system3d.com.br\\resources\\views",
+			"D:\\Works\\www\\system3d.com.br\\app\\Http\\Controllers",
+			"D:\\Works\\www\\system3d.com.br",
+			"D:\\Works\\www\\system3d.com.br\\database\\migrations",
+			"D:\\Works\\www\\system3d.com.br",
+			"D:\\Works\\www\\system3d.com.br\\database\\migrations",
+			"D:\\Works\\www\\system3d.com.br",
+			"D:\\Works\\www\\fibersul.mavpages.com",
+			"D:\\Works\\www\\system3d.com.br",
+			"D:\\Works\\www\\painel.agenciamav.com.br\\public_html",
+			"D:\\Works\\www\\painel.agenciamav.com.br\\public_html\\templates\\agenciamav",
+			"D:\\Works\\www\\system3d.com.br",
+			"D:\\Works\\www\\system3d.com.br\\pages",
+			"D:\\Works\\www\\system3d.com.br",
+			"D:\\Works\\Agência MAV\\MAV PAGES\\whmcs-mu-provisioning-1.1.0.7\\whmcs-multisite-provisioning",
+			"D:\\Works\\www\\lucianotonet.com\\whmcs-wpmu-manager\\wp-content\\plugins\\whmcs-wpmu-manager",
+			"D:\\Works\\www\\agenciamav.com.br\\wp-mu-pages\\wp-content\\plugins",
+			"D:\\Works\\www\\agenciamav.com.br\\wp-mu-pages\\wp-content\\plugins\\whmcs-wpmu-manager\\admin",
+			"D:\\Works\\www\\agenciamav.com.br\\wp-mu-pages\\wp-content\\plugins\\whmcs-wpmu-manager",
+			"D:\\Works\\www\\agenciamav.com.br\\painel",
+			"D:\\Works\\www\\andora.com.br\\wp-content\\plugins\\wp-curriculo-vitae",
+			"D:\\Works\\www\\andora.com.br\\wp-content\\plugins\\wp-curriculo-vitae\\js",
+			"D:\\Works\\www\\andora.com.br\\wp-content\\plugins\\wp-curriculo-vitae",
+			"D:\\Works\\Alpina\\wp-curriculo-vitae-premium\\wp-curriculo-vitae-premium",
+			"D:\\Works\\www\\agenciamav.com.br\\painel\\templates\\agenciamav",
+			"D:\\Works\\www\\agenciamav.com.br\\painel",
+			"D:\\Works\\www\\portal.montebelodosul.rs.gov.br\\wp-content\\themes\\carpress",
+			"D:\\Works\\www\\alfred\\app",
+			"D:\\Works\\www\\portal.montebelodosul.rs.gov.br\\wp-content\\themes\\carpress",
+			"D:\\Works\\www\\alfred\\app",
+			"D:\\Works\\www\\alfred\\app\\controllers",
+			"D:\\Works\\www\\alfred",
+			"D:\\Works\\www\\nimbus\\admin",
+			"D:\\Works\\www\\nimbus",
+			"D:\\Works\\www\\nimbus\\admin",
+			"D:\\Works\\www\\alfred",
+			"C:\\xampp",
+			"D:\\Works\\www\\projelux.com.br",
+			"D:\\Works\\www\\alfred\\app",
+			"D:\\Works\\www\\alfred",
+			"D:\\Works\\www\\alfred\\app\\controllers",
+			"D:\\Works\\www\\alfred\\app\\views\\tarefas",
+			"D:\\Works\\www\\lucianotonet.com\\mysites\\wp-content\\plugins\\mysites",
+			"D:\\Works\\www\\lucianotonet.com\\points-of-sale\\wp-content\\plugins\\Points-of-Sale - Manto",
+			"D:\\Works\\www\\bandasedan1300.com.br",
+			"D:\\Works\\www\\dalwer.com.br\\dalwer",
+			"D:\\Works\\www\\lucianotonet.com\\points-of-sale\\wp-content\\plugins\\meta-box",
+			"D:\\Works\\www\\_github\\points-of-sale-v1",
+			"D:\\Works\\www\\lucianotonet.com\\desafio-rd",
+			"D:\\Works\\www\\movingmak.com.br\\wp-content\\themes\\response\\cyberchimps",
+			"D:\\Works\\www\\movingmak.com.br\\wp-content\\themes\\response",
+			"D:\\Works\\www\\montebelodosul.rs.gov.br\\wp-content\\themes\\montebelodosul",
+			"D:\\Works\\www\\lucianotonet.com\\points-of-sale\\wp-content\\plugins\\points-of-sale",
+			"D:\\Works\\www\\montebelodosul.rs.gov.br\\wp-content\\themes\\carpress",
+			"D:\\Works\\www\\agenciamav.com.br\\painel\\templates\\agenciamav\\assets",
+			"D:\\Works\\www\\montebelodosul.rs.gov.br\\wp-content\\themes\\carpress",
+			"D:\\Works\\www\\alfred\\app\\views",
+			"D:\\Works\\www\\alfred\\app",
+			"D:\\Works\\www\\alfred",
+			"D:\\Works\\www\\WP-Quick-Install\\wp-quick-install",
+			"D:\\Works\\www\\hospedagem.steelweb.com.br\\templates\\steelweb",
+			"D:\\Works\\www\\hospedagem.steelweb.com.br\\templates\\bootstrap",
+			"D:\\Works\\www\\hospedagem.steelweb.com.br\\templates",
+			"D:\\Works\\www\\hospedagem.steelweb.com.br\\templates\\template-bootstrap-master",
+			"D:\\Works\\www\\agenciamav.com.br\\painel",
+			"D:\\Works\\www\\agenciamav.com.br\\painel\\templates\\template-bootstrap-master",
+			"D:\\Works\\www\\alfred\\app",
+			"D:\\Works\\www\\alfred\\app\\views\\transactions",
+			"D:\\Works\\www\\alfred",
+			"D:\\Works\\www\\alfred\\app",
+			"D:\\Works\\www\\laravel-calendar",
+			"D:\\Works\\www\\lucianotonet.com\\points-of-sale\\wp-content\\plugins\\Points-of-Sale",
+			"D:\\Works\\www\\bandasedan1300.com.br\\em-breve",
+			"D:\\Works\\www\\lucianotonet.com\\points-of-sale\\wp-content\\plugins\\Points-of-Sale",
+			"C:\\Users\\Luciano\\Downloads\\themeforest-2833226-avada-responsive-multipurpose-theme\\Avada_Full_Package\\Avada Theme\\Avada",
+			"D:\\Works\\www\\lucianotonet.com\\points-of-sale\\wp-content\\plugins\\Points-of-Sale",
+			"D:\\Works\\www\\alfred",
+			"D:\\Works\\www\\alfred\\app\\controllers",
+			"D:\\Works\\www\\alfred\\app\\views",
+			"D:\\Works\\www\\alfred\\app\\controllers",
+			"D:\\Works\\www\\lucianotonet.com\\points-of-sale\\wp-content\\plugins\\Points-of-Sale",
+			"D:\\Works\\www\\lucianotonet.com\\points-of-sale\\wp-content\\plugins\\Points-of-Sale\\admin",
+			"D:\\Works\\www\\alfred",
+			"D:\\Works\\www\\dagnese",
+			"D:\\Works\\www",
+			"D:\\Works\\www\\alfred\\app\\views",
+			"D:\\Works\\www\\projearte.com.br\\wp-content\\themes\\argo",
+			"C:\\xampp"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"body",
+			"&nbsp;\n						&nbsp;\n						&nbsp;\n						&nbsp;",
+			"nbps",
+			"logo",
+			"list-st",
+			"your-prefix",
+			", ",
+			"your-prefix",
+			"section3",
+			"section",
+			"2",
+			"⦁ ",
+			"{$prefix}_section2_",
+			"spark_",
+			"our-prefix",
+			"your-prefix",
+			"textdomain",
+			"Produto",
+			"product_",
+			"your_prefix",
+			"images/portfolio/item-",
+			"src=\"images/",
+			"images/clients/logo-",
+			"images/portfolio/item",
+			"<im",
+			"images/portfolio/item-2.jpg",
+			"<img",
+			"img",
+			"spark-wp-theme",
+			"integer",
+			"products",
+			"<strong>",
+			"ng>",
+			"h4",
+			"h1",
+			"src=\"images/",
+			"emai",
+			"248,103,14",
+			"220, 97, 21",
+			"$news->",
+			"recent",
+			"twentysixteen_entry_meta",
+			"Continue Reading",
+			"</a>",
+			"=\"badge\"",
+			"<h4 ",
+			"<h4 class=\"media-heading\">Atendimento e Suporte</h4>",
+			"laravel",
+			"Laravel",
+			"laravel",
+			"Laravel",
+			"laravel",
+			"Laravel",
+			"Open Sans",
+			"  font-family: 'Work Sans', sans-serif;",
+			"font-family",
+			"font-family:",
+			"Roboto",
+			"dev.steel4web.com.br",
+			"_7",
+			"Link",
+			"<br>\n							",
+			"spksistemas",
+			"> ",
+			"div",
+			"href=\"",
+			"href=\"single-",
+			"href=\"",
+			".html",
+			"icons/icon",
+			"themefisher",
+			"Themefisher",
+			"<?php echo bloginfo('stylesheet_directory'); ?>/",
+			"src=\"",
+			"<?php echo bloginfo('stylesheet_directory'); ?>/http:",
+			"src=\"",
+			"href=\"",
+			"dev.",
+			"innovareconsorcios.com.br",
+			"disableScroll",
+			"main-header",
+			"main-menu",
+			"DART",
+			"dart",
+			"DART",
+			"3333",
+			"GLOVE",
+			"600\"",
+			"600",
+			"2425",
+			"1289",
+			"2965",
+			"1700",
+			"1720",
+			"strong",
+			" mark\"",
+			"mark",
+			"<img src=\"images/mark.png\" width=\"50px\" height=\"50px\" alt=\"\" /> ",
+			"<img src=\"images/mark.png\" width=\"50px\" height=\"50px\" alt=\"Permanent Mark\" />    ",
+			"85",
+			"zoom=\"100\"",
+			"100",
+			"data-src=\"holder.js/900x500/auto/#777:#7a7a7a/text",
+			"data-src=\"holder.js/900x500/auto/#777:#7a7a7a/text:First",
+			"data-src=\"holder.js/900x500/auto/#777:#7a7a7a/text:First slide",
+			"data-src=\"holder.js/900x500/auto/#777:#7a7a7a/text:First slide\" ",
+			"data-src=\"holder.js/900x500/auto/#777:#7a7a7a/text:First slide\" alt=\"First slide\" src=\"data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5MDAiIGhlaWdodD0iNTAwIj48cmVjdCB3aWR0aD0iOTAwIiBoZWlnaHQ9IjUwMCIgZmlsbD0iIzc3NyI+PC9yZWN0Pjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjQ1MCIgeT0iMjUwIiBzdHlsZT0iZmlsbDojN2E3YTdhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjU2cHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+Rmlyc3Qgc2xpZGU8L3RleHQ+PC9zdmc+\"",
+			"100",
+			"110",
+			"data-zoom=\"",
+			"parent('li').",
+			"$(this)",
+			"el",
+			"{{ url('js/",
+			"{{ route('",
+			"{{ url('css/",
+			"') }}",
+			"{{ url('images/",
+			", ['icon' => 'fa-home']",
+			"Home",
+			"route",
+			"gestor-de-lotes",
+			"<date>",
+			"components/moment",
+			"../assets",
+			".min",
+			"->index()",
+			"email_message"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"",
+			"consulta_tecnica",
+			"fibersul.mavpages.com",
+			"fibersul",
+			"infinitycredrs.com.br",
+			"http:",
+			"infinitycredrs.com.br",
+			"infinitycredrs.com.br/",
+			"http://",
+			"http//:",
+			"fibersul.mavpages.com",
+			"D:/Works/www/portal.montebelodosul.rs.gov.br/",
+			"portal.montebelodosul.rs.gov.br",
+			"montebelodosul.agenciamav.com.br",
+			"System3D",
+			"WHMCS_WPMU_Manager",
+			"pages_43_",
+			"festivaldenovaprata/wp-content/uploads/sites/43/",
+			"portal.montebelodosul.rs.gov.br",
+			"D:/Works/www/montebelodosul",
+			"portal.montebelodosul.dev",
+			"lojavemiles.com.br",
+			"lojavemiles_",
+			"vemiles.com.br",
+			"vemilesind_",
+			"lojavemiles.com.br/",
+			"lojavemiles_",
+			"D:/Works/www/montebelodosul",
+			"D:\\Works\\www\\montebelodosul",
+			"portal.montebelodosul.dev",
+			"lv_",
+			"//216.172.172.188/~lojav892",
+			"egetrs.com.br",
+			"->date",
+			"$tarefa->date",
+			"'dev_",
+			"`dev_",
+			"\n",
+			"",
+			"\n",
+			"",
+			" ",
+			"",
+			"`dev_",
+			"`wp_",
+			"home/movingma/public_html/dev",
+			"`dev_",
+			"wp_",
+			"dev_",
+			"D:/Works/www/movingmak.com.br/",
+			"D:\\Works\\www\\movingmak.com.br\\",
+			"Secretaria",
+			"irccorretora.agenciamav.com.br",
+			"ircorretora.agenciamav.com.br",
+			"irccorretora.com",
+			";\n",
+			"dev.irccorretora.com",
+			"agenciamav",
+			"Agência MAV",
+			"no painel do cliente - Agência MAV",
+			"ns2.steelweb.com.br",
+			"ns1.steelweb.com.br",
+			"Agência MAV",
+			"agenciamav",
+			"painel.agenciamav.com.br",
+			"agenciamav.com.br",
+			"financeiro/"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/E/Works/www/foegos.com.br/index.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2903,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1701,
+								1701
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 450.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/E/Works/www/foegos.com.br/assets/css/main.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 18348,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3153,
+								3153
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1558.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 21.0
+	},
+	"input":
+	{
+		"height": 34.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.phpdocumentor":
+	{
+		"height": 59.0
+	},
+	"output.unsaved_changes":
+	{
+		"height": 398.0
+	},
+	"pinned_build_system": "",
+	"project": "foegos.sublime-project",
+	"replace":
+	{
+		"height": 38.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"stylesheet.css",
+				"wp-content\\themes\\spark-wp-theme\\fonts\\stylesheet.css"
+			],
+			[
+				"defautl",
+				"resources\\views\\templates\\default.blade.php"
+			],
+			[
+				"defa",
+				"resources\\views\\templates\\default.blade.php"
+			],
+			[
+				"default",
+				"resources\\views\\templates\\default.blade.php"
+			],
+			[
+				"scrip",
+				"public\\js\\script.js"
+			],
+			[
+				"scr",
+				"public\\js\\script.js"
+			],
+			[
+				"timeline",
+				"resources\\views\\technical_consults\\timeline\\timeline.blade.php"
+			],
+			[
+				"script",
+				"public\\js\\script.js"
+			],
+			[
+				"send",
+				"resources\\views\\technical_consults\\timeline\\timeline_send.blade.php"
+			],
+			[
+				"style",
+				"public\\css\\style.css"
+			],
+			[
+				"technical_consultsindex",
+				"resources\\views\\technical_consults\\index.blade.php"
+			],
+			[
+				"routes",
+				"app\\Http\\routes.php"
+			],
+			[
+				"technicalconsultcontroller.php",
+				"app\\Http\\Controllers\\TechnicalConsultController.php"
+			],
+			[
+				"technical_consultscreate-form",
+				"resources\\views\\technical_consults\\create-form.blade.php"
+			],
+			[
+				"create",
+				"resources\\views\\technical_consults\\create.blade.php"
+			],
+			[
+				"stagecontro",
+				"app\\Http\\Controllers\\ProjectStageController.php"
+			],
+			[
+				"fileentrycontroller",
+				"app\\Http\\Controllers\\FileEntryController.php"
+			],
+			[
+				"arquivosind",
+				"resources\\views\\arquivos\\index.blade.php"
+			],
+			[
+				"d",
+				"resources\\views\\templates\\default.blade.php"
+			],
+			[
+				"file",
+				"app\\File.php"
+			],
+			[
+				"arquivos",
+				"resources\\views\\arquivos\\index.blade.php"
+			],
+			[
+				"routes.p",
+				"app\\Http\\routes.php"
+			],
+			[
+				"routes.",
+				"app\\Http\\routes.php"
+			],
+			[
+				"deful",
+				"resources\\views\\templates\\default.blade.php"
+			],
+			[
+				"tech",
+				"app\\Http\\Controllers\\TechnicalConsultController.php"
+			],
+			[
+				"timeli",
+				"resources\\views\\technical_consults\\timeline.blade.php"
+			],
+			[
+				"email.php",
+				"app/EmailMessage.php"
+			],
+			[
+				"create-form",
+				"resources/views/technical_consults/create-form.blade.php"
+			],
+			[
+				"bread",
+				"app/Http/breadcrumbs.php"
+			],
+			[
+				"breadcr",
+				"config/breadcrumbs.php"
+			],
+			[
+				"techni",
+				"app/Http/Controllers/TechnicalConsultController.php"
+			],
+			[
+				"poject",
+				"app/Http/Controllers/ProjectController.php"
+			],
+			[
+				"defaul",
+				"resources/views/templates/default.blade.php"
+			],
+			[
+				"api",
+				"app/Http/Controllers/ApiController.php"
+			],
+			[
+				"techn",
+				"app/TechnicalConsult.php"
+			],
+			[
+				"email",
+				"app/EmailMessage.php"
+			],
+			[
+				"projectsshow",
+				"resources/views/projects/show.blade.php"
+			],
+			[
+				"techindex",
+				"resources/views/technical_consults/index.blade.php"
+			],
+			[
+				"brea",
+				"app/Http/breadcrumbs.php"
+			],
+			[
+				"index",
+				"resources/views/contacts/index.blade.php"
+			],
+			[
+				"breac",
+				"config/breadcrumbs.php"
+			],
+			[
+				"show",
+				"resources/views/projects/show.blade.php"
+			],
+			[
+				"projectc",
+				"app/Http/Controllers/ProjectController.php"
+			],
+			[
+				"contact",
+				"app/Http/Controllers/ContactController.php"
+			],
+			[
+				"contactcontrol",
+				"app/Http/Controllers/ContactController.php"
+			],
+			[
+				"client",
+				"app/Http/Controllers/ClientController.php"
+			],
+			[
+				"modal",
+				"resources/views/templates/modal_content.blade.php"
+			],
+			[
+				"route",
+				"system3d.com.br/vendor/symfony/routing/RouteCollection.php"
+			],
+			[
+				"projectcontrol",
+				"system3d.com.br/app/Http/Controllers/ProjectController.php"
+			],
+			[
+				"pojec",
+				"system3d.com.br/app/Http/Controllers/ProjectController.php"
+			],
+			[
+				"edit-",
+				"system3d.com.br/resources/views/project_disciplines/edit-form.blade.php"
+			],
+			[
+				"script.js",
+				"system3d.com.br/public/js/script.js"
+			],
+			[
+				"disciplinecont",
+				"system3d.com.br/app/Http/Controllers/ProjectDisciplineController.php"
+			],
+			[
+				"projec",
+				"system3d.com.br/app/ProjectDiscipline.php"
+			],
+			[
+				"breas",
+				"system3d.com.br/config/breadcrumbs.php"
+			],
+			[
+				"apicon",
+				"system3d.com.br/app/Http/Controllers/ApiController.php"
+			],
+			[
+				"project",
+				"system3d.com.br/app/Http/Controllers/ProjectController.php"
+			],
+			[
+				"projectcontro",
+				"system3d.com.br/app/Http/Controllers/ProjectController.php"
+			],
+			[
+				"contaccontrol",
+				"system3d.com.br/app/Http/Controllers/ContactController.php"
+			],
+			[
+				"rout",
+				"system3d.com.br/app/Http/routes.php"
+			],
+			[
+				"contac",
+				"system3d.com.br/public/js/controllers/ContactController.js"
+			],
+			[
+				"scri",
+				"system3d.com.br/public/js/script.js"
+			],
+			[
+				"scriptl",
+				"system3d.com.br/vendor/symfony/console/Helper/DescriptorHelper.php"
+			],
+			[
+				"show.",
+				"system3d.com.br/resources/views/projects/show.blade.php"
+			],
+			[
+				"script.",
+				"system3d.com.br/public/js/script.js"
+			],
+			[
+				"defaultp",
+				"system3d.com.br/resources/views/templates/default.blade.php"
+			],
+			[
+				"projects/inde",
+				"system3d.com.br/resources/views/projects/index.blade.php"
+			],
+			[
+				"technu",
+				"system3d.com.br/resources/views/technical_consults.blade.php"
+			],
+			[
+				"index_timeline",
+				"resources/views/technical_consults/index_timeline.blade.php"
+			],
+			[
+				"techniblade",
+				"resources/views/technical_consults.blade.php"
+			],
+			[
+				"default.",
+				"resources/views/templates/default.blade.php"
+			],
+			[
+				"roubtes",
+				"vendor/swiftmailer/swiftmailer/lib/classes/Swift/OutputByteStream.php"
+			],
+			[
+				"reouteservice",
+				"app/Providers/RouteServiceProvider.php"
+			],
+			[
+				"controller",
+				"app/Http/Controllers/Controller.php"
+			],
+			[
+				"illuminate/database/eloquent/model",
+				"vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php"
+			],
+			[
+				"user.",
+				"app/User.php"
+			],
+			[
+				"/faker/date",
+				"vendor/fzaninotto/faker/test/Faker/DefaultGeneratorTest.php"
+			],
+			[
+				"/faker/provider/pt_br/",
+				"vendor/fzaninotto/faker/src/Faker/Provider/pt_BR/Address.php"
+			],
+			[
+				"project.",
+				"app/Project.php"
+			],
+			[
+				"contactcontroller",
+				"app/Http/Controllers/ContactController.php"
+			],
+			[
+				"routes.php",
+				"app/Http/routes.php"
+			],
+			[
+				"guzzleclient",
+				"vendor/guzzlehttp/guzzle/src/Client.php"
+			],
+			[
+				"guzzlehttp/requestoptions",
+				"vendor/guzzlehttp/guzzle/src/RequestOptions.php"
+			],
+			[
+				"config/app",
+				"config/app.php"
+			],
+			[
+				"http/a",
+				"app/Http/Middleware/Authenticate.php"
+			],
+			[
+				"routecollection.php",
+				"alfred/vendor/laravel/framework/src/Illuminate/Routing/RouteCollection.php"
+			],
+			[
+				"s72_slider3.acao.php",
+				"admin/s72_slider3.acao.php"
+			],
+			[
+				"userscontroller",
+				"alfred/app/controllers/UsersController.php"
+			],
+			[
+				"user",
+				"app/models/User.php"
+			],
+			[
+				"composer",
+				"_laravel/composer.json"
+			],
+			[
+				"createto",
+				"_laravel/app/database/migrations/2015_06_20_164949_CreateToodooOrganizationAndUsers.php"
+			],
+			[
+				"organita",
+				"_laravel/app/database/migrations/2015_06_20_164522_CreateOrganizationsTable.php"
+			],
+			[
+				"confide",
+				"app/config/database.php"
+			],
+			[
+				"trarefascon",
+				"alfred/app/controllers/TarefasController.php"
+			],
+			[
+				"produtoscontro",
+				"alfred/app/controllers/ProdutosController.php"
+			],
+			[
+				"header",
+				"dalwer/header.php"
+			],
+			[
+				"rd-plugin.php",
+				"rdplugin/includes/class-rdplugin.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"E:\\Works\\www\\steel4website.sublime-project"
+			],
+			[
+				"steel",
+				"D:\\Works\\www\\dev\\steel4web.sublime-project"
+			],
+			[
+				"consult",
+				"D:\\Works\\www\\dev\\consultas-tecnicas.sublime-project"
+			],
+			[
+				"consul",
+				"D:\\Works\\www\\dev\\consultas-tecnicas.sublime-project"
+			],
+			[
+				"stee",
+				"D:\\Works\\www\\SYSTEM3D.sublime-project"
+			],
+			[
+				"cons",
+				"D:\\Works\\www\\dev\\consultas-tecnicas.sublime-project"
+			],
+			[
+				"horus",
+				"D:\\Works\\HORUSWP.sublime-workspace"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 269.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

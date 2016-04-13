@@ -1,9 +1,12 @@
 body {
     font-family: 'Open Sans', sans-serif;
     padding-top: 93px;
-    padding-top: 91px;
+    padding-top: 91px;    
+    font-size: 16px;
 }
-
+body.admin-bar {
+    padding-top: calc(120px - 32px) !important;
+}
 .smooth_zoom_preloader {
     background-image: url(zoom_assets/preloader.gif);
 }

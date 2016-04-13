@@ -1,14 +1,5 @@
-<?php
-/**
- * Template Name: Modelo Genérico
- *
- * @package WordPress
- * @subpackage Twenty_Fourteen
- * @since Twenty Fourteen 1.0
- */
-?>
 <?php get_header();?>
-<?php if (have_posts()) { while (have_posts()) { the_post(); ?>
+<?php //if (have_posts()) { while (have_posts()) { the_post(); ?>
         <!-- 
         ================================================== 
             Global Page Section Start
@@ -32,10 +23,25 @@
         ================================================== -->
         <section id="service-page" class="pages service-page">
             <div class="container">
-                <div class="row">
+                <div class="row">         
+
+
                     <div class="col-md-6">
                         <div class="block">
-                            <h2 class="subtitle wow fadeInUp animated" data-wow-delay=".3s" data-wow-duration="500ms">What We Love To Do</h2>
+                            <?php if (has_post_thumbnail()){ ?>
+                                <?php the_post_thumbnail('full', array('class' => 'img-responsive')); ?>                                
+                            <?php }else{ ?>
+                                <img class="img-responsive" src="https://placeholdit.imgix.net/~text?txtsize=35&txt=imagem&w=1280&h=720" alt="" />
+                            <?php } ?>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="block">
+                            <?php if (have_posts()) { while (have_posts()) { the_post(); ?>
+                            
+                            <?php the_content() ?>                            
+
+                            <!-- <h1 class="text-center"><?php the_title() ?></h1>
                             <p class="subtitle-des wow fadeInUp animated" data-wow-delay=".5s" data-wow-duration="500ms">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis porro recusandae non quibusdam iure adipisci.</p>
                             <div class="row service-parts">
                                 <div class="col-md-6">
@@ -66,18 +72,15 @@
                                         <p>Veritatis eligendi, dignissimos. Porta fermentum mus aute pulvinar earum minus platea massa feugiat rutrum urna facilisi ipsameum.</p>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="block">
-                            <img class="img-responsive" src="https://placeholdit.imgix.net/~text?txtsize=35&txt=imagem&w=370&h=260" alt="">
+                            </div> -->
+
+                            <?php } } ?>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-<?php } } ?>
+
 
         <!-- 
         ================================================== 
@@ -262,4 +265,4 @@
         </section>
 
 
-	<?php get_footer();?>
+    <?php get_footer();?>

@@ -20,12 +20,12 @@
 	<div class="container">
 		<div class="section-heading">
 			<!-- <h1 class="title wow fadeInDown" data-wow-delay=".3s">Lorem ipsum dolor sit amet</h1> -->
+			<h3 class="wow fadeInDown" data-wow-delay=".6s">
+				Entenda como a Spark pode lhe ajudar:
+			</h3>
 			<p class="wow fadeInDown" data-wow-delay=".5s">
 				A logística interna bem estruturada reflete em redução de custos, redução de desperdício de materiais, melhor ocupação dos espaços dentro da empresa, flexibilidade operacional, objetividade nas operações, maior produtividade de seus funcionários e, consequentemente, agilidade nos processos da cadeia de suprimentos desde seu início, que começa no recebimento da mercadoria produzida, até a sua entrega ao cliente final.
 			</p>
-			<h4 class="wow fadeInDown" data-wow-delay=".6s">
-				Entenda como a Spark pode lhe ajudar:
-			</h4>
 		</div>
 		<div class="row">
 			<div class="col-md-4 col-lg-4 col-xs-12">
@@ -232,44 +232,5 @@
 		</div>
 	</div>
 </section>
-
-<section class="about-feature clearfix">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="block col-md-8 wow fadeInDown animated" data-wow-duration="500ms" data-wow-delay=".3s" style="visibility: visible; animation-duration: 500ms; animation-delay: 0.3s; animation-name: fadeInDown;">
-                <div class="col-md-8">
-        			<h3 class="hero text-uppercase">Conheça nossas soluções</h3>
-        		</div>
-               	<div class="col-md-2">
-        			<ul>
-        				<!-- <li><h4><strong class="text-uppercase">Produtos</strong></h4></li> -->
-        				<li><a href="#">WMS</a></li>
-        				<li><a href="#">AGV</a></li>
-        				<li><a href="#">CART</a></li>
-        				<li><a href="#">WATCH</a></li>                				
-        				<li><a href="#">WMS</a></li>                				
-        				<li><a href="#">GLASS</a></li>                				
-        				<li><a href="#">RFID</a></li>                				
-        			</ul>
-        		</div>
-        		<div class="col-md-2">
-        			<ul>
-        				<!-- <li><h4><strong class="text-uppercase">Serviços</strong></h4></li> -->
-        				<li><a href="#">Implementação</a></li>
-        				<li><a href="#">Consultoria</a></li>
-        				<li><a href="#">Desenvolvimento</a></li>
-        				<li><a href="#">Suporte</a></li>                				
-        			</ul>
-        		</div>
-            </div>
-            <div class="block bg-dark col-md-4 wow fadeInDown animated" data-wow-duration="500ms" data-wow-delay=".5s" style="visibility: visible; animation-duration: 500ms; animation-delay: 0.5s; animation-name: fadeInDown;">                    	
-        		 <h2 class="">Desenvolvemos projetos de consultoria e soluções logísticas sob medida (???)</h2>                        
-                <a href="#" class="btn btn-lined">Saiba mais</a>
-        	                 
-            </div>                    
-        </div>
-    </div>
-</section>
-
 
 	<?php get_footer();?>

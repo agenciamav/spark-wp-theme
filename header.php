@@ -31,16 +31,17 @@
         <link rel="stylesheet" href="<?php echo bloginfo('stylesheet_directory'); ?>/css/slider.css">
         <!-- owl craousel css -->
         <link rel="stylesheet" href="<?php echo bloginfo('stylesheet_directory'); ?>/css/owl.carousel.css">
-        <link rel="stylesheet" href="<?php echo bloginfo('stylesheet_directory'); ?>/css/owl.theme.css">
+        <!-- <link rel="stylesheet" href="<?php echo bloginfo('stylesheet_directory'); ?>/css/owl.theme.css"> -->
+        <link rel="stylesheet" href="<?php echo bloginfo('stylesheet_directory'); ?>/css/owl.theme.green.css">        
         <link rel="stylesheet" href="<?php echo bloginfo('stylesheet_directory'); ?>/css/jquery.fancybox.css">
         <!-- template main css file -->
         <link rel="stylesheet" href="<?php echo bloginfo('stylesheet_directory'); ?>/css/main.css">
         <!-- responsive css -->
         <link rel="stylesheet" href="<?php echo bloginfo('stylesheet_directory'); ?>/css/responsive.css">
-
+        
         <!-- SPARK STYLES -->
         <link rel="stylesheet" href="<?php echo bloginfo('stylesheet_directory'); ?>/css/style.css">
-        <link rel="stylesheet" href="<?php echo bloginfo('stylesheet_directory'); ?>/style.css">
+        <link rel="stylesheet" href="<?php echo bloginfo('stylesheet_directory'); ?>/style.css?v=2">
 
         <?php wp_head();?>
 

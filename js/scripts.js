@@ -137,6 +137,49 @@ $(document).ready(function() {
     });
 
 
+    /**
+     *  GALERIA DE IMAGENS
+     */
+    $('.owl-carousel').owlCarousel({
+        loop:true,
+        margin:10,
+        responsiveClass:true,
+        slideBy:1,
+        dots: false,
+        responsive:{
+            0:{
+                items:1,
+                nav:true
+            },
+            600:{
+                items:3,
+                nav:true
+            },
+            1000:{
+                items:4,
+                nav:true,
+                loop:true
+            }
+        },    
+        navText: [
+          "<i class='ion-android-arrow-dropleft-circle'></i>",
+          "<i class='ion-android-arrow-dropright-circle'></i>"
+          ],
+    });
+
     
+    /**
+     *  FOOTER HEIGHT
+     */
+    $( window ).resize(function() {
+        var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+        if( w > 480 ){
+            $('body').css('marginBottom', $('.footer').height());            
+        }else {
+            $('body').css('marginBottom', 0);
+        }
+    });
+
+
 
 });
