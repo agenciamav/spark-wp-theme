@@ -41,9 +41,9 @@
         
         <!-- SPARK STYLES -->
         <link rel="stylesheet" href="<?php echo bloginfo('stylesheet_directory'); ?>/css/style.css">
-        <link rel="stylesheet" href="<?php echo bloginfo('stylesheet_directory'); ?>/style.css?v=2">
 
         <?php wp_head();?>
+        <link rel="stylesheet" href="<?php echo bloginfo('stylesheet_directory'); ?>/style.css?v=2">
 
     </head>
 
@@ -101,15 +101,23 @@ Header Section Start
                         <a href="<?php echo bloginfo('url'); ?>/produtos" class="dropdown-toggle" data-toggle="dropdown">Produtos <span class="caret"></span></a>
                         <div class="dropdown-menu">
                             <ul>
-                                <li><a href="<?php echo bloginfo('url'); ?>/produtos/WMS">WMS</a></li>
-                                <li><a href="<?php echo bloginfo('url'); ?>/produtos/CART">CART</a></li>
-                                <li><a href="<?php echo bloginfo('url'); ?>/produtos/LIFT">LIFT</a></li>
-                                <li><a href="<?php echo bloginfo('url'); ?>/produtos/AGV">AGV</a></li>
-                                <li><a href="<?php echo bloginfo('url'); ?>/produtos/RFID">RFID</a></li>
-                                <li><a href="<?php echo bloginfo('url'); ?>/produtos/DESK">DESK</a></li>
-                                <li><a href="<?php echo bloginfo('url'); ?>/produtos/GLASS">GLASS</a></li>
-                                <li><a href="<?php echo bloginfo('url'); ?>/produtos/WATCH">WATCH</a></li>
-                                <li><a href="<?php echo bloginfo('url'); ?>/produtos/ARM">ARM</a></li>
+                                <?php
+                                $type = 'product';
+                                $args=array(
+                                  'post_type' => $type,
+                                  'post_status' => 'publish',
+                                  'posts_per_page' => -1                                  
+                                );
+                                $my_query = null;
+                                $my_query = new WP_Query($args);
+                                if( $my_query->have_posts() ) {
+                                  while ($my_query->have_posts()) : $my_query->the_post(); ?>
+                                    <li><a href="<?php the_permalink() ?>" title="Ver produto <?php the_title_attribute(); ?>"><?php the_title(); ?></a></li>
+                                    <?php
+                                  endwhile;
+                                }
+                                wp_reset_query();  // Restore global post data stomped by the_post().
+                                ?>
                             </ul>
                         </div>
                     </li>
@@ -117,9 +125,23 @@ Header Section Start
                         <a href="<?php echo bloginfo('url'); ?>/servicos" class="dropdown-toggle" data-toggle="dropdown">Serviços <span class="caret"></span></a>
                         <div class="dropdown-menu">
                             <ul>
-                                <li><a href="<?php echo bloginfo('url'); ?>/servico1">Serviço 1</a></li>
-                                <li><a href="<?php echo bloginfo('url'); ?>/servico1">Serviço 2</a></li>
-                                <li><a href="<?php echo bloginfo('url'); ?>/servico1">Serviço 3</a></li>
+                                <?php
+                                $type = 'service';
+                                $args=array(
+                                  'post_type' => $type,
+                                  'post_status' => 'publish',
+                                  'posts_per_page' => -1                                  
+                                );
+                                $my_query = null;
+                                $my_query = new WP_Query($args);
+                                if( $my_query->have_posts() ) {
+                                  while ($my_query->have_posts()) : $my_query->the_post(); ?>
+                                    <li><a href="<?php the_permalink() ?>" title="Ver produto <?php the_title_attribute(); ?>"><?php the_title(); ?></a></li>
+                                    <?php
+                                  endwhile;
+                                }
+                                wp_reset_query();  // Restore global post data stomped by the_post().
+                                ?>
                             </ul>
                         </div>
                     </li>

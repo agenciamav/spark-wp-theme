@@ -107,53 +107,56 @@ Global Page Section Start
 								</div>
 							</div>
 							<div class="categories widget">
-								<h3 class="widget-head">Produtos</h3>
+								<h3 class="widget-head text-center">Produtos</h3>
 								<ul>
-									<li>
-										<a href="">WMS <span class="badge"><span class="ion-ios-arrow-right"></span></span></a>
-									</li>
-									<li>
-										<a href="">CART <span class="badge"><span class="ion-ios-arrow-right"></span></span></a>
-									</li>
-									<li>
-										<a href="">LIFT <span class="badge"><span class="ion-ios-arrow-right"></span></span></a>
-									</li>
-									<li>
-										<a href="">AGV <span class="badge"><span class="ion-ios-arrow-right"></span></span></a>
-									</li>
-									<li>
-										<a href="">RFID <span class="badge"><span class="ion-ios-arrow-right"></span></span></a>
-									</li>
-									<li>
-										<a href="">DESK <span class="badge"><span class="ion-ios-arrow-right"></span></span></a>
-									</li>
-									<li>
-										<a href="">GLASS <span class="badge"><span class="ion-ios-arrow-right"></span></span></a>
-									</li>
-									<li>
-										<a href="">WATCH <span class="badge"><span class="ion-ios-arrow-right"></span></span></a>
-									</li>
-									<li>
-										<a href="">ARM <span class="badge"><span class="ion-ios-arrow-right"></span></span></a>
-									</li>
+								<?php
+				                    $type = 'product';
+				                    $args=array(
+				                      'post_type' => $type,
+				                      'post_status' => 'publish',
+				                      'posts_per_page' => -1                                  
+				                    );
+				                    $my_query = null;
+				                    $my_query = new WP_Query($args);
+				                    if( $my_query->have_posts() ) {
+				                      while ($my_query->have_posts()) : $my_query->the_post(); ?>
+
+											<li>
+												<a href="<?php the_permalink() ?>" title="Ver produto <?php the_title_attribute(); ?>"><?php the_title(); ?> <span class="badge"><span class="ion-ios-arrow-right"></span></span></a>
+											</li>										
+
+				                        <?php
+				                      endwhile;
+				                    }
+				                    wp_reset_query();  // Restore global post data stomped by the_post().
+				                    ?>									
 								</ul>
 							</div>
 
 							<div class="categories widget">
-								<h3 class="widget-head">Serviços</h3>
+								<h3 class="widget-head text-center text-center">Serviços</h3>
 								<ul>
-									<li>
-										<a href="">Serviço 1 <span class="badge"><span class="ion-ios-arrow-right"></span></span></a>
-									</li>
-									<li>
-										<a href="">Serviço 2 <span class="badge"><span class="ion-ios-arrow-right"></span></span></a>
-									</li>
-									<li>
-										<a href="">Serviço 3 <span class="badge"><span class="ion-ios-arrow-right"></span></span></a>
-									</li>
-									<li>
-										<a href="">Serviço 4 <span class="badge"><span class="ion-ios-arrow-right"></span></span></a>
-									</li>
+									<?php
+				                    $type = 'service';
+				                    $args=array(
+				                      'post_type' => $type,
+				                      'post_status' => 'publish',
+				                      'posts_per_page' => -1                                  
+				                    );
+				                    $my_query = null;
+				                    $my_query = new WP_Query($args);
+				                    if( $my_query->have_posts() ) {
+				                      while ($my_query->have_posts()) : $my_query->the_post(); ?>
+
+											<li>
+												<a href="<?php the_permalink() ?>" title="Ver serviço <?php the_title_attribute(); ?>"><?php the_title(); ?> <span class="badge"><span class="ion-ios-arrow-right"></span></span></a>
+											</li>										
+
+				                        <?php
+				                      endwhile;
+				                    }
+				                    wp_reset_query();  // Restore global post data stomped by the_post().
+				                    ?>										
 								</ul>
 							</div>
 

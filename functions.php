@@ -111,7 +111,7 @@ function spark_product_meta_boxes( $meta_boxes ) {
                 array(
                     'id'               => $prefix.$section.'bgimage',
                     'name'             => __( 'Imagem de fundo', 'spark' ),
-                    'type'             => 'image_upload',
+                    'type'             => 'file_advanced',
                     // Delete image from Media Library when remove it from post meta?
                     // Note: it might affect other posts if you use same image for multiple posts
                     'force_delete'     => false,
@@ -123,7 +123,7 @@ function spark_product_meta_boxes( $meta_boxes ) {
             ),
     ); 
 
-        $section = 'section_downloads_';
+    $section = 'section_downloads_';
     $meta_boxes[] = array(
         'title'      => __( 'Seção Dowloads', 'spark' ),
         'post_types' => 'product',
@@ -170,7 +170,7 @@ function spark_product_meta_boxes( $meta_boxes ) {
             array(
                 'id'               => $prefix.$section.'bgimage',
                 'name'             => __( 'Imagem de fundo', 'spark' ),
-                'type'             => 'image_upload',
+                'type'             => 'file_advanced',
                 // Delete image from Media Library when remove it from post meta?
                 // Note: it might affect other posts if you use same image for multiple posts
                 'force_delete'     => false,
@@ -216,7 +216,7 @@ function spark_product_meta_boxes( $meta_boxes ) {
             array(
                 'id'               => $prefix.$section.'bgimage',
                 'name'             => __( 'Imagem de fundo', 'spark' ),
-                'type'             => 'image_upload',
+                'type'             => 'file_advanced',
                 // Delete image from Media Library when remove it from post meta?
                 // Note: it might affect other posts if you use same image for multiple posts
                 'force_delete'     => false,
@@ -263,7 +263,7 @@ function spark_product_meta_boxes( $meta_boxes ) {
             array(
                 'id'               => $prefix.$section.'bgimage',
                 'name'             => __( 'Imagem de fundo', 'spark' ),
-                'type'             => 'image_upload',
+                'type'             => 'file_advanced',
                 // Delete image from Media Library when remove it from post meta?
                 // Note: it might affect other posts if you use same image for multiple posts
                 'force_delete'     => false,
@@ -312,6 +312,107 @@ function spark_product_meta_boxes( $meta_boxes ) {
 
 
    
+    $section = 'warehouse_config_';
+    $meta_boxes[] = array(
+        'title'      => __( 'Exibição no Warehouse', 'spark' ),
+        'post_types' => 'product',
+
+        'fields'     => array(           
+            // WYSIWYG/RICH TEXT EDITOR
+            array(
+                'name'    => __( 'Exibir', 'spark' ),
+                'id'      => $prefix.$section."show",
+                'type'    => 'checkbox',      
+                'desc' => __( 'Exibir Infobox no Warehouse, e adicionar produto no menu de produtos', 'spark' ),
+            ),
+            // WYSIWYG/RICH TEXT EDITOR
+            array(
+                'name'    => __( 'Texto da infobox', 'spark' ),
+                'id'      => $prefix.$section."text",
+                'type'    => 'wysiwyg',
+                // Set the 'raw' parameter to TRUE to prevent data being passed through wpautop() on save
+                'raw'     => false,
+                'std'     => __( '', 'spark' ),
+                // Editor settings, see wp_editor() function: look4wp.com/wp_editor
+                'options' => array(
+                    'textarea_rows' => 10,
+                    'teeny'         => false,
+                    'media_buttons' => true,
+                ),
+            ),                     
+            array(
+                'id'               => $prefix.$section.'infobox_position_x',
+                'name'             => __( 'Posição X da infobox', 'spark' ),
+                'type'             => 'number',
+                'desc' => __( 'Posição horizontal em pixels', 'spark' ),
+            ),
+            array(
+                'id'               => $prefix.$section.'infobox_position_y',
+                'name'             => __( 'Posição Y da infobox', 'spark' ),
+                'type'             => 'number',
+                'desc' => __( 'Posição vertical em pixels', 'spark' ),
+            ),
+            array(
+                'name'             => __( 'Exibir no Zoom', 'spark' ),
+                'id'               => $prefix.$section.'infobox_show_at_zoom',
+                'desc' => __( 'Somente exibe a infobox quando o zoom for maior que o valor infomado.', 'spark' ),
+                'type'       => 'slider',
+                            
+                // jQuery UI slider options. See here http://api.jqueryui.com/slider/
+                'js_options' => array(
+                    'min'  => 10,
+                    'max'  => 90,
+                    'step' => 5,
+                    // 'value' => 85,
+                ),
+                'std' => 85,                
+            ),
+            
+            // DIVIDER
+            array(
+                'type' => 'divider',
+            ),
+            array(
+                'id'               => $prefix.$section.'icon',
+                'name'             => __( 'Ícone do produto', 'spark' ),
+                'type'             => 'file_advanced',
+                // Delete image from Media Library when remove it from post meta?
+                // Note: it might affect other posts if you use same image for multiple posts
+                'force_delete'     => false,
+                // Maximum image uploads
+                'max_file_uploads' => 1,
+                'desc'  => __( 'Ícone do menu de produtos', 'spark' ),
+            ),
+            array(
+                'id'               => $prefix.$section.'focus_x',
+                'name'             => __( 'Posição horizontal da câmera', 'spark' ),
+                'type'             => 'number',
+                // 'desc' => __( 'Posição horizontal da câmera', 'spark' ),
+            ),
+            array(
+                'id'               => $prefix.$section.'focus_y',
+                'name'             => __( 'Posição vertical da câmera', 'spark' ),
+                'type'             => 'number',
+                // 'desc' => __( 'Posição vertical da câmera', 'spark' ),
+            ),
+            // SLIDER
+            array(
+                'name'             => __( 'Zoom', 'spark' ),
+                'id'               => $prefix.$section.'focus_zoom',
+                'type'       => 'slider',
+                            
+                // jQuery UI slider options. See here http://api.jqueryui.com/slider/
+                'js_options' => array(
+                    'min'  => 0,
+                    'max'  => 100,
+                    'step' => 5,
+                ),
+
+                'std' => 90, 
+            ),
+                                    
+        ),  
+    );  
    
 
     return $meta_boxes;
@@ -322,63 +423,68 @@ function spark_product_meta_boxes( $meta_boxes ) {
 
 /**
  *  CUSTOM POST TYPE SERVICE
+ *  https://generatewp.com/post-type/?edit=7QJjp6k
  */
 if ( ! function_exists('spark_service_post_type') ) {
 
-    // Register Custom Post Type
-    function spark_service_post_type() {
+// Register Custom Post Type
+function spark_service_post_type() {
 
-        $labels = array(
-            'name'                  => _x( 'Serviços', 'Post Type General Name', 'spark' ),
-            'singular_name'         => _x( 'Serviço', 'Post Type Singular Name', 'spark' ),
-            'menu_name'             => __( 'Serviços', 'spark' ),
-            'name_admin_bar'        => __( 'Serviços', 'spark' ),
-            'archives'              => __( 'Item Archives', 'spark' ),
-            'parent_item_colon'     => __( 'Parent Item:', 'spark' ),
-            'all_items'             => __( 'All Items', 'spark' ),
-            'add_new_item'          => __( 'Add New Item', 'spark' ),
-            'add_new'               => __( 'Add New', 'spark' ),
-            'new_item'              => __( 'New Item', 'spark' ),
-            'edit_item'             => __( 'Edit Item', 'spark' ),
-            'update_item'           => __( 'Update Item', 'spark' ),
-            'view_item'             => __( 'View Item', 'spark' ),
-            'search_items'          => __( 'Search Item', 'spark' ),
-            'not_found'             => __( 'Not found', 'spark' ),
-            'not_found_in_trash'    => __( 'Not found in Trash', 'spark' ),
-            'featured_image'        => __( 'Featured Image', 'spark' ),
-            'set_featured_image'    => __( 'Set featured image', 'spark' ),
-            'remove_featured_image' => __( 'Remove featured image', 'spark' ),
-            'use_featured_image'    => __( 'Use as featured image', 'spark' ),
-            'insert_into_item'      => __( 'Insert into item', 'spark' ),
-            'uploaded_to_this_item' => __( 'Uploaded to this item', 'spark' ),
-            'items_list'            => __( 'Items list', 'spark' ),
-            'items_list_navigation' => __( 'Items list navigation', 'spark' ),
-            'filter_items_list'     => __( 'Filter items list', 'spark' ),
-            );
-        $args = array(
-            'label'                 => __( 'Serviço', 'spark' ),
-            'labels'                => $labels,
-            'supports'              => array( 'title', 'editor', 'excerpt', 'thumbnail', ),
-            'taxonomies'            => array( 'service_category' ),
-            'hierarchical'          => false,
-            'public'                => true,
-            'show_ui'               => true,
-            'show_in_menu'          => true,
-            'menu_position'         => 20,
-            'menu_icon'             => 'dashicons-tag',
-            'show_in_admin_bar'     => true,
-            'show_in_nav_menus'     => true,
-            'can_export'            => true,
-            'has_archive'           => true,        
-            'exclude_from_search'   => false,
-            'publicly_queryable'    => true,
-            'capability_type'       => 'page',
-            );
-        register_post_type( 'service', $args );
+    $labels = array(
+        'name'                  => _x( 'Serviços', 'Post Type General Name', 'spark' ),
+        'singular_name'         => _x( 'Serviço', 'Post Type Singular Name', 'spark' ),
+        'menu_name'             => __( 'Serviços', 'spark' ),
+        'name_admin_bar'        => __( 'Post Type', 'spark' ),
+        'archives'              => __( 'Item Archives', 'spark' ),
+        'parent_item_colon'     => __( 'Parent Item:', 'spark' ),
+        'all_items'             => __( 'All Items', 'spark' ),
+        'add_new_item'          => __( 'Add New Item', 'spark' ),
+        'add_new'               => __( 'Add New', 'spark' ),
+        'new_item'              => __( 'New Item', 'spark' ),
+        'edit_item'             => __( 'Edit Item', 'spark' ),
+        'update_item'           => __( 'Update Item', 'spark' ),
+        'view_item'             => __( 'View Item', 'spark' ),
+        'search_items'          => __( 'Search Item', 'spark' ),
+        'not_found'             => __( 'Not found', 'spark' ),
+        'not_found_in_trash'    => __( 'Not found in Trash', 'spark' ),
+        'featured_image'        => __( 'Featured Image', 'spark' ),
+        'set_featured_image'    => __( 'Set featured image', 'spark' ),
+        'remove_featured_image' => __( 'Remove featured image', 'spark' ),
+        'use_featured_image'    => __( 'Use as featured image', 'spark' ),
+        'insert_into_item'      => __( 'Insert into item', 'spark' ),
+        'uploaded_to_this_item' => __( 'Uploaded to this item', 'spark' ),
+        'items_list'            => __( 'Items list', 'spark' ),
+        'items_list_navigation' => __( 'Items list navigation', 'spark' ),
+        'filter_items_list'     => __( 'Filter items list', 'spark' ),
+    );
+    $rewrite = array(
+        'slug'                  => 'servicos',
+        'with_front'            => true,
+        'pages'                 => true,
+        'feeds'                 => true,
+    );
+    $args = array(
+        'label'                 => __( 'Serviço', 'spark' ),
+        'labels'                => $labels,
+        'supports'              => array( 'title', 'editor', 'excerpt', 'author', 'thumbnail', 'comments', 'revisions', 'page-attributes', ),
+        'hierarchical'          => false,
+        'public'                => true,
+        'show_ui'               => true,
+        'show_in_menu'          => true,
+        'menu_position'         => 5,
+        'show_in_admin_bar'     => true,
+        'show_in_nav_menus'     => true,
+        'can_export'            => true,
+        'has_archive'           => false,       
+        'exclude_from_search'   => false,
+        'publicly_queryable'    => true,
+        'rewrite'               => $rewrite,
+        'capability_type'       => 'page',
+    );
+    register_post_type( 'service', $args );
 
-    }
-
-    add_action( 'init', 'spark_service_post_type', 0 );
+}
+add_action( 'init', 'spark_service_post_type', 0 );
 
 }
 

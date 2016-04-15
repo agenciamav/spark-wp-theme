@@ -109,6 +109,9 @@ a:hover {
   padding: 40px 0 40px;
   background: #ffffff;
 }
+section {  
+  background: #ffffff;
+}
 .moduler {
   padding: 20px 0 60px 0px;
 }
@@ -172,6 +175,13 @@ a:hover {
 #top-bar .main-menu li {
   position: relative;
 }
+#top-bar .dropdown-menu > ul > li {
+    padding: 7px 0;
+    color: #fff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+
 #top-bar .main-menu li a {
   font-size: 14px;
   font-weight: 500;
@@ -608,7 +618,7 @@ figure figcaption p {
 }
 #footer .social li {
   display: inline-block;
-  margin-right: 15px;
+  margin-left: 15px;
 }
 #footer .social li a {
   font-size: 20px;
@@ -1400,13 +1410,13 @@ section.single-post {
 }
 .dropdown-menu > ul {
   list-style: none;
-  padding: 15px;
+  padding: 0px 15px !important;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 0;
   margin-top: -5px;
   background: #fff;
-  background-color: rgba(0, 0, 0, 0.95);
+  background-color: rgb(45, 39, 35);
   box-shadow: 0 2px 0.09px rgba(0, 0, 0, 0.15);
   z-index: 10000;
 }

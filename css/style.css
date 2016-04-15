@@ -7,6 +7,43 @@ body {
 body.admin-bar {
     padding-top: calc(120px - 32px) !important;
 }
+
+/* MENU */
+.dropdown-menu > ul {    
+    background-color: rgb(45, 39, 35) !important;    
+}
+.navbar-nav>li>.dropdown-menu {
+    margin-top: 25px !important;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-top: 3px #FF6700 solid;
+}
+#top-bar .dropdown-menu > ul > li {
+    padding: 13px 0 !important;
+    color: #fff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    margin: 0px 0 0px 0 !important;
+    vertical-align: middle;
+    /* line-height: 2em; */
+}
+#top-bar .dropdown-menu > ul > li:last-child {
+    padding: 13px 0 !important;
+    color: #fff;
+    border-bottom: none;
+    /* margin: 0 !important; */
+}
+#top-bar .dropdown-menu > ul > li > a {
+    display: block;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: normal;
+    text-decoration: none;
+    padding: 0px 0;
+    color: #fff;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+
 .smooth_zoom_preloader {
     background-image: url(zoom_assets/preloader.gif);
 }
@@ -43,6 +80,11 @@ div#zoom_container {
     max-width: 164px;
     /* display: none !important; */
 }
+#zoom_container .landmarks .item h3{
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-bottom: 0px;
+}
 mark, .mark {
     background-color: transparent;
     padding: 0;
@@ -54,9 +96,9 @@ mark, .mark {
     /* right: auto; */
     position: absolute;
     /* top: 50%; */
-    bottom: 20px;
-    left: -24px;
-    margin-top: -12px;
+    bottom: 10px;
+    left: -30px;
+    margin-top: 0;
     right: 100%;
     width: 0;
     height: 0;
@@ -65,16 +107,20 @@ mark, .mark {
     border-color: transparent;
     border-style: solid solid outset;
     pointer-events: none;
-    border-right-color: rgba(255, 0, 0, 0.37);
-    border-width: 12px;
+    /* border-right-color: rgba(255, 0, 0, 0.37); */
+    border-right-color: #FF6700;
+    border-width: 15px;
+    border-left-width: 15px;
+    border-top-width: 15px;
+    /* border-bottom-width: 0px; */
 }   
 #zoom_container .landmarks .lable div {
     width: 100px;
     padding: 4px;       
 }   
 #zoom_container .landmarks .mark .text{
-    background-color: rgba(255,0,0,0.6);
-    padding: 7px 7px;
+    background-color: rgb(255, 103, 0);
+    padding: 10px;
 }
 #zoom_container .landmarks .mark .text img{ 
     margin-bottom: 7px;
@@ -84,4 +130,8 @@ mark, .mark {
 }   
 #zoom_container .landmarks .mark .text a{
     color: #fff;    
+}  
+#zoom_container .landmarks .mark .text a:hover{
+    color: #fff;    
+    text-decoration:none;
 }   

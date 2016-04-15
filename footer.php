@@ -11,22 +11,47 @@
                         <div class="col-md-3 col-sm-2 col-xs-6">
                             <ul>
                                 <!-- <li><h4><strong class="text-uppercase">Produtos</strong></h4></li> -->
-                                <li><a href="#">WMS</a></li>
-                                <li><a href="#">AGV</a></li>
-                                <li><a href="#">CART</a></li>
-                                <li><a href="#">WATCH</a></li>                              
-                                <li><a href="#">WMS</a></li>                                
-                                <li><a href="#">GLASS</a></li>                              
-                                <li><a href="#">RFID</a></li>                               
+
+                                <?php
+                                $type = 'product';
+                                $args=array(
+                                  'post_type' => $type,
+                                  'post_status' => 'publish',
+                                  'posts_per_page' => -1                                  
+                                );
+                                $my_query = null;
+                                $my_query = new WP_Query($args);
+                                if( $my_query->have_posts() ) {
+                                  while ($my_query->have_posts()) : $my_query->the_post(); ?>
+                                    <li><a href="<?php the_permalink() ?>" title="Ver produto <?php the_title_attribute(); ?>"><?php the_title(); ?></a></li>
+                                    <?php
+                                  endwhile;
+                                }
+                                wp_reset_query();  // Restore global post data stomped by the_post().
+                                ?>
                             </ul>
                         </div>
                         <div class="col-md-3 col-sm-2 col-xs-6">
                             <ul>
-                                <!-- <li><h4><strong class="text-uppercase">Serviços</strong></h4></li> -->
-                                <li><a href="#">Implementação</a></li>
-                                <li><a href="#">Consultoria</a></li>
-                                <li><a href="#">Desenvolvimento</a></li>
-                                <li><a href="#">Suporte</a></li>                                
+                                <!-- <li><h4><strong class="text-uppercase">Produtos</strong></h4></li> -->
+
+                                <?php
+                                $type = 'service';
+                                $args=array(
+                                  'post_type' => $type,
+                                  'post_status' => 'publish',
+                                  'posts_per_page' => -1                                  
+                                );
+                                $my_query = null;
+                                $my_query = new WP_Query($args);
+                                if( $my_query->have_posts() ) {
+                                  while ($my_query->have_posts()) : $my_query->the_post(); ?>
+                                    <li><a href="<?php the_permalink() ?>" title="Ver serivço <?php the_title_attribute(); ?>"><?php the_title(); ?></a></li>
+                                    <?php
+                                  endwhile;
+                                }
+                                wp_reset_query();  // Restore global post data stomped by the_post().
+                                ?>
                             </ul>
                         </div>
                     </div>              

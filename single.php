@@ -87,23 +87,23 @@
                                     </div>
                                     
                                     <div class="categories widget">
-                                        <h3 class="widget-head">Categorias de News</h3>
-                                        <ul>
-                                            <li>
-                                                <a href="">Business</a> <span class="badge">19</span>
-                                            </li>
-                                            <li>
-                                                <a href="">Tecnologia</a> <span class="badge">25</span>
-                                            </li>
-                                            <li>
-                                                <a href="">Dicas</a> <span class="badge">42</span>
-                                            </li>
-                                            <li>
-                                                <a href="">Inovação</a> <span class="badge">23</span>
-                                            </li>
-                                            <li>
-                                                <a href="">Intralogísitica</a> <span class="badge">3</span>
-                                            </li>
+                                        <h3 class="widget-head text-center">Categorias de News</h3>
+                                            <ul>
+                                                <?php
+                                                    $args = array(
+                                                      'orderby' => 'name',
+                                                      'parent' => 0
+                                                      );
+                                                    $categories = get_categories( $args );
+                                                    foreach ( $categories as $category ) { ?>
+                                                        <li>
+                                                            <a href="<?php echo get_category_link( $category->term_id ) ?>">
+                                                                <?php echo $category->name ?> <span class="badge"><?php echo $category->count ?></span>
+                                                            </a>
+                                                        </li>
+                                                    <?php }
+                                                ?>
+                                                                                    
                                         </ul>
                                     </div>
                                     

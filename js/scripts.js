@@ -171,10 +171,10 @@ $(document).ready(function() {
     /**
      *  FOOTER HEIGHT
      */
-    $( window ).resize(function() {
+    $( window ).on('resize load', function() {
         var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
         if( w > 480 ){
-            $('body').css('marginBottom', $('.footer').height());            
+            $('body').css('margin-bottom', $('.footer').height());                        
         }else {
             $('body').css('marginBottom', 0);
         }

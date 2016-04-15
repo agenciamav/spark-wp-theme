@@ -9,7 +9,7 @@
 ?>
 <?php get_header();?>
 
-<?php require 'warehouse-2.php';?>
+<?php get_template_part( 'warehouse'); ?>
 
 <section class="text-center slogan">
 	<span class="">SOLUÇÕES INOVADORAS EM<br><strong>INTRALOGÍSTICA</strong></span>
@@ -20,16 +20,16 @@
 	<div class="container">
 		<div class="section-heading">
 			<!-- <h1 class="title wow fadeInDown" data-wow-delay=".3s">Lorem ipsum dolor sit amet</h1> -->
-			<h3 class="wow fadeInDown" data-wow-delay=".6s">
+			<h3 class="wow fadeInDown">
 				Entenda como a Spark pode lhe ajudar:
 			</h3>
-			<p class="wow fadeInDown" data-wow-delay=".5s">
+			<p class="wow fadeInDown">
 				A logística interna bem estruturada reflete em redução de custos, redução de desperdício de materiais, melhor ocupação dos espaços dentro da empresa, flexibilidade operacional, objetividade nas operações, maior produtividade de seus funcionários e, consequentemente, agilidade nos processos da cadeia de suprimentos desde seu início, que começa no recebimento da mercadoria produzida, até a sua entrega ao cliente final.
 			</p>
 		</div>
 		<div class="row">
 			<div class="col-md-4 col-lg-4 col-xs-12">
-				<div class="media wow fadeInDown animated" data-wow-duration="500ms" data-wow-delay="1200ms">
+				<div class="media">
 					<div class="media-left">
 						<div class="icon">
 							<i class="ion-ios-chatboxes-outline"></i>
@@ -42,7 +42,7 @@
 				</div>
 			</div>
 			<div class="col-md-4 col-lg-4 col-xs-12">
-				<div class="media wow fadeInDown animated" data-wow-duration="500ms" data-wow-delay="1500ms">
+				<div class="media">
 					<div class="media-left">
 						<div class="icon">
 							<i class="ion-ios-book-outline"></i>
@@ -55,7 +55,7 @@
 				</div>
 			</div>
 			<div class="col-md-4 col-lg-4 col-xs-12">
-				<div class="media wow fadeInDown animated" data-wow-duration="500ms" data-wow-delay="1800ms">
+				<div class="media">
 					<div class="media-left">
 						<div class="icon">
 							<i class="ion-ios-paper-outline"></i>
@@ -70,7 +70,7 @@
 		</div>
 		<div class="row">
 			<div class="col-md-4 col-lg-4 col-xs-12">
-				<div class="media wow fadeInDown animated" data-wow-duration="500ms" data-wow-delay="2100ms">
+				<div class="media">
 					<div class="media-left">
 						<div class="icon">
 							<i class="ion-ios-cart-outline"></i>
@@ -83,7 +83,7 @@
 				</div>
 			</div>
 			<div class="col-md-4 col-lg-4 col-xs-12">
-				<div class="media wow fadeInDown animated" data-wow-duration="500ms" data-wow-delay="2400ms">
+				<div class="media">
 					<div class="media-left">
 						<div class="icon">
 							<i class="ion-ios-briefcase-outline"></i>
@@ -96,7 +96,7 @@
 				</div>
 			</div>
 			<div class="col-md-4 col-lg-4 col-xs-12">
-				<div class="media wow fadeInUp animated" data-wow-duration="3000ms" data-wow-delay="2700ms">
+				<div class="media wow fadeInUp animated" data-wow-duration="1500ms" data-wow-delay="150ms">
 					<div class="media-left">
 						<div class="icon">
 							<!-- <img src="http://dev.sparkag.com.br/wp-content/themes/spark-wp-theme/images/spark.png" alt=""> -->
