@@ -47,7 +47,7 @@
                                     
                                 ?>
                             </div>
-                            <ul class="social-share">
+                           <!--  <ul class="social-share">
                                 <h4>Compartlhe:</h4>
                                 <li>
                                     <a href="#" class="Facebook">
@@ -70,7 +70,7 @@
                                     </a>
                                 </li>
                                 
-                            </ul>
+                            </ul> -->
                             
                         </div>
                         <div class="col-md-3">
@@ -140,6 +140,7 @@
         
    <?php }; // End of the loop. ?>            
             
+            <?php if(rwmb_meta( 'spark_cta_post')){ ?>
             <!--
             ==================================================
             Call To Action Section Start
@@ -149,14 +150,28 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="block">
-                                <h2 class="title wow fadeInDown" data-wow-delay=".3s" data-wow-duration="300ms">INTERESSADO EM UMA CONSULTORIA SEM COMPROMISSO?</h1>
-                                <p class="wow fadeInDown" data-wow-delay=".5s" data-wow-duration="300ms">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis,</br>possimus commodi, fugiat magnam temporibus vero magni recusandae? Dolore, maxime praesentium.</p>
-                                <a href="#" class="btn btn-default btn-contact wow fadeInDown" data-wow-delay=".7s" data-wow-duration="300ms">Solitite uma consultoria</a>
+
+                                <?php
+                                    print_r( rwmb_meta( 'spark_cta_post') );
+                                    
+                                    $cta = get_post( rwmb_meta( 'spark_cta_post') ); 
+                                    if( $cta ) {
+                                        $title      = $cta->post_title;
+                                        $content    = $cta->content;                                
+                                ?>
+                                            
+                                        <h2 class="title wow fadeInDown" data-wow-delay=".3s" data-wow-duration="300ms"><?php echo $title; ?></h1>
+                                        <p class="wow fadeInDown" data-wow-delay=".5s" data-wow-duration="300ms"><?php echo $content; ?></p>
+                                        <a href="#" class="btn btn-default btn-contact wow fadeInDown" data-wow-delay=".7s" data-wow-duration="300ms">Solitite uma consultoria</a>
+
+                                <?php  } ?>  
+
                             </div>
                         </div>
                         
                     </div>
                 </div>
             </section>
+            <?php  } ?>
 
 <?php get_footer();?>

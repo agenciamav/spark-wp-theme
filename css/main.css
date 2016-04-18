@@ -37,11 +37,12 @@ p {
 }
 ul {
   padding-left: 0px;
+  margin-bottom: 0px;
 }
 ul li {
   list-style: none;
   line-height: 22px;
-  margin-bottom: 15px;
+  margin-bottom: 0;
 }
 section li {
   padding-left: 0px;
@@ -52,6 +53,7 @@ section li {
 }
 .single-product section li {
   vertical-align: top;
+  margin-bottom: 10px;
 }
 
 .single-product section li:before {

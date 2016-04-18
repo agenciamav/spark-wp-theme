@@ -171,6 +171,7 @@
         <?php } ?>
 
 
+        <?php if(rwmb_meta( 'spark_cta_post')){ ?>
         <!-- 
         ================================================== 
             Call To Action Section Start
@@ -179,16 +180,26 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <div class="block">
-                            <h2 class="title wow fadeInDown" data-wow-delay=".3s"   data-wow-duration="500ms">Ficou com alguma dúvida?</h1>
-                            <p class="wow fadeInDown" data-wow-delay=".5s" data-wow-duration="500ms">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis,<br>possimus commodi, fugiat magnam temporibus vero magni recusandae? Dolore, maxime praesentium.</p>
-                            <a href="contact.html" class="btn btn-default btn-contact wow fadeInDown" data-wow-delay=".7s" data-wow-duration="500ms">Entre em contato</a>
+                        <div class="block">                            
+                            <?php
+                                   
+                                    $cta = get_post( rwmb_meta( 'spark_cta_post') ); 
+                                    if( $cta ) {
+                                        $title      = $cta->post_title;
+                                        $content    = $cta->post_content;                                
+                                ?>
+                                            
+                                        <h2 class="title wow fadeInDown" data-wow-delay=".3s" data-wow-duration="300ms"><?php echo $title; ?></h1>
+                                        <?php echo $content; ?>
+                                                                            
+                                <?php  } ?>  
                         </div>
                     </div>
                     
                 </div>
             </div>
         </section>
+        <?php } ?>
 
 
     <?php get_footer();?>

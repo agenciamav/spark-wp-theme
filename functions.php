@@ -412,8 +412,44 @@ function spark_product_meta_boxes( $meta_boxes ) {
             ),
                                     
         ),  
-    );  
-   
+    );
+
+
+    $prefix = 'spark_';
+
+
+    $section = 'cta_';
+    // $post_types = get_post_types();
+
+    $meta_boxes[] = array(
+        'title'  => __( 'Chamada para ação', 'spark' ),
+        'post_types' => ['post', 'page', 'product', 'service'],
+        'fields' => array(
+            array(
+                'name'        => __( 'CTA', 'spark' ),
+                'id'          => $prefix.$section."post",
+                'type'        => 'post',
+                'desc'        => __( 'Bloco de chamada para ação exibido no final do conteúdo da página', 'spark' ),
+                // 'clone'       => true,
+                // 'multiple'    => true,
+                // Post type: string (for single post type) or array (for multiple post types)
+                'post_type'   => array( 'cta' ),
+                // Default selected value (post ID)
+                'std'         => 1,
+                // Field type, either 'select' or 'select_advanced' (default)
+                'field_type'  => 'select_advanced',
+                // Placeholder
+                'placeholder' => __( 'Seleciona um item', 'spark' ),
+                // Query arguments (optional). No settings means get all published posts
+                // @see https://codex.wordpress.org/Class_Reference/WP_Query
+                'query_args'  => array(
+                    'post_status'    => 'publish',
+                    'posts_per_page' => - 1,
+                )
+            ),
+        )
+    );
+    
 
     return $meta_boxes;
 }
@@ -481,50 +517,117 @@ function spark_service_post_type() {
         'rewrite'               => $rewrite,
         'capability_type'       => 'page',
     );
-    register_post_type( 'service', $args );
+    register_post_type( 'service', $args );    
 
 }
 add_action( 'init', 'spark_service_post_type', 0 );
 
 }
 
-/**
- *  META BOXES FOR SERVICE
- */
-// add_filter( 'rwmb_meta_boxes', 'spark_service_meta_boxes' );
-// function spark_service_meta_boxes( $meta_boxes ) {
+if ( ! function_exists('spark_cta_post_type') ) {
+
+// Register Custom Post Type
+function spark_cta_post_type() {
+
+    $labels = array(
+        'name'                  => _x( 'CTAs', 'Post Type General Name', 'spark' ),
+        'singular_name'         => _x( 'CTA', 'Post Type Singular Name', 'spark' ),
+        'menu_name'             => __( 'Chamadas para Ação', 'spark' ),
+        'name_admin_bar'        => __( 'CTA', 'spark' ),
+        'archives'              => __( '', 'spark' ),
+        'parent_item_colon'     => __( 'Parent Item:', 'spark' ),
+        'all_items'             => __( 'Todas CTAs', 'spark' ),
+        'add_new_item'          => __( 'Adicionar CTA', 'spark' ),
+        'add_new'               => __( 'Adicionar nova', 'spark' ),
+        'new_item'              => __( 'Nova CTA', 'spark' ),
+        'edit_item'             => __( 'Editar CTA', 'spark' ),
+        'update_item'           => __( 'Atualizar CTA', 'spark' ),
+        'view_item'             => __( 'Ver CTA', 'spark' ),
+        'search_items'          => __( 'Buscar CTA', 'spark' ),
+        'not_found'             => __( 'Nada encontrado', 'spark' ),
+        'not_found_in_trash'    => __( 'Not found in Trash', 'spark' ),
+        'featured_image'        => __( 'Featured Image', 'spark' ),
+        'set_featured_image'    => __( 'Set featured image', 'spark' ),
+        'remove_featured_image' => __( 'Remove featured image', 'spark' ),
+        'use_featured_image'    => __( 'Use as featured image', 'spark' ),
+        'insert_into_item'      => __( 'Insert into item', 'spark' ),
+        'uploaded_to_this_item' => __( 'Uploaded to this item', 'spark' ),
+        'items_list'            => __( 'Items list', 'spark' ),
+        'items_list_navigation' => __( 'Items list navigation', 'spark' ),
+        'filter_items_list'     => __( 'Filter items list', 'spark' ),
+    );
+    $rewrite = array(
+        'slug'                  => 'cta',
+        'with_front'            => true,
+        'pages'                 => true,
+        'feeds'                 => true,
+    );
+    $args = array(
+        'label'                 => __( 'CTA', 'spark' ),
+        'labels'                => $labels,
+        'supports'              => array( 'title', 'editor', 'excerpt', 'thumbnail', 'comments', 'revisions', 'page-attributes', ),
+        'hierarchical'          => false,
+        'public'                => true,
+        'show_ui'               => true,
+        'show_in_menu'          => true,
+        'menu_position'         => 20,
+        'menu_icon'             => 'dashicons-carrot',
+        'show_in_admin_bar'     => true,
+        'show_in_nav_menus'     => true,
+        'can_export'            => true,
+        'has_archive'           => false,       
+        'exclude_from_search'   => false,
+        'publicly_queryable'    => true,
+        'rewrite'               => $rewrite,
+        'capability_type'       => 'post',
+    );
+    register_post_type( 'cta', $args );
+
+}
+add_action( 'init', 'spark_cta_post_type', 0 );
+
+}
+
+// add_filter( 'rwmb_meta_boxes', 'spark_cta_meta_boxes' );
+// function spark_cta_meta_boxes( $meta_boxes )
+// {
+//     $prefix = 'spark_';
+
+
+//     $section = 'cta_';
+//     // $post_types = get_post_types();
+
 //     $meta_boxes[] = array(
-//         'title'      => __( 'Test Meta Box', 'spark' ),
-//         'post_types' => 'product',
-//         'fields'     => array(
+//         'title'  => __( 'Chamada para ação', 'spark' ),
+//         'post_types' => ['post', 'page', 'product', 'service'],
+//         'fields' => array(
 //             array(
-//                 'id'   => 'name',
-//                 'name' => __( 'Name', 'spark' ),
-//                 'type' => 'text',
-//                 ),
-//             array(
-//                 'id'      => 'gender',
-//                 'name'    => __( 'Gender', 'spark' ),
-//                 'type'    => 'radio',
-//                 'options' => array(
-//                     'm' => __( 'Male', 'spark' ),
-//                     'f' => __( 'Female', 'spark' ),
-//                     ),
-//                 ),
-//             array(
-//                 'id'   => 'email',
-//                 'name' => __( 'Email', 'spark' ),
-//                 'type' => 'email',
-//                 ),
-//             array(
-//                 'id'   => 'bio',
-//                 'name' => __( 'Biography', 'spark' ),
-//                 'type' => 'textarea',
-//                 ),
+//                 'name'        => __( 'CTA', 'spark' ),
+//                 'id'          => $prefix.$section."post",
+//                 'type'        => 'post',
+//                 'desc'        => __( 'Bloco de chamada para ação exibido no final do conteúdo da página', 'spark' ),
+//                 // 'clone'       => true,
+//                 // 'multiple'    => true,
+//                 // Post type: string (for single post type) or array (for multiple post types)
+//                 'post_type'   => array( 'cta' ),
+//                 // Default selected value (post ID)
+//                 'std'         => 1,
+//                 // Field type, either 'select' or 'select_advanced' (default)
+//                 'field_type'  => 'select_advanced',
+//                 // Placeholder
+//                 'placeholder' => __( 'Seleciona um item', 'spark' ),
+//                 // Query arguments (optional). No settings means get all published posts
+//                 // @see https://codex.wordpress.org/Class_Reference/WP_Query
+//                 'query_args'  => array(
+//                     'post_status'    => 'publish',
+//                     'posts_per_page' => - 1,
+//                 )
 //             ),
-//         );
+//         )
+//     );
 //     return $meta_boxes;
 // }
+
 
 
 
@@ -581,8 +684,30 @@ add_filter( 'excerpt_length', 'wpdocs_custom_excerpt_length', 999 );
 /**
  *  OPTIONS PAGE
  */
-add_action( 'admin_menu', 'spark_add_admin_menu' );
-add_action( 'admin_init', 'spark_settings_init' );
+
+require_once( 'titan-framework-checker.php' );
+
+add_action( 'tf_create_options', 'mytheme_create_options' );
+function mytheme_create_options() {
+    // We create all our options here
+    $titan = TitanFramework::getInstance( 'spark' );
+
+    $section = $titan->createThemeCustomizerSection( array(
+        'name' => __( 'Footer Colors', 'spark' ),
+    ) );
+
+    $section->createOption( array(
+        'name' => __( 'Background Color', 'spark' ),
+        'id' => 'footer_bg',
+        'type' => 'color',
+        'default' => '#222222',
+        'css' => 'footer { background: value }',
+    ) );
+
+}
+
+// add_action( 'admin_menu', 'spark_add_admin_menu' );
+// add_action( 'admin_init', 'spark_settings_init' );
 
 
 function spark_add_admin_menu(  ) { 
@@ -708,4 +833,12 @@ function spark_options_page(  ) {
     </form>
     <?php
 
+}
+
+
+function getSize($file){
+    $bytes = filesize($file);
+    $s = array('b', 'Kb', 'Mb', 'Gb');
+    $e = floor(log($bytes)/log(1024));
+    return sprintf('%.2f '.$s[$e], ($bytes/pow(1024, floor($e))));
 }

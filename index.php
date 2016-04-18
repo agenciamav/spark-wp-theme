@@ -225,7 +225,8 @@
 							<span class="input-group-btn">
 								<button class="btn btn-default btn-lg" type="button"> Assinar! </button>
 							</span>
-						</div><!-- /input-group -->					
+						</div><!-- /input-group -->		
+									
 					</div>
 				</form>
 			</div>
