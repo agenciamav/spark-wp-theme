@@ -842,3 +842,14 @@ function getSize($file){
     $e = floor(log($bytes)/log(1024));
     return sprintf('%.2f '.$s[$e], ($bytes/pow(1024, floor($e))));
 }
+
+
+add_filter('posts_orderby','my_sort_custom',10,2);
+function my_sort_custom( $orderby, $query ){
+    global $wpdb;
+
+    if(!is_admin() && is_search())
+        $orderby =  $wpdb->prefix."posts.post_type DESC, {$wpdb->prefix}posts.post_date DESC";
+
+    return  $orderby;
+}

@@ -152,8 +152,7 @@
                             <div class="block">
 
                                 <?php
-                                    print_r( rwmb_meta( 'spark_cta_post') );
-                                    
+                                                                        
                                     $cta = get_post( rwmb_meta( 'spark_cta_post') ); 
                                     if( $cta ) {
                                         $title      = $cta->post_title;

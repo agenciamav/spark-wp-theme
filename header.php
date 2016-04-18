@@ -34,15 +34,14 @@
         <!-- <link rel="stylesheet" href="<?php echo bloginfo('stylesheet_directory'); ?>/css/owl.theme.css"> -->
         <link rel="stylesheet" href="<?php echo bloginfo('stylesheet_directory'); ?>/css/owl.theme.green.css">        
         <link rel="stylesheet" href="<?php echo bloginfo('stylesheet_directory'); ?>/css/jquery.fancybox.css">
+        
+        <?php wp_head();?>
+        
         <!-- template main css file -->
         <link rel="stylesheet" href="<?php echo bloginfo('stylesheet_directory'); ?>/css/main.css">
         <!-- responsive css -->
         <link rel="stylesheet" href="<?php echo bloginfo('stylesheet_directory'); ?>/css/responsive.css">
         
-        <!-- SPARK STYLES -->
-        <link rel="stylesheet" href="<?php echo bloginfo('stylesheet_directory'); ?>/css/style.css">
-
-        <?php wp_head();?>
         <link rel="stylesheet" href="<?php echo bloginfo('stylesheet_directory'); ?>/style.css?v=2">
 
     </head>

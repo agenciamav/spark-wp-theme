@@ -510,11 +510,19 @@ figure figcaption p {
 #contact-section .contact-form {
   margin-top: 42px;
 }
+#contact-section .contact-form .form-group i {
+    position: absolute;
+    font-size: 25px;
+    padding: 2px 18px;
+    color: #D4D7D7;
+    z-index: 1;
+}
 #contact-section .contact-form .btn-send {
-  margin-top: 35px;
+  padding: 0px 30px;
   color: #fff;
   outline: none;
   background: rgb(248,103,14);
+  /* float: left; */
 }
 #contact-section .contact-form .btn-send:hover {
   border: 1px solid rgb(248,103,14);
@@ -522,7 +530,7 @@ figure figcaption p {
 #contact-section input {
   display: block;
   height: 40px;
-  padding: 6px 12px;
+  padding: 6px 12px 6px 50px;
   font-size: 13px;
   line-height: 1.428571429;
   background-color: #fff;
@@ -578,6 +586,14 @@ figure figcaption p {
 #contact-section .address-details {
   /* padding-top: 70px; */
 }
+#contact-section div.wpcf7 img.ajax-loader {
+    border: none;
+    vertical-align: middle;
+    /* margin-left: 4px; */
+    /* float: right; */
+}
+
+
 #map-canvas {
   width: 100%;
   height: 350px;
@@ -1443,6 +1459,9 @@ ul {}
 
 
 /* WAREHOUSE APP */
+#zoom_container, #slider_section{
+  background: #F7F3F0;
+}
 #warehouse{
   margin-top: 0px;
 }
@@ -1490,4 +1509,90 @@ ul {}
     border-radius: 5px;/* needed styles for the overlay */
     z-index: 10;/* keep on top of other elements on the page */
     box-shadow: 0 0 0 9999px rgba(0,0,0,0.2);
+}
+
+
+
+
+/* CONTACT FORM 7 */
+div.wpcf7 {
+	margin: 0;
+	padding: 0;
+}
+
+div.wpcf7-response-output {
+	margin: 0em 0em 1em;
+	padding: 15px 30px;
+}
+
+div.wpcf7 .screen-reader-response {
+	position: absolute;
+	overflow: hidden;
+	clip: rect(1px, 1px, 1px, 1px);
+	height: 1px;
+	width: 1px;
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+div.wpcf7-mail-sent-ok {
+	border: 1px solid #398f14;
+}
+
+div.wpcf7-mail-sent-ng {
+	border: 1px solid #ff0000;
+	background: #FF5858;
+	color: #fff;
+}
+
+div.wpcf7-spam-blocked {
+	border: 1px solid #ffa500;
+}
+
+div.wpcf7-validation-errors {
+	border: 1px solid #f7e700;
+	background: #FFFF98;
+}
+
+.wpcf7-form-control-wrap {
+	position: relative;
+}
+
+span.wpcf7-not-valid-tip {
+	color: #f00;
+	font-size: 1em;
+	display: block;
+}
+
+.use-floating-validation-tip span.wpcf7-not-valid-tip {
+	position: absolute;
+	top: 20%;
+	left: 20%;
+	z-index: 100;
+	border: 1px solid #ff0000;
+	background: #fff;
+	padding: .2em .8em;
+}
+
+span.wpcf7-list-item {
+	margin-left: 0.5em;
+}
+
+.wpcf7-display-none {
+	display: none;
+}
+
+div.wpcf7 img.ajax-loader {
+	border: none;
+	vertical-align: middle;
+	margin-left: 4px;
+}
+
+div.wpcf7 div.ajax-error {
+	display: none;
+}
+
+div.wpcf7 .placeheld {
+	color: #888;
 }

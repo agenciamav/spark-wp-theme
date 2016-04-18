@@ -72,7 +72,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <small>
-                            <img src="http://dev.sparkag.com.br/wp-content/themes/spark-wp-theme/images/logo.png" alt="" class="pull-left footer-logo">
+                            <img src="<?php echo bloginfo('stylesheet_directory'); ?>/images/logo.png" alt="" class="pull-left footer-logo">
                             Rua Antônio Peruzzo, 250. Bairro Sagrada Família<br/>
                              Nova Prata - RS. CEP 95320-000 <br>
                              <a href="mailto:comercial@sparkag.com.br">comercial@sparkag.com.br</a>
@@ -83,7 +83,7 @@
                 <div class="row">
                     <div class="col-md-8 hidden-sm">
                         <p class="copyright">                            
-                            © <span><?php echo date('Y'); ?></span>. <a href="http://www.sparkag.com.br">Spark</a> - 
+                            © <span><?php echo date('Y'); ?></span>. <a href="<?php echo bloginfo('url'); ?>">Spark</a> - 
                             Soluções inovadoras em intralogística. Todos os direitos reservados.</p>
                     </div>
                     <div class="col-md-4">

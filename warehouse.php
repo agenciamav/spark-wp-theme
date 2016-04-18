@@ -19,7 +19,7 @@
 
 						<?php if( rwmb_meta( 'spark_warehouse_config_show' ) ){ ?>
                         
-                        <li data-position-x="<?php echo rwmb_meta( 'spark_warehouse_config_infobox_position_x' ); ?>" data-position-y="<?php echo rwmb_meta( 'spark_warehouse_config_infobox_position_y' ); ?>" data-zoom="<?php echo rwmb_meta( 'spark_warehouse_config_infobox_position_y' ); ?>" data-show-infobox="product_<?php the_ID(); ?>">
+                        <li data-position-x="<?php echo rwmb_meta( 'spark_warehouse_config_focus_x' ) ?>" data-position-y="<?php echo rwmb_meta( 'spark_warehouse_config_focus_y' ) ?>" data-zoom="<?php echo rwmb_meta( 'spark_warehouse_config_focus_zoom' ) ?>" data-show-infobox="product_<?php the_ID(); ?>">
                         	<a href="<?php the_permalink() ?>" title="Ver produto <?php the_title_attribute(); ?>" style="color:#fff;">
                         		                     	
                         		<?php $i = 0; ?>
@@ -113,7 +113,7 @@
 <div id="zoom_container">
 	<img src="<?php echo bloginfo('stylesheet_directory'); ?>/images/warehouse.jpg" border="0" id="warehouse" width="100%" height="auto" />
 
-	<div class="landmarks" data-show-at-zoom="85" data-allow-drag="true">
+	<div class="landmarks" data-show-at-zoom="<?php echo rwmb_meta( 'spark_warehouse_config_infobox_show_at_zoom' ); ?>" data-allow-drag="true">
 
 		<?php        
         // $my_query = new WP_Query($args);
@@ -125,7 +125,7 @@
             ?>
 
           	<!-- This is a mark-type landmark -->
-			<div class="item mark product_<?php the_ID(); ?>" data-position="<?php echo rwmb_meta( 'spark_warehouse_config_focus_x', get_the_ID() ) ?>,<?php echo rwmb_meta( 'spark_warehouse_config_focus_y', get_the_ID() ) ?>" data-show-at-zoom="<?php echo rwmb_meta( 'spark_warehouse_config_focus_zoom', get_the_ID() ) ?>">
+			<div class="item mark product_<?php the_ID(); ?>" data-position="<?php echo rwmb_meta( 'spark_warehouse_config_infobox_position_x', get_the_ID() ); ?>,<?php echo rwmb_meta( 'spark_warehouse_config_infobox_position_y', get_the_ID() ); ?>" data-show-at-zoom="<?php echo rwmb_meta( 'spark_warehouse_config_infobox_show_at_zoom', get_the_ID() ); ?>">
 				<div>
 					<div class="text">
 						<?php if (has_post_thumbnail()){ ?>

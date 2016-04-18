@@ -51,6 +51,7 @@ $(document).ready(function() {
         mouse_DOUBLE_CLICK: false,
         zoom_MAX: 100,
         mouse_WHEEL_CURSOR_POS: true,
+        background_COLOR: '#F7F3F0',
         on_ZOOM_PAN_COMPLETE: function(data) {            
             //enableScroll(); 
         },
@@ -84,33 +85,12 @@ $(document).ready(function() {
         var ypos = $(this).data('position-y');
         var zpos = $(this).data('zoom');
 
-        // SmoothZoom 
-        // $('#warehouse').smoothZoom('focusTo', {
-        //     x: xpos,
-        //     y: ypos,
-        //     zoom: 25,
-        //     speed: 2
-        // });
-        // setTimeout(function() {
-        //     $('#warehouse').smoothZoom('focusTo', {
-        //         x: xpos,
-        //         y: ypos,
-        //         zoom: zpos,
-        //         speed: 2
-        //     });
-        // }, 700);
-
-        // $('#warehouse').smoothZoom('focusTo', {
-        //     x: xpos,
-        //     y: ypos,
-        //     zoom: zpos,
-        //     speed: 2
-        // });
+        
 
         $('#warehouse').smoothZoom('focusTo', {
             x: xpos,
             y: ypos,
-            zoom: zpos - 15,
+            zoom: zpos - 20,
             speed: 3
         });
         setTimeout(function() {
