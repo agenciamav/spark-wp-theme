@@ -85,7 +85,11 @@ $(document).ready(function() {
         var ypos = $(this).data('position-y');
         var zpos = $(this).data('zoom');
 
-        
+        // Revela somente um infobox
+        var infobox_id = $(this).data('infobox');
+        $('.item.mark.'+infobox_id).removeClass('hidden');
+        $('.item.mark:not(.'+infobox_id+')').addClass('hidden');
+               
 
         $('#warehouse').smoothZoom('focusTo', {
             x: xpos,

@@ -7,13 +7,13 @@ Author: Luciano Tonet
 Author URI: http://lucianotonet.com
 */
 body {
-    padding-top: 120px !important;
+    padding-top: 105px !important;
     /* padding-bottom: 436px; */
     margin-bottom: 100%;
     background: #fff;
 }
 body.admin-bar {
-    padding-top: calc(120px - 32px) !important;
+    padding-top: calc(105px - 32px) !important;
 }
 a {
     color: #FF6700;    
@@ -284,12 +284,6 @@ a img.aligncenter {
     box-shadow: 0 2px 0.09px rgba(0, 0, 0, 0.15);
     z-index: 10000;
     width: auto;
-}
-
-#warehouse .nav>li>a:hover, .nav>li>a:focus {
-    text-decoration: none;
-    background-color: transparent;
-    border: none;
 }
 
 

@@ -328,7 +328,7 @@ function spark_product_meta_boxes( $meta_boxes ) {
             // WYSIWYG/RICH TEXT EDITOR
             array(
                 'name'    => __( 'Texto da infobox', 'spark' ),
-                'id'      => $prefix.$section."text",
+                'id'      => $prefix.$section."infobox_text",
                 'type'    => 'wysiwyg',
                 // Set the 'raw' parameter to TRUE to prevent data being passed through wpautop() on save
                 'raw'     => false,
@@ -632,7 +632,7 @@ add_action( 'init', 'spark_cta_post_type', 0 );
 
 
 // IMAGE SIZES
-add_image_size( 'medium-wide', 360, 240, true );
+add_image_size( 'medium-wide', 360, 240, false );
 add_image_size( 'large-wide', 720, 480, true );
 
 

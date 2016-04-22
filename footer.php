@@ -123,7 +123,7 @@
     <!-- Template Javascript Files
     ================================================== -->
     <!-- modernizr js -->
-    <script src="<?php echo bloginfo('stylesheet_directory'); ?>/js/vendor/modernizr-2.6.2.min.js"></script>
+    <!-- <script src="<?php echo bloginfo('stylesheet_directory'); ?>/js/vendor/modernizr-2.6.2.min.js"></script> -->
     <!-- jquery -->
     <script src="<?php echo bloginfo('stylesheet_directory'); ?>/js/jquery.min.js"></script>
     <!-- owl carouserl js -->
@@ -141,9 +141,9 @@
 
     <!-- SPARK DEPENDENCIES SCRIPTS -->
     <script src="<?php echo bloginfo('stylesheet_directory'); ?>/zoom_assets/jquery.smoothZoom.min.js"></script>
-    <script src="<?php echo bloginfo('stylesheet_directory'); ?>/js/jquery.scrollify.min.js"></script>
+    <!-- <script src="<?php echo bloginfo('stylesheet_directory'); ?>/js/jquery.scrollify.min.js"></script> -->
 
-    <script src="<?php echo bloginfo('stylesheet_directory'); ?>/js/owl.carousel.js"></script>
+    <!-- <script src="<?php echo bloginfo('stylesheet_directory'); ?>/js/owl.carousel.js"></script> -->
 
     <!-- SPARK SCRIPTS -->
     <script src="<?php echo bloginfo('stylesheet_directory'); ?>/js/scripts.js"></script>

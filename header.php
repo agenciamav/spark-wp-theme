@@ -36,13 +36,15 @@
         <link rel="stylesheet" href="<?php echo bloginfo('stylesheet_directory'); ?>/css/jquery.fancybox.css">
         
         <?php wp_head();?>
-        
+
+        <!-- wahrehouse css -->
+        <link rel="stylesheet" href="<?php echo bloginfo('stylesheet_directory'); ?>/css/warehouse.css">
         <!-- template main css file -->
         <link rel="stylesheet" href="<?php echo bloginfo('stylesheet_directory'); ?>/css/main.css">
         <!-- responsive css -->
         <link rel="stylesheet" href="<?php echo bloginfo('stylesheet_directory'); ?>/css/responsive.css">
-        
-        <link rel="stylesheet" href="<?php echo bloginfo('stylesheet_directory'); ?>/style.css?v=2">
+        <!-- custum styles -->
+        <link rel="stylesheet" href="<?php echo bloginfo('stylesheet_directory'); ?>/style.css">        
 
     </head>
 
