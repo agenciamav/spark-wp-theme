@@ -853,3 +853,6 @@ function my_sort_custom( $orderby, $query ){
 
     return  $orderby;
 }
+
+
+add_editor_style( 'css/custom-editor/css/bootstrap.min.css' );
