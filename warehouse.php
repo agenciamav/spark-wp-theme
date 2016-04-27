@@ -138,10 +138,10 @@
 	                            	<figure><?php the_post_thumbnail('medium-wide', array('class' => 'img-responsive')); ?></figure>
 	                            </a>
 	                       	<?php } ?>	
-	                       	<a href="<?php the_permalink() ?>" title="Ver produto <?php the_title_attribute(); ?>" class="infobox-body">
-								<h3><?php the_title(); ?></h3>
+	                       	<div class="infobox-body">
+								<h3><a href="<?php the_permalink() ?>" title="Ver produto <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
 								<?php echo rwmb_meta( 'spark_warehouse_config_infobox_text', get_the_ID() ); ?>
-	                       	</a>
+	                       	</div>
 						</div>
 					</div>
 				</div>            

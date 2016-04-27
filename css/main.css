@@ -1487,7 +1487,7 @@ ul {}
 }
 #warehouse .nav>li>a:hover, .nav>li>a:focus {
     text-decoration: none;
-    background-color: #222;
+    background-color: transparent;
 }
 #warehouse .carousel-inner>.item:before {
     content: " ";

@@ -96,7 +96,7 @@
 				</div>
 			</div>
 			<div class="col-md-4 col-lg-4 col-xs-12">
-				<div class="media wow fadeInUp animated" data-wow-duration="1500ms" data-wow-delay="150ms">
+				<div class="media">
 					<div class="media-left">
 						<div class="icon">
 							<!-- <img src="http://dev.sparkag.com.br/wp-content/themes/spark-wp-theme/images/spark.png" alt=""> -->
