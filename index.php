@@ -131,15 +131,18 @@
 		</div>
 		<div class="row">
 
-				<?php if (have_posts()) {
+			
+		<?php $news = new WP_Query("post_type=post&orderby=date&order=DESC");?>
 
-					while (have_posts()) {
-						the_post();
+				<?php if ( $news->have_posts() ) {
+
+					while ( $news->have_posts() ) {
+						 $news->the_post();
 						?>
 						
 						<div class="col-md-3">
 
-							<?php if (has_post_thumbnail()){ ?>
+							<?php if ( has_post_thumbnail()){ ?>
 								<article id="post-<?php the_ID()?>" class="wow fadeInDown" data-wow-delay=".3s" data-wow-duration="500ms">
 									
 										<div class="blog-post-image">
@@ -203,8 +206,7 @@
 						
 						<?php };?>
 
-
-
+				<?php wp_reset_query(); ?>
 				
 			</section>
 

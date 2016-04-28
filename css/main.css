@@ -614,7 +614,7 @@ figure figcaption p {
 .footer {
   position: fixed;
   bottom: 0;
-  /* width: 100%; *//* Set the fixed height of the footer here */
+  width: 100%;/* Set the fixed height of the footer here */
   background-color: #2D2723 !important;
   z-index: -2;
 }
@@ -1008,6 +1008,7 @@ ul.social-icons li {
   /* border-bottom: 0.5px solid #F7660D; */
   margin-bottom: 0;
   background: #2D2723 !important;
+  /* width: 100%; */
 }
 .about-feature .container{
   background: #323232 !important;

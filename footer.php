@@ -58,8 +58,9 @@
                     
                 </div>
                 <div class="block bg-dark col-md-4 fadeInDown animated hidden-sm hidden-xs">                      
-                   <h2 class="">Desenvolvemos projetos de consultoria e soluções logísticas sob medida (???)</h2>                        
-                   <a href="#" class="btn btn-lined">Saiba mais</a>
+                   
+                   <h2 class="">DESENVOLVEMOS PROJETOS DE CONSULTORIA COM SOLUÇÕES INTEGRADAS E PERSONALIZADAS PARA INTRALOGÍSTICA.</h2>                        
+                   <a href="<?php echo bloginfo('url'); ?>/servicos/consultoria/" class="btn btn-lined">Saiba mais</a>
 
                </div>                    
             </div>            
