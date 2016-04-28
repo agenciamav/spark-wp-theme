@@ -1757,3 +1757,19 @@ table>thead>tr>th,table>tbody>tr>th,table>tfoot>tr>th,table>thead>tr>td,table>tb
 table>thead>tr>th,table>thead>tr>td {
 	border-bottom-width: 2px
 }
+
+
+/* FANCYBOX */
+.fancybox-overlay-fixed {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	top: 80px;
+}
+.fancybox-wrap, .fancybox-skin, .fancybox-outer, .fancybox-inner, .fancybox-image, .fancybox-wrap iframe, .fancybox-wrap object, .fancybox-nav, .fancybox-nav span, .fancybox-tmp {
+	padding: 0 0 0 0;
+	margin: 0;
+	border: 0;
+	outline: none;
+	vertical-align: baseline;
+}

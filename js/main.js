@@ -86,6 +86,7 @@ $(document).ready(function(){
 // fancybox
 $(".fancybox").fancybox({
     padding: 0,
+    margin: 40,    
 
     openEffect : 'elastic',
     openSpeed  : 450,
