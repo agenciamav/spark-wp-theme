@@ -17,7 +17,7 @@
 
 								<?php if (has_post_thumbnail()){ ?>
 									<a href="<?php the_permalink() ?>" title="Ver produto <?php the_title_attribute(); ?>" class="">
-		                            	<figure><?php the_post_thumbnail('medium-wide', array('class' => 'img-responsive')); ?></figure>
+		                            	<?php the_post_thumbnail('medium-wide', array('class' => 'img-responsive')); ?>
 		                            </a>
 		                       	<?php } ?>	
 
