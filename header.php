@@ -41,10 +41,10 @@
         <link rel="stylesheet" href="<?php echo bloginfo('stylesheet_directory'); ?>/css/warehouse.css">
         <!-- template main css file -->
         <link rel="stylesheet" href="<?php echo bloginfo('stylesheet_directory'); ?>/css/main.css">
-        <!-- responsive css -->
-        <link rel="stylesheet" href="<?php echo bloginfo('stylesheet_directory'); ?>/css/responsive.css">
         <!-- custum styles -->
         <link rel="stylesheet" href="<?php echo bloginfo('stylesheet_directory'); ?>/style.css">        
+        <!-- responsive css -->
+        <link rel="stylesheet" href="<?php echo bloginfo('stylesheet_directory'); ?>/css/responsive.css">
 
     </head>
 
@@ -54,7 +54,7 @@
 Header Section Start
 ================================================== -->
 <header id="top-bar" class="navbar-fixed-top animated-header">
-    <div class="top-line">
+    <div class="top-line hidden-xs">
         <div class="container">
             <p class="form-control-static input-sm pull-right social-icons">
                 <a target="_blank" class="facebook" href="http://www.facebook.com/sparkag"><i class="fa fa-facebook"></i></a>

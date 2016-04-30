@@ -1773,3 +1773,14 @@ table>thead>tr>th,table>thead>tr>td {
 	outline: none;
 	vertical-align: baseline;
 }
+
+
+/* PRODUCTS PANEL (mobile) */
+.panel-product{background-color: white;border: 1px solid #FF6700;}
+.panel-product .panel-body{
+  background-color: #FF6700;
+  color: #fff;
+}
+.panel-product .panel-body h3 a{  
+  color: #fff;
+} 

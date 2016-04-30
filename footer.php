@@ -8,7 +8,7 @@
                         <div class="col-md-6 col-sm-8 col-xs-12">
                             <h3 class="hero text-uppercase">Conheça nossas soluções</h3>
                         </div>
-                        <div class="col-md-3 col-sm-2 col-xs-6">
+                        <div class="col-md-3 col-sm-2 col-xs-5">
                             <ul>
                                 <!-- <li><h4><strong class="text-uppercase">Produtos</strong></h4></li> -->
 
@@ -31,7 +31,7 @@
                                 ?>
                             </ul>
                         </div>
-                        <div class="col-md-3 col-sm-2 col-xs-6">
+                        <div class="col-md-3 col-sm-2 col-xs-7">
                             <ul>
                                 <!-- <li><h4><strong class="text-uppercase">Produtos</strong></h4></li> -->
 

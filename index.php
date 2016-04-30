@@ -9,7 +9,14 @@
 ?>
 <?php get_header();?>
 
-<?php get_template_part( 'warehouse'); ?>
+<div class="hidden-xs visible-sm visible-md visible-lg">	
+	<?php get_template_part( 'warehouse'); ?>	
+</div>
+
+<div class="visible-xs hidden-sm hidden-md hidden-lg container products">
+	<?php get_template_part( 'mobile'); ?>	
+</div>
+
 
 <section class="text-center slogan">
 	<span class="">SOLUÇÕES INOVADORAS EM<br><strong>INTRALOGÍSTICA</strong></span>
