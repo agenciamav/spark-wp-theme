@@ -7,7 +7,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <link rel="icon" type="image/png" href="<?php echo bloginfo('stylesheet_directory'); ?>/images/favicon.png">
         <title>Spark</title>
-        
+        <meta name="description" content="">
         <meta name="keywords" content="">
         <meta name="author" content="">
         <!-- Mobile Specific Metas
