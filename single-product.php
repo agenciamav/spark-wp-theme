@@ -39,40 +39,7 @@
                         <div class="block">
                             <?php if (have_posts()) { while (have_posts()) { the_post(); ?>
                             
-                            <?php the_content() ?>                            
-
-                            <!-- <h1 class="text-center"><?php the_title() ?></h1>
-                            <p class="subtitle-des wow fadeInUp animated" data-wow-delay=".5s" data-wow-duration="500ms">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis porro recusandae non quibusdam iure adipisci.</p>
-                            <div class="row service-parts">
-                                <div class="col-md-6">
-                                    <div class="block wow fadeInUp animated" data-wow-duration="400ms" data-wow-delay="600ms">
-                                        <i class="ion-ios-paper-outline"></i>
-                                        <h4>BRANDING</h4>
-                                        <p>Veritatis eligendi, dignissimos. Porta fermentum mus aute pulvinar earum minus platea massa feugiat rutrum urna facilisi ipsameum.</p>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="block wow fadeInUp animated" data-wow-duration="400ms" data-wow-delay="800ms">
-                                        <i class="ion-ios-pint-outline"></i>
-                                        <h4>DESIGN</h4>
-                                        <p>Veritatis eligendi, dignissimos. Porta fermentum mus aute pulvinar earum minus platea massa feugiat rutrum urna facilisi ipsameum.</p>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="block wow fadeInUp animated" data-wow-duration="400ms" data-wow-delay="1s">
-                                        <i class="ion-ios-paper-outline"></i>
-                                        <h4>DEVELOPMENT</h4>
-                                        <p>Veritatis eligendi, dignissimos. Porta fermentum mus aute pulvinar earum minus platea massa feugiat rutrum urna facilisi ipsameum.</p>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="block wow fadeInUp animated" data-wow-duration="400ms" data-wow-delay="1.1s">
-                                        <i class="ion-ios-paper-outline"></i>
-                                        <h4>THEMEING</h4>
-                                        <p>Veritatis eligendi, dignissimos. Porta fermentum mus aute pulvinar earum minus platea massa feugiat rutrum urna facilisi ipsameum.</p>
-                                    </div>
-                                </div>
-                            </div> -->
+                            <?php the_content() ?>                                                       
 
                             <?php } } ?>
                         </div>
@@ -113,11 +80,6 @@
 
         <?php } ?>
 
-
-        
-
-
-
         <section class="product_section2" style="background: <?php echo ( rwmb_meta( 'spark_section2_bgcolor' ) ) ? rwmb_meta( 'spark_section2_bgcolor' ) : '#ffffff'; ?>">
             <div class="container">
 
@@ -134,12 +96,14 @@
                                 </div>                                
                                 <div class="list-group">
                                     <?php foreach( rwmb_meta( 'spark_section_downloads_files', 'type=file' ) as $file ){ ?>
-                                        <a href="<?php echo $file['url']; ?>" class="list-group-item" target="_new"><?php echo $file['name']; ?><i class="ion-ios-cloud-download-outline pull-right"></i></a>
+                                        <a href="<?php echo $file['url']; ?>" class="list-group-item" target="_new"><?php echo $file['title']; ?><i class="ion-ios-cloud-download-outline pull-right"></i></a>
                                     <?php } ?>
                                 </div>                                
                             </section>
                         </div>
                     </div>
+
+
 
                 <?php }else{ ?>                
 
