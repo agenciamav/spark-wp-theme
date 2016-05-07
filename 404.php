@@ -7,15 +7,13 @@
                 <div class="text-center">
                     <h1 class="wow fadeInUp animated cd-headline slide" data-wow-delay=".4s" ><sup><i class="ion-android-warning"></i></sup>404</h1>
                     <h2 class="wow fadeInUp animated" data-wow-delay=".6s">Oops! Você encontrou um erro.</h2>
-                    <p class="wow fadeInUp animated" data-wow-delay=".9s">A página que você procura não existe ou foi removida. O sistema já foi notificado.<br/>Em breve nossos robôs irão resolver o problema.</p>
+                    <p class="wow fadeInUp animated" data-wow-delay="1.5s">Lamentamos pelo inconveniente, mas a página que você procura não existe ou foi removida.<br/>O sistema já foi notificado. Em breve nossos robôs irão resolver o problema.</p>
 
                     <br>
 
-                    <p class="wow fadeInUp animated" data-wow-delay="1.5s">Lamentamos pelo inconveniente.</p>
 
-                    <a href="" class="btn btn-dafault btn-home wow fadeInUp animated" data-wow-delay="1.1s">Ir para a Home</a>
-                    <a href="javascript: window.history.back();" class="btn btn-warning btn-home wow fadeInUp animated" data-wow-delay="1.4s">Voltar</a>                    
-                    <a href="" class="btn btn-warning btn-home wow fadeInUp animated" data-wow-delay="1.7s">Reclamar </a>                    
+                    <a href="" class="btn btn-dafault btn-home wow fadeInUp animated" data-wow-delay="1.1s"><i class="ion-ios-home-outline"></i> Página Iinicial</a>
+                    <a href="javascript: window.history.back();" class="btn btn-warning btn-home wow fadeInUp animated" data-wow-delay="1.4s"><i class="ion-ios-arrow-left"> </i>Voltar</a>                                                        
 
                 </div>
             </div>
