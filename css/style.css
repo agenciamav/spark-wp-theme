@@ -1,7 +1,7 @@
 body {
     font-family: 'Open Sans', sans-serif;
     padding-top: 93px;
-    padding-top: 91px;    
+    padding-top: 91px;
     font-size: 16px;
 }
 body.admin-bar {
@@ -9,8 +9,8 @@ body.admin-bar {
 }
 
 /* MENU */
-.dropdown-menu > ul {    
-    background-color: rgb(45, 39, 35) !important;    
+.dropdown-menu > ul {
+    background-color: rgb(45, 39, 35) !important;
 }
 .navbar-nav>li>.dropdown-menu {
     margin-top: 25px !important;

@@ -111,7 +111,7 @@ a:hover {
   padding: 40px 0 40px;
   background: #ffffff;
 }
-section {  
+section {
   background: #ffffff;
 }
 .moduler {
@@ -618,8 +618,8 @@ figure figcaption p {
   background-color: #2D2723 !important;
   z-index: -2;
 }
-.footer section li:before {    
-    content: none;    
+.footer section li:before {
+    content: none;
 }
 #footer .copyright {
   font-size: 13px;
@@ -1040,7 +1040,7 @@ ul.social-icons li {
 
 .about-feature .block a{
 
-  color: #fff; 
+  color: #fff;
 }
 .about-feature .block a:hover{
   color: #F8670E;
@@ -1268,7 +1268,7 @@ article {
   top: calc(50% - 19px);
 }
 
-/* 
+/*
  * 	Green theme - Owl Carousel CSS File
  */
 .owl-carousel .owl-stage-outer {
@@ -1785,6 +1785,6 @@ table>thead>tr>th,table>thead>tr>td {
   background-color: #FF6700;
   color: #fff;
 }
-.panel-product .panel-body h3 a{  
+.panel-product .panel-body h3 a{
   color: #fff;
-} 
+}
