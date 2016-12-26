@@ -17,7 +17,7 @@
                                 $args=array(
                                   'post_type' => $type,
                                   'post_status' => 'publish',
-                                  'posts_per_page' => -1                                  
+                                  'posts_per_page' => -1
                                 );
                                 $my_query = null;
                                 $my_query = new WP_Query($args);
@@ -40,7 +40,7 @@
                                 $args=array(
                                   'post_type' => $type,
                                   'post_status' => 'publish',
-                                  'posts_per_page' => -1                                  
+                                  'posts_per_page' => -1
                                 );
                                 $my_query = null;
                                 $my_query = new WP_Query($args);
@@ -54,22 +54,22 @@
                                 ?>
                             </ul>
                         </div>
-                    </div>              
-                    
+                    </div>
+
                 </div>
-                <div class="block bg-dark col-md-4 fadeInDown animated hidden-sm hidden-xs">                      
-                   
-                   <h2 class="">DESENVOLVEMOS PROJETOS DE CONSULTORIA COM SOLUÇÕES INTEGRADAS E PERSONALIZADAS PARA INTRALOGÍSTICA.</h2>                        
+                <div class="block bg-dark col-md-4 fadeInDown animated hidden-sm hidden-xs">
+
+                   <h2 class="">DESENVOLVEMOS PROJETOS DE CONSULTORIA COM SOLUÇÕES INTEGRADAS E PERSONALIZADAS PARA INTRALOGÍSTICA.</h2>
                    <a href="<?php echo bloginfo('url'); ?>/servicos/consultoria/" class="btn btn-lined">Saiba mais</a>
 
-               </div>                    
-            </div>            
+               </div>
+            </div>
 
        </div>
 
        <div class="container">
            <div id="footer">
-                
+
                 <div class="row">
                     <div class="col-md-12">
                         <small>
@@ -83,8 +83,8 @@
                 </div>
                 <div class="row">
                     <div class="col-md-8 hidden-sm">
-                        <p class="copyright">                            
-                            © <span><?php echo date('Y'); ?></span>. <a href="<?php echo bloginfo('url'); ?>">Spark</a> - 
+                        <p class="copyright">
+                            © <span><?php echo date('Y'); ?></span>. <a href="<?php echo bloginfo('url'); ?>">Spark</a> -
                             Soluções inovadoras em intralogística. Todos os direitos reservados.</p>
                     </div>
                     <div class="col-md-4">
@@ -97,28 +97,28 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="http://wwww.fb.com/Spark" class="Facebook">
+                                <a href="https://www.facebook.com/SparkAG" class="Facebook">
                                     <i class="ion-social-facebook"></i>
                                 </a>
-                            </li>                           
+                            </li>
                             <li>
-                                <a href="#" class="Linkedin">
+                                <a title="Em breve" class="Linkedin">
                                     <i class="ion-social-linkedin"></i>
                                 </a>
                             </li>
                             <li>
-                                <a href="http://wwww.fb.com/Spark" class="Google Plus">
+                                <a title="Em breve" class="Google Plus">
                                     <i class="ion-social-googleplus"></i>
                                 </a>
                             </li>
                         </ul>
                     </div>
                 </div>
-            
+
             </div>
        </div>
 
-   </section>    
+   </section>
 </div>
 
     <!-- Template Javascript Files
@@ -150,6 +150,6 @@
     <script src="<?php echo bloginfo('stylesheet_directory'); ?>/js/scripts.js"></script>
 
     <?php wp_footer();?>
-    
+
 </body>
 </html>
