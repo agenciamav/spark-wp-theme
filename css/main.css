@@ -1788,3 +1788,10 @@ table>thead>tr>th,table>thead>tr>td {
 .panel-product .panel-body h3 a{
   color: #fff;
 }
+
+small.withlove {
+  font-size: 80%;
+}
+small.withlove a{
+  text-decoration: none
+}
