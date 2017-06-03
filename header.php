@@ -7,7 +7,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <link rel="icon" type="image/png" href="<?php echo bloginfo('stylesheet_directory'); ?>/images/favicon.png">
         <title>Spark</title>
-        
+
         <meta name="keywords" content="">
         <meta name="author" content="">
         <!-- Mobile Specific Metas
@@ -32,9 +32,9 @@
         <!-- owl craousel css -->
         <link rel="stylesheet" href="<?php echo bloginfo('stylesheet_directory'); ?>/css/owl.carousel.css">
         <!-- <link rel="stylesheet" href="<?php echo bloginfo('stylesheet_directory'); ?>/css/owl.theme.css"> -->
-        <link rel="stylesheet" href="<?php echo bloginfo('stylesheet_directory'); ?>/css/owl.theme.green.css">        
+        <link rel="stylesheet" href="<?php echo bloginfo('stylesheet_directory'); ?>/css/owl.theme.green.css">
         <link rel="stylesheet" href="<?php echo bloginfo('stylesheet_directory'); ?>/css/jquery.fancybox.css">
-        
+
         <?php wp_head();?>
 
         <!-- wahrehouse css -->
@@ -42,7 +42,7 @@
         <!-- template main css file -->
         <link rel="stylesheet" href="<?php echo bloginfo('stylesheet_directory'); ?>/css/main.css">
         <!-- custum styles -->
-        <link rel="stylesheet" href="<?php echo bloginfo('stylesheet_directory'); ?>/style.css">        
+        <link rel="stylesheet" href="<?php echo bloginfo('stylesheet_directory'); ?>/style.css">
         <!-- responsive css -->
         <link rel="stylesheet" href="<?php echo bloginfo('stylesheet_directory'); ?>/css/responsive.css">
 
@@ -107,7 +107,7 @@ Header Section Start
                                 $args=array(
                                   'post_type' => $type,
                                   'post_status' => 'publish',
-                                  'posts_per_page' => -1                                  
+                                  'posts_per_page' => -1
                                 );
                                 $my_query = null;
                                 $my_query = new WP_Query($args);
@@ -131,7 +131,7 @@ Header Section Start
                                 $args=array(
                                   'post_type' => $type,
                                   'post_status' => 'publish',
-                                  'posts_per_page' => -1                                  
+                                  'posts_per_page' => -1
                                 );
                                 $my_query = null;
                                 $my_query = new WP_Query($args);

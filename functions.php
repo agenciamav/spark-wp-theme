@@ -55,7 +55,7 @@ function spark_product_post_type() {
         'show_in_admin_bar'     => true,
         'show_in_nav_menus'     => true,
         'can_export'            => true,
-        'has_archive'           => true,        
+        'has_archive'           => true,
         'exclude_from_search'   => false,
         'publicly_queryable'    => true,
         'rewrite'               => $rewrite,
@@ -73,7 +73,7 @@ add_action( 'init', 'spark_product_post_type', 0 );
  */
 add_filter( 'rwmb_meta_boxes', 'spark_product_meta_boxes' );
 function spark_product_meta_boxes( $meta_boxes ) {
-    
+
     $prefix = 'spark_';
 
     $section = 'section2_';
@@ -81,8 +81,8 @@ function spark_product_meta_boxes( $meta_boxes ) {
         'title'      => __( 'Seção 2', 'spark' ),
         'post_types' => 'product',
 
-        'fields'     => 
-        array(        
+        'fields'     =>
+        array(
                 // WYSIWYG/RICH TEXT EDITOR
                 array(
                     // 'name'    => __( 'Conteúdo', 'spark' ),
@@ -119,16 +119,16 @@ function spark_product_meta_boxes( $meta_boxes ) {
                     'max_file_uploads' => 1,
                 ),
 
-                                        
+
             ),
-    ); 
+    );
 
     $section = 'section_downloads_';
     $meta_boxes[] = array(
         'title'      => __( 'Seção Dowloads', 'spark' ),
         'post_types' => 'product',
 
-        'fields'     => array(           
+        'fields'     => array(
             // WYSIWYG/RICH TEXT EDITOR
             array(
                 // 'name'    => __( 'Conteúdo', 'spark' ),
@@ -152,10 +152,10 @@ function spark_product_meta_boxes( $meta_boxes ) {
             // ),
             array(
                 'id'          => $prefix.$section."files",
-                'name' => __( 'Arquivos', 'spark' ),                                
+                'name' => __( 'Arquivos', 'spark' ),
                 'type'             => 'file_advanced',
                 // 'max_file_uploads' => 4,
-                // 'mime_type'        => 'application,audio,video,image,', // Leave blank for all file types                           
+                // 'mime_type'        => 'application,audio,video,image,', // Leave blank for all file types
             ),
             // DIVIDER
             array(
@@ -178,16 +178,16 @@ function spark_product_meta_boxes( $meta_boxes ) {
                 'max_file_uploads' => 1,
             ),
 
-                                    
-        ),  
-    );  
+
+        ),
+    );
 
     $section = 'section3_';
     $meta_boxes[] = array(
         'title'      => __( 'Seção 3', 'spark' ),
         'post_types' => 'product',
 
-        'fields'     => array(           
+        'fields'     => array(
             // WYSIWYG/RICH TEXT EDITOR
             array(
                 // 'name'    => __( 'Conteúdo', 'spark' ),
@@ -224,9 +224,9 @@ function spark_product_meta_boxes( $meta_boxes ) {
                 'max_file_uploads' => 1,
             ),
 
-                                    
-        ),  
-    );   
+
+        ),
+    );
 
 
     $section = 'section4_';
@@ -234,7 +234,7 @@ function spark_product_meta_boxes( $meta_boxes ) {
         'title'      => __( 'Seção Adicional', 'spark' ),
         'post_types' => 'product',
 
-        'fields'     => array(           
+        'fields'     => array(
             // WYSIWYG/RICH TEXT EDITOR
             array(
                 // 'name'    => __( 'Conteúdo', 'spark' ),
@@ -271,9 +271,9 @@ function spark_product_meta_boxes( $meta_boxes ) {
                 'max_file_uploads' => 1,
             ),
 
-                                    
-        ),  
-    );   
+
+        ),
+    );
 
 
     $section = 'section_gallery_';
@@ -281,7 +281,7 @@ function spark_product_meta_boxes( $meta_boxes ) {
         'title'      => __( 'Imagens', 'spark' ),
         'post_types' => 'product',
 
-        'fields'     => array(           
+        'fields'     => array(
             // WYSIWYG/RICH TEXT EDITOR
             array(
                 'name'    => __( 'Título', 'spark' ),
@@ -306,23 +306,23 @@ function spark_product_meta_boxes( $meta_boxes ) {
                 'force_delete'     => false,
                 // Maximum image uploads
                 'max_file_uploads' => 10,
-            ),                                    
-        ),  
-    );   
+            ),
+        ),
+    );
 
 
-   
+
     $section = 'warehouse_config_';
     $meta_boxes[] = array(
         'title'      => __( 'Exibição no Warehouse', 'spark' ),
         'post_types' => 'product',
 
-        'fields'     => array(           
+        'fields'     => array(
             // WYSIWYG/RICH TEXT EDITOR
             array(
                 'name'    => __( 'Exibir', 'spark' ),
                 'id'      => $prefix.$section."show",
-                'type'    => 'checkbox',      
+                'type'    => 'checkbox',
                 'desc' => __( 'Exibir Infobox no Warehouse, e adicionar produto no menu de produtos', 'spark' ),
             ),
             // WYSIWYG/RICH TEXT EDITOR
@@ -339,7 +339,7 @@ function spark_product_meta_boxes( $meta_boxes ) {
                     'teeny'         => false,
                     'media_buttons' => true,
                 ),
-            ),                     
+            ),
             array(
                 'id'               => $prefix.$section.'infobox_position_x',
                 'name'             => __( 'Posição X da infobox', 'spark' ),
@@ -357,7 +357,7 @@ function spark_product_meta_boxes( $meta_boxes ) {
                 'id'               => $prefix.$section.'infobox_show_at_zoom',
                 'desc' => __( 'Somente exibe a infobox quando o zoom for maior que o valor infomado.', 'spark' ),
                 'type'       => 'slider',
-                            
+
                 // jQuery UI slider options. See here http://api.jqueryui.com/slider/
                 'js_options' => array(
                     'min'  => 10,
@@ -365,9 +365,9 @@ function spark_product_meta_boxes( $meta_boxes ) {
                     'step' => 5,
                     // 'value' => 85,
                 ),
-                'std' => 85,                
+                'std' => 85,
             ),
-            
+
             // DIVIDER
             array(
                 'type' => 'divider',
@@ -400,7 +400,7 @@ function spark_product_meta_boxes( $meta_boxes ) {
                 'name'             => __( 'Zoom', 'spark' ),
                 'id'               => $prefix.$section.'focus_zoom',
                 'type'       => 'slider',
-                            
+
                 // jQuery UI slider options. See here http://api.jqueryui.com/slider/
                 'js_options' => array(
                     'min'  => 0,
@@ -408,10 +408,10 @@ function spark_product_meta_boxes( $meta_boxes ) {
                     'step' => 5,
                 ),
 
-                'std' => 90, 
+                'std' => 90,
             ),
-                                    
-        ),  
+
+        ),
     );
 
 
@@ -449,12 +449,66 @@ function spark_product_meta_boxes( $meta_boxes ) {
             ),
         )
     );
-    
+
+
+    $prefix = 'contact_';
+    $section = 'details_';
+    $meta_boxes[] = array(
+        'title'      => __( 'Detalhes', 'spark' ),
+        'post_types' => 'contact',
+
+        'fields'     =>
+            array(
+                array(
+                    'name'    => __( 'Whatsapp/Celular', 'spark' ),
+                    'id'      => $prefix.$section."whatsapp",
+                    'type'    => 'text',
+                ),
+                array(
+                  'name'    => __( 'E-mail', 'spark' ),
+                  'id'      => $prefix.$section."email",
+                  'type'    => 'email',
+                  'std'     => __( '', 'spark' ),
+                ),
+                array(
+                  'name'    => __( 'Telefone', 'spark' ),
+                  'id'      => $prefix.$section."phone",
+                  'type'    => 'tel',
+                  'std'     => __( '+55 54 3242-4507', 'spark' ),
+                ),
+                array(
+                  'name'    => __( 'Facebook', 'spark' ),
+                  'id'      => $prefix.$section."facebook",
+                  'type'    => 'url',
+                  'std'     => __( 'http://Facebook.com/SparkAG', 'spark' ),
+                ),
+                array(
+                  'name'    => __( 'Instagram', 'spark' ),
+                  'id'      => $prefix.$section."instagram",
+                  'type'    => 'url',
+                  'std'     => __( 'http://Instagram.com/spark.ag', 'spark' ),
+                ),
+                array(
+                  'name'    => __( 'Endereço', 'spark' ),
+                  'id'      => $prefix.$section."address",
+                  'type'    => 'WYSIWYG',
+                  // Set the 'raw' parameter to TRUE to prevent data being passed through wpautop() on save
+                  'raw'     => false,
+                  'std'     => __( "Rua Antônio Peruzzo, 250 \n Bairro Sagrada Família \n Nova Prata - RS", 'spark' ),
+                ),
+                array(
+                  'name'    => __( 'Site', 'spark' ),
+                  'id'      => $prefix.$section."website",
+                  'type'    => 'url',
+                  // Set the 'raw' parameter to TRUE to prevent data being passed through wpautop() on save
+                  'raw'     => false,
+                  'std'     => __( 'http://www.sparkag.com.br', 'spark' ),
+                ),
+          ),
+    );
 
     return $meta_boxes;
 }
-
-
 
 
 /**
@@ -511,16 +565,84 @@ function spark_service_post_type() {
         'show_in_admin_bar'     => true,
         'show_in_nav_menus'     => true,
         'can_export'            => true,
-        'has_archive'           => false,       
+        'has_archive'           => false,
         'exclude_from_search'   => false,
         'publicly_queryable'    => true,
         'rewrite'               => $rewrite,
         'capability_type'       => 'page',
     );
-    register_post_type( 'service', $args );    
+    register_post_type( 'service', $args );
 
 }
 add_action( 'init', 'spark_service_post_type', 0 );
+
+}
+
+
+/**
+ *  CUSTOM POST TYPE CONTACT
+ */
+if ( ! function_exists('spark_contact_post_type') ) {
+
+// Register Custom Post Type
+function spark_contact_post_type() {
+
+    $labels = array(
+        'name'                  => _x( 'Contatos', 'Post Type General Name', 'spark' ),
+        'singular_name'         => _x( 'Contato', 'Post Type Singular Name', 'spark' ),
+        'menu_name'             => __( 'Contatos', 'spark' ),
+        'name_admin_bar'        => __( 'Post Type', 'spark' ),
+        'archives'              => __( 'Item Archives', 'spark' ),
+        'parent_item_colon'     => __( 'Parent Item:', 'spark' ),
+        'all_items'             => __( 'All Items', 'spark' ),
+        'add_new_item'          => __( 'Add New Item', 'spark' ),
+        'add_new'               => __( 'Add New', 'spark' ),
+        'new_item'              => __( 'New Item', 'spark' ),
+        'edit_item'             => __( 'Edit Item', 'spark' ),
+        'update_item'           => __( 'Update Item', 'spark' ),
+        'view_item'             => __( 'View Item', 'spark' ),
+        'search_items'          => __( 'Search Item', 'spark' ),
+        'not_found'             => __( 'Not found', 'spark' ),
+        'not_found_in_trash'    => __( 'Not found in Trash', 'spark' ),
+        'featured_image'        => __( 'Featured Image', 'spark' ),
+        'set_featured_image'    => __( 'Set featured image', 'spark' ),
+        'remove_featured_image' => __( 'Remove featured image', 'spark' ),
+        'use_featured_image'    => __( 'Use as featured image', 'spark' ),
+        'insert_into_item'      => __( 'Insert into item', 'spark' ),
+        'uploaded_to_this_item' => __( 'Uploaded to this item', 'spark' ),
+        'items_list'            => __( 'Items list', 'spark' ),
+        'items_list_navigation' => __( 'Items list navigation', 'spark' ),
+        'filter_items_list'     => __( 'Filter items list', 'spark' ),
+    );
+    $rewrite = array(
+        'slug'                  => 'contact',
+        'with_front'            => true,
+        'pages'                 => true,
+        'feeds'                 => true,
+    );
+    $args = array(
+        'label'                 => __( 'Contato', 'spark' ),
+        'labels'                => $labels,
+        'supports'              => array( 'title', 'editor', 'excerpt', 'author', 'thumbnail', 'comments', 'revisions', 'page-attributes', ),
+        'hierarchical'          => false,
+        'public'                => true,
+        'show_ui'               => true,
+        'show_in_menu'          => true,
+        'show_in_rest'          => true,
+        'menu_position'         => 6,
+        'show_in_admin_bar'     => true,
+        'show_in_nav_menus'     => true,
+        'can_export'            => true,
+        'has_archive'           => false,
+        'exclude_from_search'   => false,
+        'publicly_queryable'    => true,
+        'rewrite'               => $rewrite,
+        'capability_type'       => 'page',
+    );
+    register_post_type( 'contact', $args );
+
+}
+add_action( 'init', 'spark_contact_post_type', 0 );
 
 }
 
@@ -575,7 +697,7 @@ function spark_cta_post_type() {
         'show_in_admin_bar'     => true,
         'show_in_nav_menus'     => true,
         'can_export'            => true,
-        'has_archive'           => false,       
+        'has_archive'           => false,
         'exclude_from_search'   => false,
         'publicly_queryable'    => true,
         'rewrite'               => $rewrite,
@@ -588,46 +710,39 @@ add_action( 'init', 'spark_cta_post_type', 0 );
 
 }
 
-// add_filter( 'rwmb_meta_boxes', 'spark_cta_meta_boxes' );
-// function spark_cta_meta_boxes( $meta_boxes )
-// {
-//     $prefix = 'spark_';
 
 
-//     $section = 'cta_';
-//     // $post_types = get_post_types();
+//  ADD THE CUSTOM FIELDS TO API REST
+add_action( 'rest_api_init', function() {
+    register_rest_field( 'contact', 'meta', array(
+        'get_callback' => function( $contact_arr ) {
 
-//     $meta_boxes[] = array(
-//         'title'  => __( 'Chamada para ação', 'spark' ),
-//         'post_types' => ['post', 'page', 'product', 'service'],
-//         'fields' => array(
-//             array(
-//                 'name'        => __( 'CTA', 'spark' ),
-//                 'id'          => $prefix.$section."post",
-//                 'type'        => 'post',
-//                 'desc'        => __( 'Bloco de chamada para ação exibido no final do conteúdo da página', 'spark' ),
-//                 // 'clone'       => true,
-//                 // 'multiple'    => true,
-//                 // Post type: string (for single post type) or array (for multiple post types)
-//                 'post_type'   => array( 'cta' ),
-//                 // Default selected value (post ID)
-//                 'std'         => 1,
-//                 // Field type, either 'select' or 'select_advanced' (default)
-//                 'field_type'  => 'select_advanced',
-//                 // Placeholder
-//                 'placeholder' => __( 'Seleciona um item', 'spark' ),
-//                 // Query arguments (optional). No settings means get all published posts
-//                 // @see https://codex.wordpress.org/Class_Reference/WP_Query
-//                 'query_args'  => array(
-//                     'post_status'    => 'publish',
-//                     'posts_per_page' => - 1,
-//                 )
-//             ),
-//         )
-//     );
-//     return $meta_boxes;
-// }
+          $contact_details['whatsapp']    = rwmb_meta( 'contact_details_whatsapp', $args = array(), $contact_arr['id'] );
+          $contact_details['email']       = rwmb_meta( 'contact_details_email', $args = array(), $contact_arr['id'] );
+          $contact_details['phone']       = rwmb_meta( 'contact_details_phone', $args = array(), $contact_arr['id'] );
+          $contact_details['facebook']    = rwmb_meta( 'contact_details_facebook', $args = array(), $contact_arr['id'] );
+          $contact_details['instagram']   = rwmb_meta( 'contact_details_instagram', $args = array(), $contact_arr['id'] );
+          $contact_details['address']     = rwmb_meta( 'contact_details_address', $args = array(), $contact_arr['id'] );
+          $contact_details['website']     = rwmb_meta( 'contact_details_website', $args = array(), $contact_arr['id'] );
 
+          return $contact_details;
+        },
+        'update_callback' => function( $meta, $contact_obj ) {
+            $ret = wp_update_contact( array(
+                'contact_ID'    => $contact_obj->contact_ID,
+                'contact_meta' => $meta
+            ) );
+            if ( false === $ret ) {
+                return new WP_Error( 'rest_contact_meta_failed', __( 'Failed to update contact meta.' ), array( 'status' => 500 ) );
+            }
+            return true;
+        },
+        'schema' => array(
+            'description' => __( 'Contact meta.' ),
+            'type'        => 'integer'
+        ),
+    ) );
+} );
 
 
 
@@ -658,7 +773,7 @@ add_theme_support('post-thumbnails');
  * @return string (Maybe) modified "read more" excerpt string.
  */
 function wpdocs_excerpt_more( $more ) {
-	if ( is_front_page() ) {	
+	if ( is_front_page() ) {
        return '...   <a href="'. get_the_permalink() .'" class="">continue lendo <span class="ion-ios-arrow-right"></span></a>';
    }else{
        return $more;
@@ -710,61 +825,61 @@ function mytheme_create_options() {
 // add_action( 'admin_init', 'spark_settings_init' );
 
 
-function spark_add_admin_menu(  ) { 
+function spark_add_admin_menu(  ) {
 
     add_options_page( 'Spark', 'Spark', 'manage_options', 'spark', 'spark_options_page' );
 
 }
 
 
-function spark_settings_init(  ) { 
+function spark_settings_init(  ) {
 
     register_setting( 'pluginPage', 'spark_settings' );
 
     add_settings_section(
-        'spark_pluginPage_section', 
-        __( 'Your section description', 'spark' ), 
-        'spark_settings_section_callback', 
+        'spark_pluginPage_section',
+        __( 'Your section description', 'spark' ),
+        'spark_settings_section_callback',
         'pluginPage'
         );
 
-    add_settings_field( 
-        'spark_text_field_0', 
-        __( 'Settings field description', 'spark' ), 
-        'spark_text_field_0_render', 
-        'pluginPage', 
-        'spark_pluginPage_section' 
+    add_settings_field(
+        'spark_text_field_0',
+        __( 'Settings field description', 'spark' ),
+        'spark_text_field_0_render',
+        'pluginPage',
+        'spark_pluginPage_section'
         );
 
-    add_settings_field( 
-        'spark_checkbox_field_1', 
-        __( 'Settings field description', 'spark' ), 
-        'spark_checkbox_field_1_render', 
-        'pluginPage', 
-        'spark_pluginPage_section' 
+    add_settings_field(
+        'spark_checkbox_field_1',
+        __( 'Settings field description', 'spark' ),
+        'spark_checkbox_field_1_render',
+        'pluginPage',
+        'spark_pluginPage_section'
         );
 
-    add_settings_field( 
-        'spark_textarea_field_2', 
-        __( 'Settings field description', 'spark' ), 
-        'spark_textarea_field_2_render', 
-        'pluginPage', 
-        'spark_pluginPage_section' 
+    add_settings_field(
+        'spark_textarea_field_2',
+        __( 'Settings field description', 'spark' ),
+        'spark_textarea_field_2_render',
+        'pluginPage',
+        'spark_pluginPage_section'
         );
 
-    add_settings_field( 
-        'spark_select_field_3', 
-        __( 'Settings field description', 'spark' ), 
-        'spark_select_field_3_render', 
-        'pluginPage', 
-        'spark_pluginPage_section' 
+    add_settings_field(
+        'spark_select_field_3',
+        __( 'Settings field description', 'spark' ),
+        'spark_select_field_3_render',
+        'pluginPage',
+        'spark_pluginPage_section'
         );
 
 
 }
 
 
-function spark_text_field_0_render(  ) { 
+function spark_text_field_0_render(  ) {
 
     $options = get_option( 'spark_settings' );
     ?>
@@ -774,7 +889,7 @@ function spark_text_field_0_render(  ) {
 }
 
 
-function spark_checkbox_field_1_render(  ) { 
+function spark_checkbox_field_1_render(  ) {
 
     $options = get_option( 'spark_settings' );
     ?>
@@ -784,11 +899,11 @@ function spark_checkbox_field_1_render(  ) {
 }
 
 
-function spark_textarea_field_2_render(  ) { 
+function spark_textarea_field_2_render(  ) {
 
     $options = get_option( 'spark_settings' );
     ?>
-    <textarea cols='40' rows='5' name='spark_settings[spark_textarea_field_2]'> 
+    <textarea cols='40' rows='5' name='spark_settings[spark_textarea_field_2]'>
         <?php echo $options['spark_textarea_field_2']; ?>
     </textarea>
     <?php
@@ -796,7 +911,7 @@ function spark_textarea_field_2_render(  ) {
 }
 
 
-function spark_select_field_3_render(  ) { 
+function spark_select_field_3_render(  ) {
 
     $options = get_option( 'spark_settings' );
     ?>
@@ -810,26 +925,26 @@ function spark_select_field_3_render(  ) {
 }
 
 
-function spark_settings_section_callback(  ) { 
+function spark_settings_section_callback(  ) {
 
     echo __( 'This section description', 'spark' );
 
 }
 
 
-function spark_options_page(  ) { 
+function spark_options_page(  ) {
 
     ?>
     <form action='options.php' method='post'>
 
         <h2>Spark</h2>
-        
+
         <?php
         settings_fields( 'pluginPage' );
         do_settings_sections( 'pluginPage' );
         submit_button();
         ?>
-        
+
     </form>
     <?php
 

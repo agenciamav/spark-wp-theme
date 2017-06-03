@@ -52,6 +52,7 @@
             }
             wp_reset_query();  // Restore global post data stomped by the_post().
             ?>
+            <li><a href="<?php echo site_url('/docs') ?>" title="Ver documentação">Documentação</a></li>
           </ul>
         </div>
       </div>
@@ -81,18 +82,16 @@
       </div>
       <div class="col-md-6">
         <p>
-          <br>
           <!-- Social Media -->
           <ul class="social">
             <li>
-              <a href="">
-                <span class="ion-android-call"></span>
-                +55 54 3242-4507
+              <a href="https://www.facebook.com/SparkAG" class="Facebook">
+                <i class="ion-social-facebook"></i>
               </a>
             </li>
             <li>
-              <a href="https://www.facebook.com/SparkAG" class="Facebook">
-                <i class="ion-social-facebook"></i>
+              <a href="https://instagram.com/Spark.AG" class="Instagram">
+                <i class="ion-social-instagram"></i>
               </a>
             </li>
             <li>
@@ -103,6 +102,15 @@
             <li>
               <a title="Em breve" class="Google Plus">
                 <i class="ion-social-googleplus"></i>
+              </a>
+            </li>
+          </ul>
+          <br>
+          <ul class="social">
+            <li>
+              <a href="">
+                <span class="ion-android-call"></span>
+                +55 54 3242-4507
               </a>
             </li>
           </ul>

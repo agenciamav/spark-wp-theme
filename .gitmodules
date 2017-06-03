@@ -1,6 +1,0 @@
-[submodule "options"]
-	path = options
-	url = git://github.com/LiftUX/UpThemes-Framework.git
-[submodule "typerocket"]
-	path = typerocket
-	url = https://github.com/TypeRocket/typerocket.git

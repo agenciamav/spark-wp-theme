@@ -131,11 +131,11 @@
 								<div class="col-md-4">
 									<div class="blog-post-image">
 										<a href="<?php the_permalink();?>">
-											
+
 												<?php the_post_thumbnail('full', array('class' => 'img-responsive')); ?>
-											
+
 										</a>
-									</div>									
+									</div>
 								</div>
 								<div class="col-md-8">
 									<div class="blog-content">
@@ -147,14 +147,14 @@
 											<span class="text-capitalize">por <?php the_author_posts_link();?></span>
 											<span class="text-capitalize"><?php the_category(', ');?></span>
 										</div>
-										<?php the_excerpt();?>										
+										<?php the_excerpt();?>
 									</div>
 								</div>
 							</div>
 						</article>
 						<?php }else{ ?>
-						<article id="post-<?php the_ID()?>" class="wow fadeInDown" data-wow-delay=".3s" data-wow-duration="500ms">				
-						
+						<article id="post-<?php the_ID()?>" class="wow fadeInDown" data-wow-delay=".3s" data-wow-duration="500ms">
+
 							<div class="blog-content">
 								<h2 class="blogpost-title">
 									<a href="<?php the_permalink();?>"><?php the_title();?></a>
@@ -164,11 +164,11 @@
 									<span class="text-capitalize">por <?php the_author_posts_link();?></span>
 									<span class="text-capitalize"><?php the_category(', ');?></span>
 								</div>
-								<?php the_excerpt();?>										
+								<?php the_excerpt();?>
 							</div>
-						
+
 						</article>
-						<?php } ?>						
+						<?php } ?>
 
 						<?php } ?>
 						<article class="wow fadeInDown" data-wow-delay=".3s" data-wow-duration="500ms">
@@ -184,7 +184,7 @@
 
 				</div>
 				<div class="col-md-3">
-					<div class="sidebar">						
+					<div class="sidebar">
 						<div class="author widget">
 							<img class="img-responsive" src="http://dev.sparkag.com.br/wp-content/uploads/2016/03/720.jpg">
 							<div class="author-body text-center">
@@ -235,7 +235,7 @@
 										<a href="">ARM <span class="badge"><span class="ion-ios-arrow-right"></span></span></a>
 									</li>
 								</ul>
-							</div>							
+							</div>
 
 						</div>
 					</div>
