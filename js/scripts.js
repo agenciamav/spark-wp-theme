@@ -7,7 +7,7 @@ $(document).ready(function() {
       e = e || window.event;
       if (e.preventDefault)
           e.preventDefault();
-      e.returnValue = false;  
+      e.returnValue = false;
     }
 
     function preventDefaultForScrollKeys(e) {
@@ -31,15 +31,15 @@ $(document).ready(function() {
 
     function enableScroll() {
         console.log('Scroll ativado');
-        
+
         if (window.removeEventListener)
             window.removeEventListener('DOMMouseScroll', preventDefault, false);
-        window.onmousewheel = document.onmousewheel = null; 
-        window.onwheel = null; 
-        window.ontouchmove = null;  
-        document.onkeydown = null;  
+        window.onmousewheel = document.onmousewheel = null;
+        window.onwheel = null;
+        window.ontouchmove = null;
+        document.onkeydown = null;
     }
-    
+
     $('#warehouse').smoothZoom({
         width: document.body.innerWidth,
         height: 620,
@@ -51,23 +51,23 @@ $(document).ready(function() {
         mouse_DOUBLE_CLICK: false,
         zoom_MAX: 100,
         mouse_WHEEL_CURSOR_POS: true,
-        background_COLOR: '#F7F3F0',
-        on_ZOOM_PAN_COMPLETE: function(data) {            
-            //enableScroll(); 
+        // background_COLOR: '#F7F3F0',
+        on_ZOOM_PAN_COMPLETE: function(data) {
+            //enableScroll();
         },
-        on_ZOOM_PAN_UPDATE: function(data) {                        
-            //disableScroll();            
+        on_ZOOM_PAN_UPDATE: function(data) {
+            //disableScroll();
         },
     });
 
     $('body').mousewheel(function(event, delta, deltaX, deltaY) {
 
         var zoomData = $('#warehouse').smoothZoom('getZoomData');
-        
-        if (delta < 0) {             
+
+        if (delta < 0) {
             $('#warehouse').smoothZoom('Reset');
         }
-        
+
     });
 
 
@@ -78,7 +78,7 @@ $(document).ready(function() {
     $("#slider-navigation li").on('mouseover', 'a', function(event) {
         event.preventDefault();
     });
-    // Cycles the carousel to a particular frame 
+    // Cycles the carousel to a particular frame
     $("#slider-navigation li").hover(function() {
 
         var xpos = $(this).data('position-x');
@@ -89,7 +89,7 @@ $(document).ready(function() {
         var infobox_id = $(this).data('infobox');
         $('.item.mark.'+infobox_id).removeClass('hidden');
         $('.item.mark:not(.'+infobox_id+')').addClass('hidden');
-               
+
 
         $('#warehouse').smoothZoom('focusTo', {
             x: xpos,
@@ -144,21 +144,21 @@ $(document).ready(function() {
                 nav:true,
                 loop:true
             }
-        },    
+        },
         navText: [
           "<i class='ion-android-arrow-dropleft-circle'></i>",
           "<i class='ion-android-arrow-dropright-circle'></i>"
           ],
     });
 
-    
+
     /**
      *  FOOTER HEIGHT
      */
     $( window ).on('resize load', function() {
         var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
         if( w > 480 ){
-            $('body').css('margin-bottom', $('.footer').height());                        
+            $('body').css('margin-bottom', $('.footer').height());
         }else {
             $('body').css('marginBottom', 0);
         }

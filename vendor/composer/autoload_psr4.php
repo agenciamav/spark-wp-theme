@@ -9,4 +9,5 @@ return array(
     'Sabre\\Xml\\' => array($vendorDir . '/sabre/xml/lib'),
     'Sabre\\VObject\\' => array($vendorDir . '/sabre/vobject/lib'),
     'Sabre\\Uri\\' => array($vendorDir . '/sabre/uri/lib'),
+    'JeroenDesloovere\\VCard\\' => array($vendorDir . '/jeroendesloovere/vcard/src'),
 );

@@ -12,6 +12,7 @@ div#zoom_container {
     margin-top: -50px !important;
     margin-bottom: 0px;
     background-color: #F7F3F0 !important;
+    /*background-image: url('../images/isometric-bg.png');*/
     height: 615px !important;
     z-index: 0;
 }
@@ -19,19 +20,19 @@ div#zoom_container {
 #slider_section {
     z-index: 0;
 }
-    
+
 .smooth_zoom_icons {
     background-image: url(zoom_assets/icons.png);
 }
 #zoom_container .landmarks{
     position:absolute;
-    z-index:10; 
+    z-index:10;
     top:0px;
     left:0px;
     font-family: Helvetica, Arial, Verdana;
     font-size:12px;
     color: #ffffff;
-}   
+}
 #zoom_container .landmarks .item {
     position:absolute;
     margin: 0px 0px 0px 100px;
@@ -75,11 +76,11 @@ mark, .mark {
     border-left-width: 15px;
     border-top-width: 30px;
     border-bottom-width: 0px;
-}   
+}
 #zoom_container .landmarks .lable div {
     width: 100px;
-    padding: 4px;       
-}   
+    padding: 4px;
+}
 #zoom_container .landmarks .mark .text{
     background-color: rgb(255, 103, 0);
     padding: 0px;
@@ -99,22 +100,22 @@ mark, .mark {
     overflow: hidden;
 }
 #zoom_container .landmarks .mark .text .infobox-body{
-    padding: 10px;    
+    padding: 10px;
 }
 #zoom_container .landmarks .mark .text img{
     margin: auto 0;
     /* min-width: 250px !important; */
     /* min-height: 150px; */
     /* width: 360px; */
-}   
+}
 #zoom_container .landmarks .mark .text p{
     line-height: 1;
     margin: 0;
-}   
+}
 #zoom_container .landmarks .mark .text a{
-    color: #fff;    
-}  
+    color: #fff;
+}
 #zoom_container .landmarks .mark .text a:hover{
-    color: #fff;    
+    color: #fff;
     text-decoration:none;
-}   
+}

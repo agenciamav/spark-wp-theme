@@ -19,6 +19,10 @@ class ComposerStaticInit7cd7024361e067b69e9c8ab9b9fa5452
             'Sabre\\VObject\\' => 14,
             'Sabre\\Uri\\' => 10,
         ),
+        'J' => 
+        array (
+            'JeroenDesloovere\\VCard\\' => 23,
+        ),
     );
 
     public static $prefixDirsPsr4 = array (
@@ -34,6 +38,20 @@ class ComposerStaticInit7cd7024361e067b69e9c8ab9b9fa5452
         array (
             0 => __DIR__ . '/..' . '/sabre/uri/lib',
         ),
+        'JeroenDesloovere\\VCard\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/jeroendesloovere/vcard/src',
+        ),
+    );
+
+    public static $prefixesPsr0 = array (
+        'B' => 
+        array (
+            'Behat\\Transliterator' => 
+            array (
+                0 => __DIR__ . '/..' . '/behat/transliterator/src',
+            ),
+        ),
     );
 
     public static function getInitializer(ClassLoader $loader)
@@ -41,6 +59,7 @@ class ComposerStaticInit7cd7024361e067b69e9c8ab9b9fa5452
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInit7cd7024361e067b69e9c8ab9b9fa5452::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInit7cd7024361e067b69e9c8ab9b9fa5452::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInit7cd7024361e067b69e9c8ab9b9fa5452::$prefixesPsr0;
 
         }, null, ClassLoader::class);
     }

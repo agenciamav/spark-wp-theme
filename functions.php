@@ -460,6 +460,16 @@ function spark_product_meta_boxes( $meta_boxes ) {
         'fields'     =>
             array(
                 array(
+                    'name'    => __( 'Nome', 'spark' ),
+                    'id'      => $prefix.$section."name",
+                    'type'    => 'text',
+                ),
+                array(
+                    'name'    => __( 'Função', 'spark' ),
+                    'id'      => $prefix.$section."designation",
+                    'type'    => 'text',
+                ),
+                array(
                     'name'    => __( 'Whatsapp/Celular', 'spark' ),
                     'id'      => $prefix.$section."whatsapp",
                     'type'    => 'text',
@@ -491,10 +501,15 @@ function spark_product_meta_boxes( $meta_boxes ) {
                 array(
                   'name'    => __( 'Endereço', 'spark' ),
                   'id'      => $prefix.$section."address",
-                  'type'    => 'WYSIWYG',
+                  'type'    => 'textarea',
                   // Set the 'raw' parameter to TRUE to prevent data being passed through wpautop() on save
                   'raw'     => false,
-                  'std'     => __( "Rua Antônio Peruzzo, 250 \n Bairro Sagrada Família \n Nova Prata - RS", 'spark' ),
+                  'std'     => __( "Rua Antônio Peruzzo, 250\nBairro Sagrada Família\nNova Prata - RS", 'spark' ),
+                ),
+                array(
+                    'name'    => __( 'CEP', 'spark' ),
+                    'id'      => $prefix.$section."cep",
+                    'type'    => 'text',
                 ),
                 array(
                   'name'    => __( 'Site', 'spark' ),
@@ -623,7 +638,7 @@ function spark_contact_post_type() {
     $args = array(
         'label'                 => __( 'Contato', 'spark' ),
         'labels'                => $labels,
-        'supports'              => array( 'title', 'editor', 'excerpt', 'author', 'thumbnail', 'comments', 'revisions', 'page-attributes', ),
+        'supports'              => array( 'title', 'thumbnail', 'page-attributes'),
         'hierarchical'          => false,
         'public'                => true,
         'show_ui'               => true,
@@ -717,12 +732,15 @@ add_action( 'rest_api_init', function() {
     register_rest_field( 'contact', 'meta', array(
         'get_callback' => function( $contact_arr ) {
 
+          $contact_details['name']        = rwmb_meta( 'contact_details_name', $args = array(), $contact_arr['id'] );
+          $contact_details['designation'] = rwmb_meta( 'contact_details_designation', $args = array(), $contact_arr['id'] );
           $contact_details['whatsapp']    = rwmb_meta( 'contact_details_whatsapp', $args = array(), $contact_arr['id'] );
           $contact_details['email']       = rwmb_meta( 'contact_details_email', $args = array(), $contact_arr['id'] );
           $contact_details['phone']       = rwmb_meta( 'contact_details_phone', $args = array(), $contact_arr['id'] );
           $contact_details['facebook']    = rwmb_meta( 'contact_details_facebook', $args = array(), $contact_arr['id'] );
           $contact_details['instagram']   = rwmb_meta( 'contact_details_instagram', $args = array(), $contact_arr['id'] );
           $contact_details['address']     = rwmb_meta( 'contact_details_address', $args = array(), $contact_arr['id'] );
+          $contact_details['cep']         = rwmb_meta( 'contact_details_cep', $args = array(), $contact_arr['id'] );
           $contact_details['website']     = rwmb_meta( 'contact_details_website', $args = array(), $contact_arr['id'] );
 
           return $contact_details;

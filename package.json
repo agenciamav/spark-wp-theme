@@ -10,7 +10,10 @@
   },
   "dependencies": {
     "axios": "^0.16.1",
+    "fs": "0.0.1-security",
     "lodash": "^4.17.4",
+    "vcard-generator": "0.0.3",
+    "vcards-js": "^2.4.1",
     "vue": "^2.3.3"
   },
   "devDependencies": {

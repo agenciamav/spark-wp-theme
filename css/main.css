@@ -1462,6 +1462,7 @@ ul {}
 /* WAREHOUSE APP */
 #zoom_container, #slider_section{
   background: #F7F3F0;
+  /*background-image: url('../images/isometric-bg.png');*/
 }
 #warehouse{
   margin-top: 0px;
