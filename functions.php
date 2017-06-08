@@ -451,6 +451,40 @@ function spark_product_meta_boxes( $meta_boxes ) {
     );
 
 
+    $prefix = 'spark_';
+    $section = 'form_';
+    // $post_types = get_post_types();
+
+    $meta_boxes[] = array(
+        'title'  => __( 'Formulário de contato', 'spark' ),
+        'post_types' => ['page'],
+        'fields' => array(
+            array(
+                'name'        => __( 'Formulário', 'spark' ),
+                'id'          => $prefix.$section."form",
+                'type'        => 'post',
+                'desc'        => __( 'Crie ou edite os formulários <a href="http://sparkag.com.br/wp-admin/admin.php?page=wpcf7">aqui</a>', 'spark' ),
+                // 'clone'       => true,
+                // 'multiple'    => true,
+                // Post type: string (for single post type) or array (for multiple post types)
+                'post_type'   => array( 'wpcf7_contact_form' ),
+                // Default selected value (post ID)
+                'std'         => 1,
+                // Field type, either 'select' or 'select_advanced' (default)
+                'field_type'  => 'select_advanced',
+                // Placeholder
+                'placeholder' => __( 'Seleciona um item', 'spark' ),
+                // Query arguments (optional). No settings means get all published posts
+                // @see https://codex.wordpress.org/Class_Reference/WP_Query
+                'query_args'  => array(
+                    'post_status'    => 'publish',
+                    'posts_per_page' => - 1,
+                )
+            ),
+        )
+    );
+
+
     $prefix = 'contact_';
     $section = 'details_';
     $meta_boxes[] = array(

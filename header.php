@@ -68,7 +68,7 @@ Header Section Start
                 <span class="fone"><i class="fa fa-phone"></i>Ligue +55 54 3242-4507</span>
                 <span><i class="fa fa-calendar"></i><a href="<?php echo bloginfo('url') ?>/contato/solicitar-demonstracao" style="color:#FFFFFF">Agende demonstração</a></span>
                 <span><i class="fa fa-envelope"></i><a href="mailto:comercial@sparkag.com.br" style="color:#FFFFFF">Escreva-nos</a></span>
-                <span><i class="fa fa-suitcase"></i><a href="#" target="_blank" style="color:#FFFFFF">Trabalhe Conosco</a></span>
+                <span><i class="fa fa-suitcase"></i><a href="<?php echo bloginfo('url') ?>/contato/trabalhe-conosco" style="color:#FFFFFF">Trabalhe Conosco</a></span>
 
             </p>
         </div>

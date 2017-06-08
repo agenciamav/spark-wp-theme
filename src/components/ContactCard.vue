@@ -61,7 +61,7 @@
 									<i class="fa fa-map-marker" aria-hidden="true"></i>
 								</td>
 								<td>
-									<span> <div v-html="contact.meta.address"></div></span>
+									<span>{{ contact.meta.address + ' ' + contact.meta.cep }}</span>
 								</td>
 							</tr>
 							<tr v-if="contact.meta.facebook">
@@ -93,9 +93,6 @@
 					<hr>
 					<a class="btn btn-sm btn-primary text-uppercase" href="?download">
 						<i class="fa fa-save"></i> Baixar V-card
-					</a>
-					<a href="#" class="btn btn-sm btn-primary text-uppercase" onclick="alert('Indisponível!');">
-						<i class="fa fa-save"></i> Baixar CSV
 					</a>
 				</div>
 			</div>

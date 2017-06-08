@@ -17,7 +17,8 @@
     $contact_details['cep']         = rwmb_meta( 'contact_details_cep' );
     $contact_details['website']     = rwmb_meta( 'contact_details_website' );
 
-    $contact_details['photo']       = get_the_post_thumbnail_url('full');
+    // $contact_details['photo']       = get_the_post_thumbnail_url($post->ID, 'full');
+    $contact_details['photo']       = get_attached_file( get_post_thumbnail_id( $post->ID ) );
 
     /**
      * VCard generator - Save to file or output as a download
